@@ -1,0 +1,545 @@
+
+<!DOCTYPE html>
+
+
+<html lang="fr" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Notes typographiques &#8212; Version 2.6b1</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=a56b48ff" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=37dc2d04"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="_static/translations.js?v=e6b791cb"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'usage_typography';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Gestion des projets" href="project_overview.html" />
+    <link rel="prev" title="Raccourcis clavier" href="usage_shortcuts.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  <meta name="docsearch:version" content="2.6b1" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Passer au contenu principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Haut de page</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Alerte de version"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/novelwriter-light.png" class="logo__image only-light" alt="Version 2.6b1 - Home"/>
+    <img src="_static/novelwriter-dark.png" class="logo__image only-dark pst-js-only" alt="Version 2.6b1 - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+<p class="nw-sidebar-title">Version 2.6b1</p>
+</div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Page d'accueil</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="int_introduction.html">Présentation générale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_overview.html">Premières lectures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_started.html">Configuration et installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_howto.html">Trucs et astuces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_glossary.html">Glossaire</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Utiliser novelWriter</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="usage_breakdown.html">Comment ça marche</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_project.html">Vues du projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_writing.html">L’éditeur et le visualisateur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_format.html">Mise en forme du texte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_shortcuts.html">Raccourcis clavier</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Notes typographiques</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Organiser votre projet</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="project_overview.html">Gestion des projets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_structure.html">Structure du roman</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_references.html">Tags et références</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_manuscript.html">Compiler le manuscrit</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Détails additionnels</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="more_customise.html">Personnalisations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="more_projectformat.html">Modifications du format des projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="more_counting.html">Décompte des mots et des textes</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Sujets techniques</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="tech_locations.html">Emplacement des fichiers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_storage.html">Comment les données sont stockées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_source.html">Executer depuis la source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_tests.html">Exécution des tests</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/vkbo/novelwriter" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Dépôt source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/vkbo/novelwriter/issues/new?title=Issue%20on%20page%20%2Fusage_typography.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Ouvrez un problème"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/usage_typography.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Thème" data-bs-title="Thème"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Clair"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Sombre"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="Paramètres système"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Notes typographiques</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#special-notes-on-symbols">Remarques spéciales sur les symboles</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dashes-and-ellipsis">Tirets et points de suspension</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#single-and-double-quotes">Guillemets simples et doubles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#single-and-double-prime">Simple et double prime</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Modificateur Lettre Apostrophe</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#special-space-symbols">Symboles spéciaux d’espacement</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="typographical-notes">
+<span id="a-typ"></span><h1>Notes typographiques<a class="headerlink" href="#typographical-notes" title="Lien vers cette rubrique">#</a></h1>
+<p>novelWriter prend en charge certains symboles typographiques qui ne sont généralement pas disponibles dans de nombreux éditeurs de texte. Cela inclut par exemple les guillemets unicode, les tirets, les points de suspension, les espaces fins, etc. Tous ces symboles sont disponibles dans le menu <strong>Insérer</strong>, et via des raccourcis clavier. Voir <a class="reference internal" href="usage_shortcuts.html#a-kb-ins"><span class="std std-ref">Raccourcis d’insertion</span></a>.</p>
+<p>Ce chapitre fournit des informations supplémentaires sur la manière dont novelWriter gère ces symboles.</p>
+<section id="special-notes-on-symbols">
+<span id="a-typ-notes"></span><h2>Remarques spéciales sur les symboles<a class="headerlink" href="#special-notes-on-symbols" title="Lien vers cette rubrique">#</a></h2>
+<p>Cette section contient des notes supplémentaires sur les symboles spéciaux disponibles.</p>
+<section id="dashes-and-ellipsis">
+<h3>Tirets et points de suspension<a class="headerlink" href="#dashes-and-ellipsis" title="Lien vers cette rubrique">#</a></h3>
+<p>Lorsque la fonction de remplacement automatique est activée (voir <a class="reference internal" href="usage_writing.html#a-ui-edit-auto"><span class="std std-ref">Remplacement automatique au fur et à mesure de la saisie</span></a>), les traits d’union multiples sont automatiquement convertis en tirets courts et longs, et les trois points en points de suspension. Le dernier remplacement automatique peut toujours être annulé avec la commande d’annulation <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>+<kbd class="kbd docutils literal notranslate">Z</kbd></kbd>, ramenant le texte à ce que vous aviez tapé avant le remplacement automatique.</p>
+<p>En outre, le « tiret chiffré » est disponible. Il s’agit d’un tiret de la même largeur que les chiffres de la même police, pour la plupart des polices. Il permet de bien aligner les chiffres dans les colonnes lorsque vous devez utiliser un tiret.</p>
+</section>
+<section id="single-and-double-quotes">
+<h3>Guillemets simples et doubles<a class="headerlink" href="#single-and-double-quotes" title="Lien vers cette rubrique">#</a></h3>
+<p>Tous les différents guillemets listés sur la page Wikipedia <a class="reference external" href="https://en.wikipedia.org/wiki/Quotation_mark">Quotation Mark</a> sont disponibles, et peuvent être sélectionnés comme symboles auto-remplacés pour les touches de guillemets simples et doubles. Les réglages se trouvent dans les <strong>Préférences</strong>.</p>
+<p>Normalement, le texte entre guillemets est mis en évidence par l’éditeur. Il s’agit d’une commodité pour mettre en évidence les dialogues entre les personnages. Cette fonctionnalité peut être désactivée dans les <strong>Préférences</strong> si elle n’est pas souhaitée.</p>
+<p>L’éditeur fait la distinction entre le texte entre guillemets droits et les symboles de guillemets sélectionnés par l’utilisateur. Cela permet au rédacteur de reconnaître les parties du texte qui n’utilisent pas les symboles de guillemets choisis. Deux fonctions pratiques du menu <strong>Format</strong> peuvent être utilisées pour reformater une section de texte sélectionnée avec les symboles de guillemets corrects.</p>
+</section>
+<section id="single-and-double-prime">
+<h3>Simple et double prime<a class="headerlink" href="#single-and-double-prime" title="Lien vers cette rubrique">#</a></h3>
+<p>Les symboles de prime simple et double sont disponibles dans le menu <strong>Insérer</strong>. Ces symboles sont les symboles corrects à utiliser pour les symboles d’unités pour les pieds, les pouces, les minutes et les secondes. L’utilisation de ces symboles est décrite plus en détail sur la page <a class="reference external" href="https://en.wikipedia.org/wiki/Prime_(symbol)">Prime</a> de Wikipedia. Ils ressemblent beaucoup aux guillemets simples et doubles et peuvent être rendus de la même manière par la police, mais ils ont des codes différents. En les utilisant correctement, vous éviterez que les fonctions de remplacement automatique et de mise en évidence des dialogues ne se méprennent sur leur signification dans le texte.</p>
+</section>
+<section id="id1">
+<h3>Modificateur Lettre Apostrophe<a class="headerlink" href="#id1" title="Lien vers cette rubrique">#</a></h3>
+<p>La fonction de remplacement automatique considère tout guillemet droit simple orienté vers la droite comme un symbole de guillemet, même s’il s’agit d’une apostrophe. Cela s’applique également à l’outil de mise en évidence de la syntaxe, qui peut supposer que la première apostrophe qui suit est le symbole de fermeture d’une région de texte entre guillemets.</p>
+<p>Pour contourner ce problème, il existe une apostrophe alternative. Il s’agit d’un caractère Unicode spécial qui n’est pas considéré comme une ponctuation, mais comme un modificateur. Il est généralement rendu de la même manière que les guillemets simples de droite, en fonction de la police de caractères. Il existe un article de Wikipédia sur la <a class="reference external" href="https://en.wikipedia.org/wiki/Modifier_letter_apostrophe">lettre modificatrice apostrophe</a> avec plus de détails.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Lors de l’exportation à l’aide de l’outil <strong>Compiler un manuscrit</strong>, ces apostrophes seront automatiquement remplacées par le symbole de guillemet simple de droite correspondant, comme cela est généralement recommandé. Par conséquent, cela n’a pas vraiment d’importance si vous ne les utilisez que pour corriger la mise en évidence de la syntaxe.</p>
+</div>
+</section>
+<section id="special-space-symbols">
+<h3>Symboles spéciaux d’espacement<a class="headerlink" href="#special-space-symbols" title="Lien vers cette rubrique">#</a></h3>
+<p>Quelques variations du caractère espace régulier sont prises en charge. La manière typographique correcte de séparer un nombre de son unité est d’utiliser une « espace fine ». Sa largeur est généralement égale aux deux tiers de celle d’une espace normale. Pour les nombres et les unités, il doit en outre s’agir d’un espace insécable, c’est-à-dire que l’habillage du texte ne doit pas ajouter de saut de ligne sur cet espace particulier.</p>
+<p>Un espace régulier peut également être transformé en espace insécable si nécessaire.</p>
+<p>Tous les espaces insécables sont mis en évidence par un arrière-plan de couleur différente pour faciliter leur repérage dans le texte. La couleur dépend du thème de couleur sélectionné.</p>
+<p>Les espaces fins et insécables sont convertis en codes HTML correspondants lors de l’exportation au format HTML.</p>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="usage_shortcuts.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">Raccourcis clavier</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="project_overview.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Gestion des projets</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#special-notes-on-symbols">Remarques spéciales sur les symboles</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dashes-and-ellipsis">Tirets et points de suspension</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#single-and-double-quotes">Guillemets simples et doubles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#single-and-double-prime">Simple et double prime</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Modificateur Lettre Apostrophe</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#special-space-symbols">Symboles spéciaux d’espacement</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par Veronica Berglyd Olsen
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

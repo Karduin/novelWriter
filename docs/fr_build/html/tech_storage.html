@@ -1,0 +1,578 @@
+
+<!DOCTYPE html>
+
+
+<html lang="fr" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Comment les données sont stockées &#8212; Version 2.6b1</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=a56b48ff" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=37dc2d04"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="_static/translations.js?v=e6b791cb"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'tech_storage';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Executer depuis la source" href="tech_source.html" />
+    <link rel="prev" title="Emplacement des fichiers" href="tech_locations.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  <meta name="docsearch:version" content="2.6b1" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Passer au contenu principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Haut de page</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Alerte de version"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/novelwriter-light.png" class="logo__image only-light" alt="Version 2.6b1 - Home"/>
+    <img src="_static/novelwriter-dark.png" class="logo__image only-dark pst-js-only" alt="Version 2.6b1 - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+<p class="nw-sidebar-title">Version 2.6b1</p>
+</div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Page d'accueil</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="int_introduction.html">Présentation générale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_overview.html">Premières lectures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_started.html">Configuration et installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_howto.html">Trucs et astuces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_glossary.html">Glossaire</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Utiliser novelWriter</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="usage_breakdown.html">Comment ça marche</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_project.html">Vues du projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_writing.html">L’éditeur et le visualisateur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_format.html">Mise en forme du texte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_shortcuts.html">Raccourcis clavier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_typography.html">Notes typographiques</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Organiser votre projet</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="project_overview.html">Gestion des projets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_structure.html">Structure du roman</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_references.html">Tags et références</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_manuscript.html">Compiler le manuscrit</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Détails additionnels</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="more_customise.html">Personnalisations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="more_projectformat.html">Modifications du format des projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="more_counting.html">Décompte des mots et des textes</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Sujets techniques</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="tech_locations.html">Emplacement des fichiers</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Comment les données sont stockées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_source.html">Executer depuis la source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_tests.html">Exécution des tests</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/vkbo/novelwriter" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Dépôt source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/vkbo/novelwriter/issues/new?title=Issue%20on%20page%20%2Ftech_storage.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Ouvrez un problème"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/tech_storage.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Thème" data-bs-title="Thème"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Clair"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Sombre"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="Paramètres système"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Comment les données sont stockées</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-structure">Structure du projet</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#main-project-file">Fichier principal du projet</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-documents">Documents de projet</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-file-saving-process">Le processus d’enregistrement des fichiers</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-meta-data">Métadonnées du projet</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-project-index">L’index des projets</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#build-definitions">Définitions des compilations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cached-gui-options">Options de l’interface graphique mises en cache</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#custom-word-list">Liste des mots personnalisés</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#session-stats">Statistiques de la session</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="how-data-is-stored">
+<span id="a-storage"></span><h1>Comment les données sont stockées<a class="headerlink" href="#how-data-is-stored" title="Lien vers cette rubrique">#</a></h1>
+<p>Ce chapitre contient des détails sur la manière dont novelWriter stocke et gère les données du projet.</p>
+<section id="project-structure">
+<h2>Structure du projet<a class="headerlink" href="#project-structure" title="Lien vers cette rubrique">#</a></h2>
+<p>Tous les fichiers novelWriter sont écrits avec l’encodage utf-8. Comme Python convertit automatiquement les fins de ligne Unix en fins de ligne Windows sur les systèmes Windows, novelWriter ne fait aucune adaptation au formatage sur les systèmes Windows. Ceci est entièrement géré par la bibliothèque standard de Python. Python s’en occupe également lorsqu’il travaille sur les mêmes fichiers sur les systèmes d’exploitation Windows et Unix.</p>
+<section id="main-project-file">
+<h3>Fichier principal du projet<a class="headerlink" href="#main-project-file" title="Lien vers cette rubrique">#</a></h3>
+<p>Le projet lui-même nécessite un dossier dédié pour stocker ses fichiers, où novelWriter créera son propre « système de fichiers » où la hiérarchie des dossiers et des fichiers du projet est décrite dans un fichier XML du projet. C’est le fichier principal du projet dans le dossier racine du projet avec le nom <code class="docutils literal notranslate"><span class="pre">nwProject.nwx</span></code>. Ce fichier contient également toutes les métadonnées requises pour le projet (à l’exception des données d’index), ainsi qu’un certain nombre de paramètres liés au projet.</p>
+<p>Si ce fichier est perdu ou corrompu, la structure du projet est perdue, mais pas le texte lui-même. Il est important de sauvegarder ce fichier, soit à l’aide de l’outil de sauvegarde intégré, soit à l’aide de votre propre solution de sauvegarde.</p>
+<p>Le fichier XML du projet est formaté en indentation et convient aux outils de comparaison et de contrôle de version, car la majeure partie du fichier reste statique, bien qu’un horodatage soit défini dans la section méta à la ligne 2 et que diverses entrées de données méta soient incrémentées à chaque enregistrement.</p>
+<p>Une description complète du format de fichier actuel est disponible dans le document <a class="reference download internal" download="" href="_downloads/b90010f8ffc9c978e2b11a514bc1012b/fileformatspec15.pdf"><code class="xref download docutils literal notranslate"><span class="pre">File</span> <span class="pre">Format</span> <span class="pre">Spec</span> <span class="pre">1.5</span></code></a>, disponible au format PDF.</p>
+</section>
+</section>
+<section id="project-documents">
+<h2>Documents de projet<a class="headerlink" href="#project-documents" title="Lien vers cette rubrique">#</a></h2>
+<p>Tous les documents du projet sont enregistrés dans un sous-dossier du dossier principal du projet nommé <code class="docutils literal notranslate"><span class="pre">content</span></code>. Chaque document possède un identifiant de fichier basé sur un nombre aléatoire de 52 bits, représenté sous la forme d’une chaîne hexadécimale. Les documents sont enregistrés avec un nom de fichier assemblé à partir de cet identifiant et de l’extension <code class="docutils literal notranslate"><span class="pre">.nwd</span></code>.</p>
+<p>Si vous souhaitez trouver l’emplacement du système de fichiers d’un document dans le projet, vous pouvez soit le rechercher dans le fichier XML du projet, soit sélectionner <strong>Afficher les détails du fichier</strong> dans le menu <strong>Document</strong> lorsque le document est ouvert dans l’éditeur, soit rechercher dans le fichier <code class="docutils literal notranslate"><span class="pre">ToC.txt</span></code> à la racine du dossier du projet. Le fichier <code class="docutils literal notranslate"><span class="pre">ToC.txt</span></code> contient une liste de tous les documents du projet, référencés par leur étiquette, et l’endroit où ils sont sauvegardés.</p>
+<p>La raison de ce nom de fichier cryptique est d’éviter les problèmes liés aux conventions de dénomination des fichiers et aux restrictions sur les différents systèmes d’exploitation, et aussi d’avoir un nom de fichier qui ne dépend pas du nom que vous donnez au document dans le projet, ou des modifications que vous lui apportez. Ceci est particulièrement utile lors de l’utilisation d’un système de gestion des versions.</p>
+<p>Chaque fichier de document contient une version en texte brut du texte de l’éditeur. Le fichier peut en principe être édité dans n’importe quel éditeur de texte, et convient pour le diffing et le contrôle de version si on le souhaite. Assurez-vous simplement que le fichier reste en encodage utf-8, sinon les caractères unicode risquent d’être altérés lorsque le fichier est ouvert dans novelWriter.</p>
+<p>Il est généralement déconseillé de modifier ces fichiers. La raison en est que l’index ne sera pas automatiquement mis à jour, ce qui signifie que novelWriter ne sait pas que vous avez modifié le fichier. Si vous modifiez un fichier de cette manière, vous devez reconstruire l’index lorsque vous ouvrez le projet dans novelWriter.</p>
+<p>Les premières lignes du fichier peuvent contenir des métadonnées commençant par les caractères <code class="docutils literal notranslate"><span class="pre">%%~</span></code>. Ces lignes sont principalement là pour restaurer certaines informations si le fichier est perdu dans le fichier principal du projet, et ces informations peuvent être utiles si vous ouvrez le fichier dans un éditeur externe car elles contiennent l’étiquette du document ainsi que la classe et la mise en page du document. Les lignes peuvent être supprimées sans conséquences pour le reste du contenu du fichier, et seront ajoutées la prochaine fois que le document sera sauvegardé dans novelWriter.</p>
+<section id="the-file-saving-process">
+<h3>Le processus d’enregistrement des fichiers<a class="headerlink" href="#the-file-saving-process" title="Lien vers cette rubrique">#</a></h3>
+<p>Lors de l’enregistrement du fichier de projet ou de l’un des documents, les données sont d’abord enregistrées dans un fichier temporaire. En cas de succès, l’ancien fichier de données est alors supprimé et remplacé par le fichier temporaire. Cela garantit que les données précédemment enregistrées ne sont remplacées que lorsque les nouvelles données ont été enregistrées avec succès sur le support de stockage.</p>
+</section>
+</section>
+<section id="project-meta-data">
+<h2>Métadonnées du projet<a class="headerlink" href="#project-meta-data" title="Lien vers cette rubrique">#</a></h2>
+<p>Le dossier du projet contient un sous-dossier nommé <code class="docutils literal notranslate"><span class="pre">meta</span></code>, contenant un certain nombre de fichiers. Le dossier meta contient des fichiers semi-importants. C’est-à-dire qu’ils peuvent être perdus avec un impact mineur sur le projet. Tous les fichiers de ce dossier sont des fichiers JSON ou JSON Lines, bien que certains autres fichiers puissent provenir de versions antérieures de novelWriter, car ils n’ont pas tous été des fichiers JSON dans le passé.</p>
+<p>Si vous utilisez un logiciel de contrôle de version pour votre projet, vous pouvez exclure ce dossier, même si vous souhaitez suivre le fichier journal de la session et la liste des mots personnalisés.</p>
+<section id="the-project-index">
+<h3>L’index des projets<a class="headerlink" href="#the-project-index" title="Lien vers cette rubrique">#</a></h3>
+<p>Entre les sessions d’écriture, l’index du projet est sauvegardé dans un fichier JSON dans <code class="docutils literal notranslate"><span class="pre">meta/index.json</span></code>. Ce fichier n’est pas critique. S’il est perdu, il peut être complètement reconstruit à partir de novelWriter dans le menu <strong>Outils</strong>.</p>
+<p>L’index est maintenu et mis à jour chaque fois qu’un document ou une note est enregistré dans l’éditeur. Il contient toutes les références et les balises des documents et des notes, ainsi que l’emplacement de tous les en-têtes dans le projet et le nombre de mots dans chaque section de l’en-tête.</p>
+<p>L’intégrité de l’index est vérifiée lorsque le fichier est chargé. Il est possible de corrompre l’index si le fichier est édité et manipulé manuellement, c’est pourquoi cette vérification est importante pour éviter les plantages soudains de novelWriter. Si le fichier contient des erreurs, novelWriter le reconstruira automatiquement. Si la vérification échoue d’une manière ou d’une autre et que novelWriter continue à se bloquer, vous pouvez supprimer le fichier manuellement et reconstruire l’index. Si cela échoue également, vous avez probablement rencontré un bogue.</p>
+</section>
+<section id="build-definitions">
+<h3>Définitions des compilations<a class="headerlink" href="#build-definitions" title="Lien vers cette rubrique">#</a></h3>
+<p>Les définitions de construction de l’outil <strong>Compilation du manuscrit</strong> sont conservées dans le fichier <code class="docutils literal notranslate"><span class="pre">meta/builds.json</span></code>. Si ce fichier est perdu, toutes les définitions de construction personnalisées sont également perdues.</p>
+</section>
+<section id="cached-gui-options">
+<h3>Options de l’interface graphique mises en cache<a class="headerlink" href="#cached-gui-options" title="Lien vers cette rubrique">#</a></h3>
+<p>Un fichier nommé <code class="docutils literal notranslate"><span class="pre">meta/options.json</span></code> contient le dernier état des différents boutons de l’interface graphique, des commutateurs, de la taille des fenêtres de dialogue, de la taille des colonnes, etc, de l’interface graphique. Ce sont les paramètres de l’interface graphique qui sont spécifiques au projet. Les paramètres globaux de l’interface graphique sont stockés dans le fichier de configuration principal.</p>
+<p>Le fichier n’est pas critique, mais s’il est perdu, toutes les options de l’interface graphique reviendront à leurs paramètres par défaut.</p>
+</section>
+<section id="custom-word-list">
+<h3>Liste des mots personnalisés<a class="headerlink" href="#custom-word-list" title="Lien vers cette rubrique">#</a></h3>
+<p>Un fichier nommé <code class="docutils literal notranslate"><span class="pre">meta/userdict.json</span></code> contient tous les mots personnalisés que vous avez ajoutés au projet à des fins de vérification orthographique. Le contenu de ce fichier peut être édité à partir du menu <strong>Outils</strong>. Si vous perdez ce fichier, tous vos mots personnalisés pour la vérification orthographique seront également perdus.</p>
+</section>
+<section id="session-stats">
+<h3>Statistiques de la session<a class="headerlink" href="#session-stats" title="Lien vers cette rubrique">#</a></h3>
+<p>La progression de l’écriture est sauvegardée dans le fichier <code class="docutils literal notranslate"><span class="pre">meta/sessions.jsonl</span></code>. Ce fichier enregistre la durée et le nombre de mots de chaque session d’écriture sur le projet donné. Ce fichier est utilisé par l’outil <strong>Statistiques d’écriture</strong>. Si ce fichier est perdu, l’historique qu’il contient est également perdu, mais cela n’a par ailleurs aucun impact sur le projet.</p>
+<p>Chaque session est enregistrée sous la forme d’un objet JSON sur une seule ligne du fichier. Chaque enregistrement de session est ajouté au fichier.</p>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="tech_locations.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">Emplacement des fichiers</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="tech_source.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Executer depuis la source</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-structure">Structure du projet</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#main-project-file">Fichier principal du projet</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-documents">Documents de projet</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-file-saving-process">Le processus d’enregistrement des fichiers</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-meta-data">Métadonnées du projet</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-project-index">L’index des projets</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#build-definitions">Définitions des compilations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cached-gui-options">Options de l’interface graphique mises en cache</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#custom-word-list">Liste des mots personnalisés</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#session-stats">Statistiques de la session</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par Veronica Berglyd Olsen
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

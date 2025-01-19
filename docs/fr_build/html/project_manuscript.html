@@ -1,0 +1,650 @@
+
+<!DOCTYPE html>
+
+
+<html lang="fr" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Compiler le manuscrit &#8212; Version 2.6b1</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=a56b48ff" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=37dc2d04"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="_static/translations.js?v=e6b791cb"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'project_manuscript';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Personnalisations" href="more_customise.html" />
+    <link rel="prev" title="Tags et références" href="project_references.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  <meta name="docsearch:version" content="2.6b1" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Passer au contenu principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Haut de page</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Alerte de version"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/novelwriter-light.png" class="logo__image only-light" alt="Version 2.6b1 - Home"/>
+    <img src="_static/novelwriter-dark.png" class="logo__image only-dark pst-js-only" alt="Version 2.6b1 - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+<p class="nw-sidebar-title">Version 2.6b1</p>
+</div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Page d'accueil</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="int_introduction.html">Présentation générale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_overview.html">Premières lectures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_started.html">Configuration et installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_howto.html">Trucs et astuces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_glossary.html">Glossaire</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Utiliser novelWriter</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="usage_breakdown.html">Comment ça marche</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_project.html">Vues du projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_writing.html">L’éditeur et le visualisateur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_format.html">Mise en forme du texte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_shortcuts.html">Raccourcis clavier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_typography.html">Notes typographiques</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Organiser votre projet</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="project_overview.html">Gestion des projets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_structure.html">Structure du roman</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_references.html">Tags et références</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Compiler le manuscrit</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Détails additionnels</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="more_customise.html">Personnalisations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="more_projectformat.html">Modifications du format des projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="more_counting.html">Décompte des mots et des textes</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Sujets techniques</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="tech_locations.html">Emplacement des fichiers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_storage.html">Comment les données sont stockées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_source.html">Executer depuis la source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_tests.html">Exécution des tests</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/vkbo/novelwriter" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Dépôt source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/vkbo/novelwriter/issues/new?title=Issue%20on%20page%20%2Fproject_manuscript.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Ouvrez un problème"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/project_manuscript.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Thème" data-bs-title="Thème"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Clair"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Sombre"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="Paramètres système"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Compiler le manuscrit</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-manuscript-build-tool">L’outil de compilation de manuscrit</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#outline-and-word-counts">Plan et nombre de mots</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build-settings">Paramètres de compilation</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#document-selection">Sélection des documents</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formatting-headings">Mise en forme des en-têtes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#scene-separators">Séparateurs de scènes</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hard-and-soft-scenes">Scènes dures et douces</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#output-settings">Paramètres de sortie</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-manuscript-documents">Création des manuscrits</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#file-formats">Formats de fichiers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-formats">Formats supplémentaires</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#print-and-pdf">Imprimer et PDF</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="building-the-manuscript">
+<span id="a-manuscript"></span><h1>Compiler le manuscrit<a class="headerlink" href="#building-the-manuscript" title="Lien vers cette rubrique">#</a></h1>
+<p>Vous pouvez à tout moment compiler un manuscrit, une ébauche de vos notes ou tout autre type de document à partir du texte de votre projet. Tout cela est géré par l’outil <strong>Compiler le manuscrit</strong>. Vous pouvez l’activer à partir de la barre latérale, du menu <strong>Outils</strong>, ou en appuyant sur <kbd class="kbd docutils literal notranslate">F5</kbd>.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">Ajouté dans la version 2.1: </span>Cet outil est nouveau pour la version 2.1. Un outil plus simple était utilisé pour les versions précédentes. Cet outil plus simple ne vous permettait de définir qu’un seul ensemble d’options pour la compilation, mais il offrait à peu près les mêmes fonctionnalités.</p>
+</div>
+<section id="the-manuscript-build-tool">
+<span id="a-manuscript-main"></span><h2>L’outil de compilation de manuscrit<a class="headerlink" href="#the-manuscript-build-tool" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="_images/fig_manuscript_build.png"><img alt="_images/fig_manuscript_build.png" src="_images/fig_manuscript_build.png" style="width: 80%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">La fenêtre principale de l’outil <strong>Compiler le manuscrit</strong>.</span><a class="headerlink" href="#id1" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<p>La fenêtre principale de l’outil <strong>Compiler le manuscrit</strong> contient une liste de toutes les structures que vous avez définies, une sélection de paramètres et quelques boutons permettant de générer un aperçu, d’ouvrir la boîte de dialogue d’impression ou d’exécuter la compilation pour créer un document manuscrit.</p>
+<section id="outline-and-word-counts">
+<h3>Plan et nombre de mots<a class="headerlink" href="#outline-and-word-counts" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="_images/fig_manuscript_build_outline.png"><img alt="_images/fig_manuscript_build_outline.png" src="_images/fig_manuscript_build_outline.png" style="width: 80%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">La fenêtre principale de l’outil <strong>Compiler le manuscrit</strong> avec le <strong>Plan</strong> visible.</span><a class="headerlink" href="#id2" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<p>L’onglet <strong>Plan</strong> sur la gauche vous permet de naviguer dans les rubriques du document de prévisualisation. Il affiche les titres de niveau scène pour les documents de roman, et les titres de niveau 2 pour les notes.</p>
+<p>Un panneau escamotable indiquant le nombre de mots et de caractères est également disponible sous le document de prévisualisation. Ces chiffres sont calculés à partir du texte que vous avez inclus dans le document et sont plus précis que ceux disponibles dans l’arborescence du projet puisqu’ils sont comptés <em>après le formatage</em>.</p>
+<p>Pour une description détaillée de la façon dont ils sont comptés, voir <a class="reference internal" href="more_counting.html#a-counting"><span class="std std-ref">Décompte des mots et des textes</span></a>.</p>
+</section>
+</section>
+<section id="build-settings">
+<span id="a-manuscript-settings"></span><h2>Paramètres de compilation<a class="headerlink" href="#build-settings" title="Lien vers cette rubrique">#</a></h2>
+<p>Chaque définition de construction peut être éditée en l’ouvrant dans la boîte de dialogue <strong>Paramètres de construction du manuscrit</strong>, soit en double-cliquant, soit en la sélectionnant et en appuyant sur le bouton d’édition dans la barre d’outils.</p>
+<div class="admonition tip">
+<p class="admonition-title">Astuce</p>
+<p>Vous pouvez garder la boîte de dialogue <strong>Paramètres de construction du manuscrit</strong> ouverte pendant que vous testez les différentes options, et simplement cliquer sur le bouton <span class="guilabel">Appliquer</span>. Vous pouvez tester le résultat de vos réglages en appuyant sur le bouton <span class="guilabel">Aperçu</span> dans la fenêtre principale <strong>Compiler le manuscrit</strong>. Lorsque vous êtes satisfait du résultat, vous pouvez fermer les paramètres.</p>
+</div>
+<section id="document-selection">
+<h3>Sélection des documents<a class="headerlink" href="#document-selection" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="_images/fig_build_settings_selections.png"><img alt="_images/fig_build_settings_selections.png" src="_images/fig_build_settings_selections.png" style="width: 80%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">La page <strong>Sélection</strong> de la boîte de dialogue <strong>Paramètres de construction du manuscrit</strong>.</span><a class="headerlink" href="#id3" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<p>La page <strong>Sélection</strong> de la boîte de dialogue <strong>Paramètres de construction du manuscrit</strong> vous permet d’affiner les documents inclus dans la construction. Ils sont indiqués par une icône de flèche verte dans la dernière colonne. Sur la droite, vous disposez d’options de filtrage pour sélectionner le contenu d’un type spécifique, et d’un ensemble de commutateurs pour les dossiers racine à inclure.</p>
+<p>Vous pouvez remplacer le résultat de ces filtres en marquant un ou plusieurs documents et en choisissant de les inclure ou de les exclure explicitement à l’aide des boutons situés sous l’arborescence. Le dernier bouton peut être utilisé pour réinitialiser l’annulation et redonner le contrôle aux paramètres du filtre.</p>
+<p>Dans la figure, l’icône de la flèche verte et l’icône de l’épingle bleue indiquent les documents inclus, et l’icône de l’interdiction rouge indique qu’un document est explicitement exclu.</p>
+</section>
+<section id="formatting-headings">
+<span id="a-manuscript-settings-head"></span><h3>Mise en forme des en-têtes<a class="headerlink" href="#formatting-headings" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-default" id="id4">
+<a class="reference internal image-reference" href="_images/fig_build_settings_headings.png"><img alt="_images/fig_build_settings_headings.png" src="_images/fig_build_settings_headings.png" style="width: 80%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">La page <strong>En-têtes</strong> de la boîte de dialogue <strong>Paramètres de construction du manuscrit</strong>.</span><a class="headerlink" href="#id4" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<p>La page <strong>En-têtes</strong> de la boîte de dialogue <strong>Paramètres de construction du manuscrit</strong> vous permet de définir le format des titres de vos <a class="reference internal" href="int_glossary.html#term-Novel-Documents"><span class="xref std std-term">Documents du roman</span></a>. Par défaut, le titre est simplement copié tel quel, comme l’indique le format <code class="docutils literal notranslate"><span class="pre">{Titre}</span></code>. Vous pouvez modifier ce format pour, par exemple, ajouter des numéros de chapitre et de scène, ou insérer des noms de personnages, comme indiqué dans la figure ci-dessus.</p>
+<p>Cliquer sur le bouton d’édition à côté d’un format copiera la chaîne de formatage dans la boîte d’édition où elle peut être modifiée, et où un surligneur de syntaxe aidera à indiquer quelles parties sont automatiquement générées par l’outil de construction. Le bouton <span class="guilabel">Insérer</span> est une liste déroulante de ces formats, et en sélectionner un l’insérera à la position du curseur.</p>
+<p>Tout texte que vous ajoutez et qui n’est pas surligné en couleur restera dans vos titres formatés. <code class="docutils literal notranslate"><span class="pre">{Titre}</span></code> sera toujours remplacé par le texte de l’en-tête de vos documents.</p>
+<p>Vous pouvez prévisualiser le résultat de ces chaînes de formatage en cliquant sur <span class="guilabel">appliquer</span>, puis en cliquant sur <span class="guilabel">aperçu</span> dans la fenêtre principale de l’outil <strong>Compilation de manuscrit</strong>.</p>
+<section id="scene-separators">
+<h4>Séparateurs de scènes<a class="headerlink" href="#scene-separators" title="Lien vers cette rubrique">#</a></h4>
+<p>Si vous ne voulez pas de titres pour vos scènes (ou pour vos sections si vous en avez), vous pouvez laisser les cases de mise en forme vides. Dans ce cas, un paragraphe vide sera inséré entre les scènes ou les sections, ce qui créera un vide dans le texte. Vous pouvez également activer le paramètre <span class="guilabel">Cacher</span>, qui les ignorera complètement. En d’autres termes, il n’y aura même pas d’espace supplémentaire inséré.</p>
+<p>Alternativement, si vous voulez un texte séparateur entre eux, comme le commun <code class="docutils literal notranslate"><span class="pre">*</span> <span class="pre">*</span> <span class="pre">*</span></code>, vous pouvez entrer le texte séparateur désiré comme format. Si le format est un morceau de texte statique, il sera toujours traité comme un séparateur.</p>
+</section>
+<section id="hard-and-soft-scenes">
+<span id="a-manuscript-settings-head-hard"></span><h4>Scènes dures et douces<a class="headerlink" href="#hard-and-soft-scenes" title="Lien vers cette rubrique">#</a></h4>
+<p>Si vous souhaitez faire la distinction entre les ruptures de scène douces et dures, vous pouvez utiliser le format alternatif de l’en-tête de scène dans votre texte. Vous pouvez ensuite donner à ces titres un format différent dans les paramètres <strong>En-têtes</strong>.</p>
+<p>Voir <a class="reference internal" href="usage_format.html#a-fmt-head"><span class="std std-ref">Titres</span></a> pour plus d’informations sur la façon de formater les titres dans votre texte.</p>
+</section>
+</section>
+<section id="output-settings">
+<h3>Paramètres de sortie<a class="headerlink" href="#output-settings" title="Lien vers cette rubrique">#</a></h3>
+<p>Les pages <strong>Contenu</strong>, <strong>Format</strong> et <strong>Sortie</strong> de la boîte de dialogue <strong>Paramètres de construction du manuscrit</strong> contrôlent un certain nombre d’autres paramètres pour la sortie. Certains d’entre eux ne s’appliquent qu’à des formats de sortie spécifiques, ce qui est indiqué par les titres de section sur les pages de paramètres.</p>
+</section>
+</section>
+<section id="building-manuscript-documents">
+<span id="a-manuscript-build"></span><h2>Création des manuscrits<a class="headerlink" href="#building-manuscript-documents" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-default" id="id5">
+<a class="reference internal image-reference" href="_images/fig_build_build.png"><img alt="_images/fig_build_build.png" src="_images/fig_build_build.png" style="width: 80%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Le dialogue <strong>compiler le manuscrit</strong> est utilisé pour créer les manuscrits proprement dits.</span><a class="headerlink" href="#id5" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<p>Lorsque vous appuyez sur le bouton <span class="guilabel">Construire</span> dans la fenêtre principale de l’outil <strong>Compiler le manuscrit</strong>, une boîte de dialogue spéciale s’ouvre. C’est là que vous choisissez le format de sortie désiré et l’endroit où écrire le fichier.</p>
+<p>La partie gauche de la boîte de dialogue contient une liste de tous les formats de fichiers disponibles, et la partie droite, une liste des documents qui sont inclus en fonction de la définition de la construction que vous avez sélectionnée. Vous pouvez choisir un chemin de sortie et définir un nom de fichier de base. L’extension du fichier sera ajoutée automatiquement.</p>
+<p>Pour générer le document manuscrit, appuyez sur le bouton <span class="guilabel">Construire</span>. Une petite barre de progression indique l’avancement de la construction, mais pour les petits projets, elle peut passer très vite.</p>
+<section id="file-formats">
+<h3>Formats de fichiers<a class="headerlink" href="#file-formats" title="Lien vers cette rubrique">#</a></h3>
+<p>Actuellement, quatre formats de documents sont pris en charge.</p>
+<dl class="simple">
+<dt>Open Document Format</dt><dd><p>L’outil de construction peut produire soit un fichier <code class="docutils literal notranslate"><span class="pre">.odt</span></code>, soit un fichier <code class="docutils literal notranslate"><span class="pre">.fodt</span></code>. Ce dernier n’est qu’une version plate du format du document sous la forme d’un fichier XML unique. La plupart des éditeurs de texte riche supportent le premier, et seulement quelques uns le second.</p>
+</dd>
+<dt>novelWriter HTML</dt><dd><p>Le format HTML écrit un seul fichier <code class="docutils literal notranslate"><span class="pre">.htm</span></code> avec un formatage de style minimal. Le document HTML peut être traité par des outils de conversion de documents tels que <a class="reference external" href="https://pandoc.org/">Pandoc</a>, importé dans un traitement de texte ou imprimé à partir d’un navigateur.</p>
+</dd>
+<dt>novelWriter Markup</dt><dd><p>Il s’agit simplement d’une concaténation des documents du projet sélectionnés par les filtres dans un fichier <code class="docutils literal notranslate"><span class="pre">.txt</span></code>. Les documents sont empilés dans l’ordre où ils apparaissent dans l’arborescence du projet, avec les commentaires, les balises, etc. inclus s’ils sont sélectionnés. C’est un format utile pour exporter le projet et le réimporter plus tard dans novelWriter.</p>
+</dd>
+<dt>Markdown standard/étendu</dt><dd><p>Le format Markdown existe en version standard et en version étendue. La <em>seule</em> différence en termes de fonctionnalité de novelWriter est la prise en charge du texte barré, qui n’est pas prise en charge par la version standard.</p>
+</dd>
+</dl>
+</section>
+<section id="additional-formats">
+<h3>Formats supplémentaires<a class="headerlink" href="#additional-formats" title="Lien vers cette rubrique">#</a></h3>
+<p>En plus des formats de document ci-dessus, les formats HTML et Markup de novelWriter peuvent également être enveloppés dans un fichier JSON. Ces fichiers auront une entrée pour les métadonnées et une entrée pour le corps du texte. Pour le HTML, les styles CSS utilisés par la prévisualisation sont également inclus.</p>
+<p>Le corps du texte est enregistré dans une liste à deux niveaux. La liste extérieure contient une entrée par document, dans l’ordre où ils apparaissent dans l’arborescence du projet. Chaque document est ensuite divisé en une liste, avec une entrée par paragraphe qu’il contient.</p>
+<p>Ces fichiers sont principalement destinés au post-traitement par script pour ceux qui souhaitent cette option. Un fichier JSON peut être importé directement dans un objet dict de Python ou dans un tableau de PHP, pour ne citer que quelques options.</p>
+</section>
+</section>
+<section id="print-and-pdf">
+<span id="a-manuscript-print"></span><h2>Imprimer et PDF<a class="headerlink" href="#print-and-pdf" title="Lien vers cette rubrique">#</a></h2>
+<p>Le bouton <span class="guilabel">Imprimer</span> vous permet d’imprimer le contenu de la fenêtre de prévisualisation. Vous pouvez soit imprimer sur l’une des imprimantes de votre système, soit sélectionner le format PDF à partir de l’icône de l’imprimante dans la boîte de dialogue d’impression.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Dans tous les cas, le format de papier doit être défini par défaut, quel que soit le format par défaut de votre système. Si vous souhaitez le modifier, vous devez le sélectionner dans la boîte de dialogue <strong>Aperçu avant impression</strong>.</p>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="project_references.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">Tags et références</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="more_customise.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Personnalisations</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-manuscript-build-tool">L’outil de compilation de manuscrit</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#outline-and-word-counts">Plan et nombre de mots</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build-settings">Paramètres de compilation</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#document-selection">Sélection des documents</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formatting-headings">Mise en forme des en-têtes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#scene-separators">Séparateurs de scènes</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hard-and-soft-scenes">Scènes dures et douces</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#output-settings">Paramètres de sortie</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-manuscript-documents">Création des manuscrits</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#file-formats">Formats de fichiers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-formats">Formats supplémentaires</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#print-and-pdf">Imprimer et PDF</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par Veronica Berglyd Olsen
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

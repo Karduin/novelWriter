@@ -1,0 +1,650 @@
+
+<!DOCTYPE html>
+
+
+<html lang="fr" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Personnalisations &#8212; Version 2.6b1</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=a56b48ff" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=37dc2d04"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="_static/translations.js?v=e6b791cb"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'more_customise';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Modifications du format des projet" href="more_projectformat.html" />
+    <link rel="prev" title="Compiler le manuscrit" href="project_manuscript.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  <meta name="docsearch:version" content="2.6b1" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Passer au contenu principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Haut de page</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Alerte de version"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/novelwriter-light.png" class="logo__image only-light" alt="Version 2.6b1 - Home"/>
+    <img src="_static/novelwriter-dark.png" class="logo__image only-dark pst-js-only" alt="Version 2.6b1 - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+<p class="nw-sidebar-title">Version 2.6b1</p>
+</div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Page d'accueil</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="int_introduction.html">Présentation générale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_overview.html">Premières lectures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_started.html">Configuration et installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_howto.html">Trucs et astuces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_glossary.html">Glossaire</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Utiliser novelWriter</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="usage_breakdown.html">Comment ça marche</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_project.html">Vues du projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_writing.html">L’éditeur et le visualisateur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_format.html">Mise en forme du texte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_shortcuts.html">Raccourcis clavier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_typography.html">Notes typographiques</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Organiser votre projet</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="project_overview.html">Gestion des projets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_structure.html">Structure du roman</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_references.html">Tags et références</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_manuscript.html">Compiler le manuscrit</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Détails additionnels</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Personnalisations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="more_projectformat.html">Modifications du format des projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="more_counting.html">Décompte des mots et des textes</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Sujets techniques</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="tech_locations.html">Emplacement des fichiers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_storage.html">Comment les données sont stockées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_source.html">Executer depuis la source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_tests.html">Exécution des tests</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/vkbo/novelwriter" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Dépôt source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/vkbo/novelwriter/issues/new?title=Issue%20on%20page%20%2Fmore_customise.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Ouvrez un problème"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/more_customise.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Thème" data-bs-title="Thème"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Clair"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Sombre"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="Paramètres système"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Personnalisations</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spell-check-dictionaries">Dictionnaires de vérification orthographique</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linux-and-macos">Linux et MacOS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#windows">Windows</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#syntax-and-gui-themes">Syntaxe et thèmes de l’interface graphique</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#custom-gui-and-icons-theme">Thème d’interface graphique et d’icônes personnalisé</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#custom-syntax-theme">Syntaxe des thèmes personnalisés</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="customisations">
+<span id="a-custom"></span><h1>Personnalisations<a class="headerlink" href="#customisations" title="Lien vers cette rubrique">#</a></h1>
+<p>Vous pouvez personnaliser novelWriter de plusieurs façons. Actuellement, vous pouvez ajouter de nouveaux thèmes d’interface graphique, vos propres thèmes de syntaxe et installer des dictionnaires supplémentaires.</p>
+<section id="spell-check-dictionaries">
+<span id="a-custom-dict"></span><h2>Dictionnaires de vérification orthographique<a class="headerlink" href="#spell-check-dictionaries" title="Lien vers cette rubrique">#</a></h2>
+<p>novelWriter utilise <a class="reference external" href="https://rrthomas.github.io/enchant/">Enchant</a> comme outil de vérification orthographique. Selon votre système d’exploitation, il peut ou non charger automatiquement tous les dictionnaires de vérification orthographique installés.</p>
+<section id="linux-and-macos">
+<h3>Linux et MacOS<a class="headerlink" href="#linux-and-macos" title="Lien vers cette rubrique">#</a></h3>
+<p>Sous Linux et MacOS, il vous suffit généralement d’installer les dictionnaires hunspell, aspell ou myspell sur votre système, comme vous le faites pour d’autres applications. Consultez la documentation de votre distro ou de votre système d’exploitation pour savoir comment procéder. Ces dictionnaires devraient apparaître comme des langues de vérification orthographique disponibles dans novelWriter.</p>
+</section>
+<section id="windows">
+<h3>Windows<a class="headerlink" href="#windows" title="Lien vers cette rubrique">#</a></h3>
+<p>Pour Windows, l’anglais est inclus dans l’installation. Pour les autres langues, vous devez télécharger et ajouter les dictionnaires vous-même.</p>
+<p><strong>Outil d’installation</strong></p>
+<p>Un petit outil pour vous aider se trouve sous <strong>Outils &gt; Ajouter des dictionnaires</strong>. Il importera des dictionnaires de vérification orthographique à partir des extensions Free Office ou Libre Office. Les dictionnaires sont alors installés dans l’emplacement d’installation de la bibliothèque Enchant et devraient donc fonctionner pour toute application qui utilise Enchant pour la vérification orthographique.</p>
+<p><strong>Installation manuelle</strong></p>
+<p>Si vous préférez le faire manuellement ou si vous voulez utiliser une source différente de celles mentionnées ci-dessus, vous devez obtenir des fichiers de dictionnaires compatibles avec votre langue. Vous avez besoin de deux fichiers se terminant par <code class="docutils literal notranslate"><span class="pre">.aff</span></code> et <code class="docutils literal notranslate"><span class="pre">.dic</span></code>. Ces fichiers doivent ensuite être copiés à l’emplacement suivant :</p>
+<p><code class="docutils literal notranslate"><span class="pre">C:\Users\&lt;USER&gt;\AppData\Local\enchant\hunspell</span></code></p>
+<p>Cela suppose que votre profil d’utilisateur est stocké dans <code class="docutils literal notranslate"><span class="pre">C:\Users\&lt;USER&gt;</span></code>. Le dernier ou les deux derniers dossiers peuvent ne pas exister, vous devrez donc les créer.</p>
+<p>Vous pouvez trouver les différents dictionnaires sur le site web <a class="reference external" href="https://cgit.freedesktop.org/libreoffice/dictionaries/tree/">Free Desktop</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Le lien Free Desktop pointe vers un référentiel, et ce qui peut ressembler à des liens de fichiers à l’intérieur du dossier du dictionnaire sont en fait des liens vers des pages web. Si vous cliquez avec le bouton droit de la souris et que vous les téléchargez, vous obtiendrez des fichiers HTML, pas des dictionnaires !</p>
+<p>Pour télécharger les fichiers du dictionnaire, cliquez avec le bouton droit de la souris sur l’étiquette « plain » à la fin de chaque ligne et téléchargez-la.</p>
+</div>
+</section>
+</section>
+<section id="syntax-and-gui-themes">
+<span id="a-custom-theme"></span><h2>Syntaxe et thèmes de l’interface graphique<a class="headerlink" href="#syntax-and-gui-themes" title="Lien vers cette rubrique">#</a></h2>
+<p>L’ajout de vos propres thèmes d’interface graphique et de syntaxe est relativement facile, bien qu’il soit nécessaire d’éditer manuellement les fichiers de configuration avec les valeurs de couleur. Les thèmes sont définis par de simples fichiers de configuration en texte brut contenant des métadonnées et des paramètres de couleur.</p>
+<p>Pour créer vos propres versions, copiez d’abord l’un des fichiers existants sur votre ordinateur local et modifiez-le à votre guise.</p>
+<ul class="simple">
+<li><p>Les thèmes syntaxiques existants sont stockés dans <a class="reference external" href="https://github.com/vkbo/novelWriter/tree/main/novelwriter/assets/syntax">novelwriter/assets/syntax</a>.</p></li>
+<li><p>Les thèmes GUI existants sont stockés dans <a class="reference external" href="https://github.com/vkbo/novelWriter/tree/main/novelwriter/assets/themes">novelwriter/assets/themes</a>.</p></li>
+<li><p>Les thèmes d’icônes existants sont stockés dans <a class="reference external" href="https://github.com/vkbo/novelWriter/tree/main/novelwriter/assets/icons">novelwriter/assets/icons</a>.</p></li>
+</ul>
+<p>N’oubliez pas de changer également le nom de votre thème en modifiant le paramètre <code class="docutils literal notranslate"><span class="pre">name</span></code> en haut du fichier, sinon vous ne pourrez pas les distinguer dans les <strong>Préférences</strong>.</p>
+<p>Pour que novelWriter puisse localiser les fichiers de thèmes personnalisés, vous devez les copier dans l’emplacement <a class="reference internal" href="tech_locations.html#a-locations-data"><span class="std std-ref">Données d’application</span></a> dans votre espace personnel ou utilisateur. Il devrait y avoir un dossier nommé <code class="docutils literal notranslate"><span class="pre">syntax</span></code> pour les thèmes de syntaxe, juste <code class="docutils literal notranslate"><span class="pre">themes</span></code> pour les thèmes d’interface graphique, et <code class="docutils literal notranslate"><span class="pre">icons</span></code> pour les thèmes d’icônes. Ces dossiers sont créés la première fois que vous démarrez novelWriter.</p>
+<p>Une fois les fichiers copiés, ils devraient apparaître dans les <strong>Préférences</strong> avec le nom que vous avez défini dans le fichier.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">Ajouté dans la version 2.0: </span>La valeur <code class="docutils literal notranslate"><span class="pre">icontheme</span></code> a été ajoutée aux thèmes GUI. Assurez-vous de définir cette valeur dans les thèmes personnalisés existants. Sinon, novelWriter essaiera de deviner votre thème d’icônes, et ne choisira peut-être pas le plus approprié.</p>
+</div>
+<section id="custom-gui-and-icons-theme">
+<h3>Thème d’interface graphique et d’icônes personnalisé<a class="headerlink" href="#custom-gui-and-icons-theme" title="Lien vers cette rubrique">#</a></h3>
+<p>Le fichier <code class="docutils literal notranslate"><span class="pre">.conf</span></code> d’un thème GUI est constitué des paramètres suivants :</p>
+<div class="highlight-cfg notranslate"><div class="highlight"><pre><span></span><span class="k">[Main]</span>
+<span class="na">name</span><span class="w">        </span><span class="o">=</span><span class="w"> </span><span class="s">My Custom Theme</span>
+<span class="na">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">A description of my custom theme</span>
+<span class="na">author</span><span class="w">      </span><span class="o">=</span><span class="w"> </span><span class="s">Jane Doe</span>
+<span class="na">credit</span><span class="w">      </span><span class="o">=</span><span class="w"> </span><span class="s">John Doe</span>
+<span class="na">url</span><span class="w">         </span><span class="o">=</span><span class="w"> </span><span class="s">https://example.com</span>
+<span class="na">license</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="s">CC BY-SA 4.0</span>
+<span class="na">licenseurl</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="s">https://creativecommons.org/licenses/by-sa/4.0/</span>
+<span class="na">icontheme</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="s">typicons_light</span>
+
+<span class="k">[Palette]</span>
+<span class="na">window</span><span class="w">          </span><span class="o">=</span><span class="w"> </span><span class="s">100, 100, 100</span>
+<span class="na">windowtext</span><span class="w">      </span><span class="o">=</span><span class="w"> </span><span class="s">100, 100, 100</span>
+<span class="na">base</span><span class="w">            </span><span class="o">=</span><span class="w"> </span><span class="s">100, 100, 100</span>
+<span class="na">alternatebase</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="s">100, 100, 100</span>
+<span class="na">text</span><span class="w">            </span><span class="o">=</span><span class="w"> </span><span class="s">100, 100, 100</span>
+<span class="na">tooltipbase</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="s">100, 100, 100</span>
+<span class="na">tooltiptext</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="s">100, 100, 100</span>
+<span class="na">button</span><span class="w">          </span><span class="o">=</span><span class="w"> </span><span class="s">100, 100, 100</span>
+<span class="na">buttontext</span><span class="w">      </span><span class="o">=</span><span class="w"> </span><span class="s">100, 100, 100</span>
+<span class="na">brighttext</span><span class="w">      </span><span class="o">=</span><span class="w"> </span><span class="s">100, 100, 100</span>
+<span class="na">highlight</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="s">100, 100, 100</span>
+<span class="na">highlightedtext</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">100, 100, 100</span>
+<span class="na">link</span><span class="w">            </span><span class="o">=</span><span class="w"> </span><span class="s">100, 100, 100</span>
+<span class="na">linkvisited</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="s">100, 100, 100</span>
+
+<span class="k">[GUI]</span>
+<span class="na">helptext</span><span class="w">        </span><span class="o">=</span><span class="w">   </span><span class="s">0,   0,   0</span>
+<span class="na">fadedtext</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="s">128, 128, 128</span>
+<span class="na">errortext</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="s">255,   0,   0</span>
+<span class="na">statusnone</span><span class="w">      </span><span class="o">=</span><span class="w"> </span><span class="s">120, 120, 120</span>
+<span class="na">statussaved</span><span class="w">     </span><span class="o">=</span><span class="w">   </span><span class="s">2, 133,  37</span>
+<span class="na">statusunsaved</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="s">200,  15,  39</span>
+</pre></div>
+</div>
+<p>Dans la section Main, vous devez au moins définir les paramètres <code class="docutils literal notranslate"><span class="pre">name</span></code> et <code class="docutils literal notranslate"><span class="pre">icontheme</span></code>. Le paramètre <code class="docutils literal notranslate"><span class="pre">icontheme</span></code> doit correspondre à l’un des thèmes d’icônes internes, soit <code class="docutils literal notranslate"><span class="pre">typicons_light</span></code> ou <code class="docutils literal notranslate"><span class="pre">typicons_dark</span></code>, soit à un thème d’icônes dans votre répertoire d’icônes personnalisé. Le paramètre doit correspondre au nom du dossier du thème d’icônes.</p>
+<p>Les valeurs de la palette correspondent aux valeurs de l’enum Qt pour <code class="docutils literal notranslate"><span class="pre">QPalette::ColorRole</span></code>, voir la documentation Qt &lt;<a class="reference external" href="https://doc.qt.io/qt-5.15/qpalette.html#ColorRole-enum">https://doc.qt.io/qt-5.15/qpalette.html#ColorRole-enum</a>&gt;`_ pour plus de détails. Les valeurs de couleur sont des nombres RVB au format <code class="docutils literal notranslate"><span class="pre">r,</span> <span class="pre">g,</span> <span class="pre">b</span></code> où chacun est un entier de <code class="docutils literal notranslate"><span class="pre">0</span></code> à <code class="docutils literal notranslate"><span class="pre">255</span></code>. Les valeurs omises ne sont pas chargées et utilisent les valeurs par défaut. Si la couleur de <code class="docutils literal notranslate"><span class="pre">helptext</span></code> n’est pas définie, elle est calculée comme une couleur comprise entre celles de <code class="docutils literal notranslate"><span class="pre">window</span></code> et de <code class="docutils literal notranslate"><span class="pre">windowtext</span></code>.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">Ajouté dans la version 2.5: </span>Les entrées de couleur des thèmes <code class="docutils literal notranslate"><span class="pre">fadedtext</span></code> et <code class="docutils literal notranslate"><span class="pre">errortext</span></code> ont été ajoutées.</p>
+</div>
+</section>
+<section id="custom-syntax-theme">
+<h3>Syntaxe des thèmes personnalisés<a class="headerlink" href="#custom-syntax-theme" title="Lien vers cette rubrique">#</a></h3>
+<p>A syntax theme <code class="docutils literal notranslate"><span class="pre">.conf</span></code> file consists of the following settings:</p>
+<div class="highlight-cfg notranslate"><div class="highlight"><pre><span></span><span class="k">[Main]</span>
+<span class="na">name</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="s">My Syntax Theme</span>
+<span class="na">author</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="s">Jane Doe</span>
+<span class="na">credit</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="s">John Doe</span>
+<span class="na">url</span><span class="w">        </span><span class="o">=</span><span class="w"> </span><span class="s">https://example.com</span>
+<span class="na">license</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="s">CC BY-SA 4.0</span>
+<span class="na">licenseurl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://creativecommons.org/licenses/by-sa/4.0/</span>
+
+<span class="k">[Syntax]</span>
+<span class="na">background</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="s">255, 255, 255</span>
+<span class="na">text</span><span class="w">           </span><span class="o">=</span><span class="w">   </span><span class="s">0,   0,   0</span>
+<span class="na">link</span><span class="w">           </span><span class="o">=</span><span class="w">   </span><span class="s">0,   0,   0</span>
+<span class="na">headertext</span><span class="w">     </span><span class="o">=</span><span class="w">   </span><span class="s">0,   0,   0</span>
+<span class="na">headertag</span><span class="w">      </span><span class="o">=</span><span class="w">   </span><span class="s">0,   0,   0</span>
+<span class="na">emphasis</span><span class="w">       </span><span class="o">=</span><span class="w">   </span><span class="s">0,   0,   0</span>
+<span class="na">dialog</span><span class="w">         </span><span class="o">=</span><span class="w">   </span><span class="s">0,   0,   0</span>
+<span class="na">altdialog</span><span class="w">      </span><span class="o">=</span><span class="w">   </span><span class="s">0,   0,   0</span>
+<span class="na">note</span><span class="w">           </span><span class="o">=</span><span class="w">   </span><span class="s">0,   0,   0</span>
+<span class="na">hidden</span><span class="w">         </span><span class="o">=</span><span class="w">   </span><span class="s">0,   0,   0</span>
+<span class="na">shortcode</span><span class="w">      </span><span class="o">=</span><span class="w">   </span><span class="s">0,   0,   0</span>
+<span class="na">keyword</span><span class="w">        </span><span class="o">=</span><span class="w">   </span><span class="s">0,   0,   0</span>
+<span class="na">tag</span><span class="w">            </span><span class="o">=</span><span class="w">   </span><span class="s">0,   0,   0</span>
+<span class="na">value</span><span class="w">          </span><span class="o">=</span><span class="w">   </span><span class="s">0,   0,   0</span>
+<span class="na">optional</span><span class="w">       </span><span class="o">=</span><span class="w">   </span><span class="s">0,   0,   0</span>
+<span class="na">spellcheckline</span><span class="w"> </span><span class="o">=</span><span class="w">   </span><span class="s">0,   0,   0</span>
+<span class="na">errorline</span><span class="w">      </span><span class="o">=</span><span class="w">   </span><span class="s">0,   0,   0</span>
+<span class="na">replacetag</span><span class="w">     </span><span class="o">=</span><span class="w">   </span><span class="s">0,   0,   0</span>
+<span class="na">modifier</span><span class="w">       </span><span class="o">=</span><span class="w">   </span><span class="s">0,   0,   0</span>
+<span class="na">texthighlight</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="s">255, 255, 255, 128</span>
+</pre></div>
+</div>
+<p>In the Main section, you must define at least the <code class="docutils literal notranslate"><span class="pre">name</span></code> setting. The Syntax colour values are
+RGB(A) numbers of the format <code class="docutils literal notranslate"><span class="pre">r,</span> <span class="pre">g,</span> <span class="pre">b,</span> <span class="pre">a</span></code> where each is an integer from <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">255</span></code>. The
+fourth value is the alpha channel, which can be omitted.</p>
+<p>Omitted syntax colours default to black, except <code class="docutils literal notranslate"><span class="pre">background</span></code> which defaults to white, and
+<code class="docutils literal notranslate"><span class="pre">texthighlight</span></code> which defaults to white with half transparency.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">Ajouté dans la version 2.2: </span>The <code class="docutils literal notranslate"><span class="pre">shortcode</span></code> syntax colour entry was added.</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">Ajouté dans la version 2.3: </span>The <code class="docutils literal notranslate"><span class="pre">optional</span></code> syntax colour entry was added.</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">Ajouté dans la version 2.4: </span>The <code class="docutils literal notranslate"><span class="pre">texthighlight</span></code> syntax colour entry was added.</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">Ajouté dans la version 2.5: </span>The <code class="docutils literal notranslate"><span class="pre">dialog</span></code>, <code class="docutils literal notranslate"><span class="pre">altdialog</span></code>, <code class="docutils literal notranslate"><span class="pre">note</span></code> and <code class="docutils literal notranslate"><span class="pre">tag</span></code> syntax colour entries were added.
+<code class="docutils literal notranslate"><span class="pre">straightquotes</span></code>, <code class="docutils literal notranslate"><span class="pre">doublequotes</span></code> and <code class="docutils literal notranslate"><span class="pre">singlequotes</span></code> were removed.</p>
+</div>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="project_manuscript.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">Compiler le manuscrit</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="more_projectformat.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Modifications du format des projet</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spell-check-dictionaries">Dictionnaires de vérification orthographique</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linux-and-macos">Linux et MacOS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#windows">Windows</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#syntax-and-gui-themes">Syntaxe et thèmes de l’interface graphique</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#custom-gui-and-icons-theme">Thème d’interface graphique et d’icônes personnalisé</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#custom-syntax-theme">Syntaxe des thèmes personnalisés</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par Veronica Berglyd Olsen
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

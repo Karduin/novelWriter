@@ -1,0 +1,813 @@
+
+<!DOCTYPE html>
+
+
+<html lang="fr" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Mise en forme du texte &#8212; Version 2.6b1</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=a56b48ff" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=37dc2d04"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="_static/translations.js?v=e6b791cb"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'usage_format';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Raccourcis clavier" href="usage_shortcuts.html" />
+    <link rel="prev" title="L’éditeur et le visualisateur" href="usage_writing.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  <meta name="docsearch:version" content="2.6b1" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Passer au contenu principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Haut de page</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Alerte de version"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/novelwriter-light.png" class="logo__image only-light" alt="Version 2.6b1 - Home"/>
+    <img src="_static/novelwriter-dark.png" class="logo__image only-dark pst-js-only" alt="Version 2.6b1 - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+<p class="nw-sidebar-title">Version 2.6b1</p>
+</div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Page d'accueil</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="int_introduction.html">Présentation générale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_overview.html">Premières lectures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_started.html">Configuration et installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_howto.html">Trucs et astuces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_glossary.html">Glossaire</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Utiliser novelWriter</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="usage_breakdown.html">Comment ça marche</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_project.html">Vues du projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_writing.html">L’éditeur et le visualisateur</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Mise en forme du texte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_shortcuts.html">Raccourcis clavier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_typography.html">Notes typographiques</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Organiser votre projet</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="project_overview.html">Gestion des projets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_structure.html">Structure du roman</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_references.html">Tags et références</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_manuscript.html">Compiler le manuscrit</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Détails additionnels</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="more_customise.html">Personnalisations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="more_projectformat.html">Modifications du format des projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="more_counting.html">Décompte des mots et des textes</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Sujets techniques</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="tech_locations.html">Emplacement des fichiers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_storage.html">Comment les données sont stockées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_source.html">Executer depuis la source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_tests.html">Exécution des tests</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/vkbo/novelwriter" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Dépôt source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/vkbo/novelwriter/issues/new?title=Issue%20on%20page%20%2Fusage_format.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Ouvrez un problème"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/usage_format.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Thème" data-bs-title="Thème"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Clair"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Sombre"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="Paramètres système"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Mise en forme du texte</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#syntax-highlighting">Surlignage syntaxique</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#headings">Titres</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-paragraphs">Paragraphes du texte</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-emphasis-with-markdown">Mise en valeur du texte avec Markdown</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formatting-with-shortcodes">Mise en forme avec les shortcodes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comments-and-synopsis">Commentaires et synopsis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#footnotes">Notes de bas de page</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ignored-text">Texte ignoré</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tags-and-references">Tags et références</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#paragraph-alignment-and-indentation">Alignement et indentation des paragraphes</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alignment-with-line-breaks">Alignement avec les sauts de ligne</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alignment-with-first-line-indent">Alignement sur le retrait de la première ligne</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vertical-space-and-page-breaks">Espace vertical et sauts de page</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="formatting-your-text">
+<span id="a-fmt"></span><h1>Mise en forme du texte<a class="headerlink" href="#formatting-your-text" title="Lien vers cette rubrique">#</a></h1>
+<p>L’éditeur de texte novelWriter est un éditeur de texte simple qui utilise des codes de formatage pour définir les valeurs des métadonnées et permettre un certain formatage du texte. La syntaxe est basée sur Markdown, mais novelWriter n’est <strong>pas</strong> un éditeur Markdown. Il prend en charge le formatage de base comme les italiques, les gras et les biffures, ainsi que quatre niveaux de titres. Pour des besoins de formatage plus complexes, un ensemble de shortcodes peut être utilisé.</p>
+<p>Outre les codes de formatage, novelWriter autorise les commentaires, une balise synopsis et un certain nombre de mots-clés et d’ensembles de valeurs utilisés pour <a class="reference internal" href="int_glossary.html#term-Tag"><span class="xref std std-term">tags</span></a> et <a class="reference internal" href="int_glossary.html#term-Reference"><span class="xref std std-term">références</span></a>. Certains codes s’appliquent également à des paragraphes entiers. Voir <a class="reference internal" href="#a-fmt-text"><span class="std std-ref">Paragraphes du texte</span></a> pour plus de détails.</p>
+<section id="syntax-highlighting">
+<span id="a-fmt-hlight"></span><h2>Surlignage syntaxique<a class="headerlink" href="#syntax-highlighting" title="Lien vers cette rubrique">#</a></h2>
+<p>L’éditeur dispose d’une fonction de mise en évidence de la syntaxe qui vous permet de savoir si vous avez utilisé correctement les balises de formatage ou d’autres fonctions. Il modifie la couleur et la taille de police de vos titres, change la couleur du texte mis en évidence et peut également vous montrer les endroits où vous avez des dialogues dans votre texte.</p>
+<figure class="align-default" id="id1">
+<img alt="_images/fig_references.png" src="_images/fig_references.png" />
+<figcaption>
+<p><span class="caption-text">Exemple de mise en évidence des références par la couleur. « Bob » n’est pas défini et “&#64;blabla” n’est pas un type de référence valide.</span><a class="headerlink" href="#id1" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<p>Lorsque vous utilisez les mots-clés pour définir les balises et les références, celles-ci changent également de couleur. Les mots-clés corrects ont une couleur distincte, et les références elles-mêmes ont une couleur si elles sont valides. Les références non valides sont accompagnées d’une ligne d’erreur en pointillés. Il en va de même pour les balises dupliquées.</p>
+<p>Il existe un certain nombre de thèmes de couleurs pour les surligneurs de syntaxe, à la fois pour les interfaces graphiques claires et foncées. Vous pouvez les sélectionner dans les <strong>Préférences</strong>.</p>
+</section>
+<section id="headings">
+<span id="a-fmt-head"></span><h2>Titres<a class="headerlink" href="#headings" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-default" id="id2">
+<img alt="_images/fig_header_levels.png" src="_images/fig_header_levels.png" />
+<figcaption>
+<p><span class="caption-text">Illustration de la correspondance entre les niveaux de titres et la structure du roman.</span><a class="headerlink" href="#id2" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<p>Quatre niveaux de titres sont autorisés. Pour <a class="reference internal" href="int_glossary.html#term-Project-Notes"><span class="xref std std-term">notes de projet</span></a>, ils sont libres d’être utilisés comme bon vous semble. En d’autres termes, novelWriter n’attribue pas de signification particulière aux différentes titres. Cependant, pour <a class="reference internal" href="int_glossary.html#term-Novel-Documents"><span class="xref std std-term">documents du roman</span></a>, ils indiquent le niveau structurel du roman et doivent être utilisées correctement pour produire le résultat escompté. Voir <a class="reference internal" href="project_structure.html#a-struct-heads"><span class="std std-ref">Importance des titres</span></a> pour plus de détails.</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">Texte</span> <span class="pre">de</span> <span class="pre">titre</span></code></dt><dd><p>Titre de niveau un. Pour les documents de type roman, le niveau indique le début d’une nouvelle partition. Les partitions sont utilisées lorsque vous souhaitez diviser votre histoire en « Partie 1 », « Partie 2 », etc. Vous pouvez également choisir de les utiliser pour diviser le texte en actes, puis de masquer ces titres dans votre manuscrit.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">##</span> <span class="pre">Texte</span> <span class="pre">de</span> <span class="pre">titre</span></code></dt><dd><p>Titre de niveau deux. Pour les documents de type roman, le niveau indique le début d’un nouveau chapitre. Les numéros de chapitre peuvent être insérés automatiquement lors de la construction du manuscrit.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">###</span> <span class="pre">Texte</span> <span class="pre">de</span> <span class="pre">titre</span></code></dt><dd><p>Titre de niveau trois. Pour les documents de type roman, le niveau indique le début d’une nouvelle scène. Des numéros de scène ou des séparateurs de scène peuvent être insérés automatiquement lors de la construction du manuscrit. Vous pouvez donc utiliser le champ titre comme titre de travail pour vos scènes si vous le souhaitez, mais vous devez fournir un titre minimal.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">####</span> <span class="pre">Texte</span> <span class="pre">de</span> <span class="pre">titre</span></code></dt><dd><p>Titre de niveau quatre. Pour les documents de type roman, le niveau indique le début d’une nouvelle section. Les titres de section peuvent être remplacés par des séparateurs ou ignorés lors de la construction du manuscrit.</p>
+</dd>
+</dl>
+<p>Pour les titres de niveau un à trois, l’ajout d’un <code class="docutils literal notranslate"><span class="pre">!</span></code> modifie le sens du titre :</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">#!</span> <span class="pre">Texte</span> <span class="pre">de</span> <span class="pre">titre</span></code></dt><dd><p>Cela indique à l’outil de compilation que le titre de niveau 1 est destiné à être utilisé pour le titre principal du roman ou du dossier de notes, comme par exemple sur la page d’accueil. Lors de la compilation du manuscrit, un style différent sera utilisé et le titre sera exclu, par exemple, d’une table des matières dans Libre Office.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">##!</span> <span class="pre">Texte</span> <span class="pre">de</span> <span class="pre">titre</span></code></dt><dd><p>Cela indique à l’outil de compilation de ne pas attribuer de numéro de chapitre à ce titre de chapitre si des numéros de chapitre automatiques sont utilisés. De tels titres sont utiles pour un prologue par exemple. Voir <a class="reference internal" href="project_structure.html#a-struct-heads-unnum"><span class="std std-ref">Titres des chapitres non numérotés</span></a> pour plus de détails.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">###!</span> <span class="pre">Texte</span> <span class="pre">de</span> <span class="pre">titre</span></code></dt><dd><p>Il s’agit d’un titre de scène alternatif qui peut être formaté différemment dans l’outil <strong>Compiler le manuscrit</strong>. Il est destiné à séparer les coupures de scène « douces » et « dures ». A part cela, il se comporte de la même manière qu’un titre de scène normal. Voir <a class="reference internal" href="project_structure.html#a-struct-heads-scenes"><span class="std std-ref">Ruptures de scène dures et douces</span></a> pour plus de détails.</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>L’espace après le caractère <code class="docutils literal notranslate"><span class="pre">#</span></code> ou <code class="docutils literal notranslate"><span class="pre">!</span></code> est obligatoire. Le surligneur syntaxique change de couleur et de taille de police lorsque le titre est correctement formaté.</p>
+</div>
+</section>
+<section id="text-paragraphs">
+<span id="a-fmt-text"></span><h2>Paragraphes du texte<a class="headerlink" href="#text-paragraphs" title="Lien vers cette rubrique">#</a></h2>
+<p>Un paragraphe de texte est indiqué par une ligne blanche. En d’autres termes, il faut deux sauts de ligne pour séparer deux fragments de texte en deux paragraphes. Les sauts de ligne simples sont traités comme des sauts de ligne à l’intérieur d’un paragraphe.</p>
+<p>En outre, l’éditeur prend en charge quelques types d’espaces blancs supplémentaires :</p>
+<ul class="simple">
+<li><p>Un espace insécable peut être inséré avec <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>+<kbd class="kbd docutils literal notranslate">K</kbd></kbd>, <kbd class="kbd docutils literal notranslate">Espace</kbd></p></li>
+<li><p>Les espaces minces sont également supportés, et peuvent être insérés avec <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>+<kbd class="kbd docutils literal notranslate">K</kbd></kbd>, <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Maj</kbd>+<kbd class="kbd docutils literal notranslate">Espace</kbd></kbd>.</p></li>
+<li><p>Une espace fine insécable peut être insérée avec <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>+<kbd class="kbd docutils literal notranslate">K</kbd></kbd>, <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>+<kbd class="kbd docutils literal notranslate">Espace</kbd></kbd>.</p></li>
+</ul>
+<p>Ce sont toutes des fonctions d’insertion, et le menu <strong>Insertion</strong> en propose d’autres. Les raccourcis clavier pour ces fonctions sont également listés dans <a class="reference internal" href="usage_shortcuts.html#a-kb-ins"><span class="std std-ref">Raccourcis d’insertion</span></a>.</p>
+<p>Les espaces insécables sont mis en évidence par le surligneur syntaxique avec un arrière-plan de couleur différente, en fonction du thème sélectionné.</p>
+<div class="admonition tip">
+<p class="admonition-title">Astuce</p>
+<p>Les espaces insécables sont par exemple le type d’espace correct pour séparer un nombre de son unité. En général, les espaces insécables sont utilisés pour empêcher les algorithmes de retour à la ligne d’ajouter des sauts de ligne là où ils ne le devraient pas.</p>
+</div>
+</section>
+<section id="text-emphasis-with-markdown">
+<span id="a-fmt-emph"></span><h2>Mise en valeur du texte avec Markdown<a class="headerlink" href="#text-emphasis-with-markdown" title="Lien vers cette rubrique">#</a></h2>
+<p>Un ensemble minimal de styles d’accentuation de texte Markdown est pris en charge pour les paragraphes de texte.</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">_texte_</span></code></dt><dd><p>Le texte est rendu en italique.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">**texte**</span></code></dt><dd><p>Le texte est rendu en gras.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">~~texte~~</span></code></dt><dd><p>Barrer le texte.</p>
+</dd>
+</dl>
+<p>Dans les guides Markdown, il est souvent recommandé de différencier le gras de l’italique en utilisant <code class="docutils literal notranslate"><span class="pre">**</span></code> pour le gras et <code class="docutils literal notranslate"><span class="pre">_</span></code> pour l’italique, bien que Markdown supporte également <code class="docutils literal notranslate"><span class="pre">__</span></code> pour le gras et <code class="docutils literal notranslate"><span class="pre">*</span></code> pour l’italique. Cependant, puisque la différenciation rend la mise en évidence et la conversion significativement plus simple et plus rapide, dans novelWriter il s’agit d’une règle et non d’une simple recommandation.</p>
+<p>En outre, les règles suivantes s’appliquent :</p>
+<ol class="arabic simple">
+<li><p>Les balises de mise en valeur et de biffage n’autorisent pas les espaces entre les mots et la balise elle-même. Autrement dit, <code class="docutils literal notranslate"><span class="pre">**texte**</span></code> est valide, <code class="docutils literal notranslate"><span class="pre">**texte</span> <span class="pre">**</span></code> ne l’est pas.</p></li>
+<li><p>Plus généralement, les délimiteurs doivent se trouver aux bords des mots. Autrement dit, « certains <strong>textes en gras</strong> ici » sont valides, « certains** textes en gras** ici » ne le sont pas.</p></li>
+<li><p>Si vous utilisez à la fois <code class="docutils literal notranslate"><span class="pre">**</span></code> et <code class="docutils literal notranslate"><span class="pre">_</span></code> pour envelopper le même texte, le trait de soulignement doit être à <strong>l’intérieure</strong>. Ceci est dû au fait que le trait de soulignement est également un caractère verbal valide, donc s’il est à l’extérieur, il viole la règle 2.</p></li>
+<li><p>L’accentuation du texte ne s’étend pas au-delà des sauts de ligne. Si vous devez ajouter un accent à plusieurs lignes ou paragraphes, vous devez l’appliquer à chacun d’entre eux à tour de rôle.</p></li>
+<li><p>L’accentuation du texte ne peut être utilisée que dans les commentaires et les paragraphes. Les titres et les balises de métadonnées ne permettent pas la mise en forme, et toute marque de mise en forme sera rendue telle quelle.</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Astuce</p>
+<p>novelWriter supporte la syntaxe d’échappement standard pour les caractères d’accentuation au cas où l’éditeur ne comprendrait pas l’usage que vous voulez en faire. C’est-à-dire que <code class="docutils literal notranslate"><span class="pre">\*</span></code>, <code class="docutils literal notranslate"><span class="pre">\_</span></code> et <code class="docutils literal notranslate"><span class="pre">\~</span></code> généreront respectivement un <code class="docutils literal notranslate"><span class="pre">*</span></code>, <code class="docutils literal notranslate"><span class="pre">_</span></code> et <code class="docutils literal notranslate"><span class="pre">~</span></code>, sans les interpréter comme faisant partie du balisage.</p>
+</div>
+</section>
+<section id="formatting-with-shortcodes">
+<span id="a-fmt-shortcodes"></span><h2>Mise en forme avec les shortcodes<a class="headerlink" href="#formatting-with-shortcodes" title="Lien vers cette rubrique">#</a></h2>
+<p>Pour des options de formatage supplémentaires, vous pouvez utiliser des shortcodes. Les shortcodes sont une forme de codes en ligne qui peuvent être utilisés pour modifier le format du texte qui suit le code d’ouverture et qui dure jusqu’à ce que la région de mise en forme soit terminée par un code de fermeture.</p>
+<p>Ces shortcodes sont destinés à des cas de formatage spéciaux ou à des cas plus complexes qui ne peuvent pas être résolus avec de simples codes de formatage de type Markdown. Les shortcodes disponibles sont énumérés ci-dessous.</p>
+<div class="pst-scrollable-table-container"><table class="tight-table table" id="id3">
+<caption><span class="caption-text">Formats des shortcodes</span><a class="headerlink" href="#id3" title="Lien vers ce tableau">#</a></caption>
+<colgroup>
+<col style="width: 40.0%" />
+<col style="width: 60.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Syntaxe</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">[b]texte[/b]</span></code></p></td>
+<td><p>Le texte est rendu en gras.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">[i]texte[/i]</span></code></p></td>
+<td><p>Le texte est rendu en italique.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">[s]texte[/s]</span></code></p></td>
+<td><p>Le texte est rendu sous forme de texte barré.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">[u]texte[/u]</span></code></p></td>
+<td><p>Le texte est rendu sous forme de texte souligné.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">[m]texte[/m]</span></code></p></td>
+<td><p>Le texte est rendu en surbrillance.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">[sup]texte[/sup]</span></code></p></td>
+<td><p>Le texte est rendu en exposant.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">[sub]texte[/sub]</span></code></p></td>
+<td><p>Le texte est rendu sous forme d’indice.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Contrairement aux codes de style Markdown, ces codes peuvent être utilisés n’importe où dans un paragraphe. Même au milieu d’un mot si nécessaire. Vous pouvez également les combiner librement pour obtenir une mise en forme plus complexe.</p>
+<p>Les shortcodes sont disponibles dans le menu <strong>Format</strong> et dans la barre d’outils de l’éditeur, qui peut être activée en cliquant sur l’icône la plus à gauche dans l’en-tête de l’éditeur.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Les shortcodes ne sont pas traités tant que vous n’avez pas généré un aperçu ou un document manuscrit. Il n’y a donc pas de mise en évidence du texte entre les marqueurs de formatage. Il n’y a pas non plus de vérification de la logique de vos marqueurs. Vous devez vous assurer que les marqueurs de formatage d’ouverture et de fermeture se trouvent à l’endroit voulu.</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">Ajouté dans la version 2.2.</span></p>
+</div>
+</section>
+<section id="comments-and-synopsis">
+<span id="a-fmt-comm"></span><h2>Commentaires et synopsis<a class="headerlink" href="#comments-and-synopsis" title="Lien vers cette rubrique">#</a></h2>
+<p>En plus des fonctions de formatage ci-dessus, novelWriter permet également d’insérer des commentaires dans les documents. Le texte d’un commentaire est toujours ignoré par le compteur de mots. Le texte peut également être filtré lors de la construction du manuscrit ou de la visualisation du document.</p>
+<p>Le premier mot d’un commentaire, suivi de deux points, peut faire partie d’un petit ensemble de modificateurs qui indiquent que le commentaire est destiné à un usage spécifique. Par exemple, si le commentaire commence par <code class="docutils literal notranslate"><span class="pre">Synopsis:</span></code>, le commentaire est traité d’une manière spéciale et apparaîtra dans le <a class="reference internal" href="usage_project.html#a-ui-outline"><span class="std std-ref">Vue d’ensemble du roman</span></a> dans une colonne dédiée. Le mot <code class="docutils literal notranslate"><span class="pre">synopsis</span></code> n’est pas sensible à la casse. S’il est correctement formaté, le surligneur de syntaxe l’indiquera en modifiant la couleur du mot.</p>
+<p>Les différents styles de commentaires sont les suivants :</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">%</span> <span class="pre">Le</span> <span class="pre">texte</span> <span class="pre">de</span> <span class="pre">votre</span> <span class="pre">commentaire</span> <span class="pre">...</span></code></dt><dd><p>Il s’agit d’un commentaire. Le texte n’est pas rendu par défaut (il est possible d’y déroger), n’est pas visible dans la vue des documents et n’est pas pris en compte dans le décompte des mots. Il est destiné à vous permettre de prendre des notes dans votre texte pour votre propre intérêt, quel qu’il soit, et qui ne fait pas partie du texte de l’histoire. Voici le format général d’un commentaire.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">%Synopsis:</span> <span class="pre">Votre</span> <span class="pre">texte</span> <span class="pre">de</span> <span class="pre">synopsis</span> <span class="pre">...</span></code></dt><dd><p>Il s’agit d’un commentaire de synopsis. Il est généralement traité de la même manière qu’un commentaire normal, sauf qu’il est également capturé par l’algorithme d’indexation et affiché dans <a class="reference internal" href="usage_project.html#a-ui-outline"><span class="std std-ref">Vue d’ensemble du roman</span></a>. Il peut également être filtré séparément lors de la construction du projet pour, par exemple, générer un document de synopsis de l’ensemble du projet.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">%Short:</span> <span class="pre">Votre</span> <span class="pre">courte</span> <span class="pre">description</span> <span class="pre">...</span></code></dt><dd><p>Il s’agit d’un commentaire de description courte. Il est identique au commentaire de synopsis (ils sont interchangeables), mais il est destiné à être utilisé pour les notes de projet. Le texte apparaît dans le panneau Référence, sous la vue de documents, dans la dernière colonne intitulée <strong>Courte description</strong>.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">%Footnote.&lt;key&gt;:</span> <span class="pre">Votre</span> <span class="pre">texte</span> <span class="pre">de</span> <span class="pre">note</span> <span class="pre">de</span> <span class="pre">bas</span> <span class="pre">de</span> <span class="pre">page</span> <span class="pre">...</span></code></dt><dd><p>Il s’agit d’un commentaire spécial attribué à un marqueur de note de bas de page. Voir <a class="reference internal" href="#a-fmt-footnote"><span class="std std-ref">Notes de bas de page</span></a> pour savoir comment les utiliser dans votre texte.</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Un seul commentaire peut être marqué comme synopsis ou commentaire court pour chaque rubrique. Si plusieurs commentaires sont marqués comme synopsis ou commentaires courts, le dernier sera utilisé et les autres ignorés.</p>
+</div>
+</section>
+<section id="footnotes">
+<span id="a-fmt-footnote"></span><h2>Notes de bas de page<a class="headerlink" href="#footnotes" title="Lien vers cette rubrique">#</a></h2>
+<p>Les notes de bas de page sont ajoutées à l’aide d’un shortcode, associé à un commentaire correspondant au texte de la note. La correspondance se fait à l’aide d’une clé qui lie les deux. Si vous insérez une note de bas de page à partir du menu <strong>Insérer</strong>, une clé unique est générée pour vous.</p>
+<p>La fonction d’insertion ajoutera le marqueur du shortcode de la note de bas de page à l’endroit où se trouve votre curseur dans le texte, créera le commentaire de la note de bas de page associée juste après le paragraphe et déplacera le curseur à cet endroit pour que vous puissiez immédiatement commencer à taper le texte de la note de bas de page.</p>
+<p>Le commentaire de la note de bas de page peut se trouver n’importe où dans le document, de sorte que si vous souhaitez le placer, par exemple, au bas du texte, vous êtes libre de le faire.</p>
+<p>Les clés de notes de bas de page ne doivent être uniques qu’à l’intérieur d’un document. Par conséquent, si vous copiez, déplacez ou fusionnez du texte, vous devez vous assurer que les clés ne sont pas dupliquées. Si vous utilisez les clés générées automatiquement à partir du menu <strong>Insérer</strong>, elles sont uniques parmi tous les documents indexés. Il n’est pas garanti qu’elles soient uniques par rapport aux notes de bas de page du dossier Archives ou Corbeille, mais le risque de générer accidentellement la même clé deux fois dans un projet est relativement faible (1 sur 810 000).</p>
+<p>Voici à quoi peut ressembler une note de bas de page insérée dans un paragraphe une fois terminée :</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>This is a text paragraph with a footnote[footnote:fn1] in the middle.
+
+%Footnote.fn1: This is the text of the footnote.
+</pre></div>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">Ajouté dans la version 2.5.</span></p>
+</div>
+</section>
+<section id="ignored-text">
+<span id="a-fmt-ignore"></span><h2>Texte ignoré<a class="headerlink" href="#ignored-text" title="Lien vers cette rubrique">#</a></h2>
+<p>Si vous souhaitez ignorer complètement une partie du texte dans vos documents, mais que vous n’êtes pas prêt à l’effacer, vous pouvez ajouter <code class="docutils literal notranslate"><span class="pre">%~</span></code> devant le paragraphe ou la ligne de texte. Cela permettra à novelWriter d’ignorer complètement le texte lors de la génération d’aperçus ou de la construction de manuscrits.</p>
+<p>Il s’agit d’un meilleur moyen de supprimer le texte que de le convertir en commentaires normaux, car vous souhaiterez peut-être inclure des commentaires normaux dans vos prévisualisations ou votre projet de manuscrit.</p>
+<p>Vous pouvez activer ou désactiver la fonction de texte ignoré pour un paragraphe en appuyant sur <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>+<kbd class="kbd docutils literal notranslate">Maj</kbd>+<kbd class="kbd docutils literal notranslate">D</kbd></kbd> sur votre clavier avec votre curseur quelque part dans le paragraphe.</p>
+<p>Exemple :</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>%~ This text is ignored.
+
+This text is a regular paragraph.
+</pre></div>
+</div>
+</section>
+<section id="tags-and-references">
+<span id="a-fmt-tags"></span><h2>Tags et références<a class="headerlink" href="#tags-and-references" title="Lien vers cette rubrique">#</a></h2>
+<p>L’éditeur de documents prend en charge un ensemble de mots-clés utilisés pour définir des balises et faire des références entre les documents sur la base de ces balises.</p>
+<p>Vous devez utiliser le mot-clé <code class="docutils literal notranslate"><span class="pre">&#64;tag:</span></code> pour définir une balise. La balise peut être définie une fois par section définie par un titre. Si vous la définissez plusieurs fois dans la même rubrique, elle remplacera la précédente.</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">&#64;tag:</span> <span class="pre">valeur</span></code></dt><dd><p>Un mot-clé de balise suivi de la valeur de la balise, comme par exemple le nom d’un personnage.</p>
+</dd>
+</dl>
+<p>Les références peuvent être placées n’importe où dans une section et sont rassemblées en fonction de leur catégorie. Les références se trouvent sur le formulaire :</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">&#64;mot</span> <span class="pre">clé:</span> <span class="pre">valeur1,</span> <span class="pre">valeur2,</span> <span class="pre">...,</span> <span class="pre">valeurN</span></code></dt><dd><p>Un mot-clé de référence suivi d’une valeur ou d’une liste de valeurs séparées par des virgules.</p>
+</dd>
+</dl>
+<p>Les balises et les références sont traitées en détail dans le chapitre <a class="reference internal" href="project_references.html#a-references"><span class="std std-ref">Tags et références</span></a>. Les mots-clés peuvent être insérés à la position du curseur dans l’éditeur via le menu <strong>Insérer</strong>. Si vous commencez à taper un <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> sur une nouvelle ligne, un menu d’auto-complétion apparaîtra également pour suggérer des mots-clés.</p>
+</section>
+<section id="paragraph-alignment-and-indentation">
+<span id="a-fmt-align"></span><h2>Alignement et indentation des paragraphes<a class="headerlink" href="#paragraph-alignment-and-indentation" title="Lien vers cette rubrique">#</a></h2>
+<p>Le texte de tous les documents est par défaut aligné à gauche ou justifié, selon les paramètres définis dans les <strong>Préférences</strong>.</p>
+<p>Vous pouvez remplacer l’alignement par défaut du texte sur des paragraphes individuels en spécifiant des balises d’alignement. Ces balises sont des doubles chevrons. Il peut s’agir de <code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span></code> ou de <code class="docutils literal notranslate"><span class="pre">&lt;&lt;</span></code>. Vous les placez avant ou après le paragraphe, et elles « pousseront » le texte vers le bord vers lequel les crochets pointent. Cela devrait être assez intuitif.</p>
+<p>L’indentation utilise une syntaxe similaire. Mais ici, vous utilisez un seul <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> ou <code class="docutils literal notranslate"><span class="pre">&lt;</span></code> pour éloigner le texte du bord.</p>
+<p>Exemples :</p>
+<div class="pst-scrollable-table-container"><table class="tight-table table" id="id4">
+<caption><span class="caption-text">Alignement et indentation du texte</span><a class="headerlink" href="#id4" title="Lien vers ce tableau">#</a></caption>
+<colgroup>
+<col style="width: 40.0%" />
+<col style="width: 60.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Syntaxe</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span> <span class="pre">Texte</span> <span class="pre">aligné</span> <span class="pre">à</span> <span class="pre">droite</span></code></p></td>
+<td><p>Le paragraphe est aligné à droite.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">Texte</span> <span class="pre">aligné</span> <span class="pre">à</span> <span class="pre">gauche</span> <span class="pre">&lt;&lt;</span></code></p></td>
+<td><p>Le paragraphe  est aligné à gauche.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span> <span class="pre">Texte</span> <span class="pre">centré</span> <span class="pre">&lt;&lt;</span></code></p></td>
+<td><p>Le paragraphe est centré.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">Texte</span> <span class="pre">en</span> <span class="pre">retrait</span> <span class="pre">à</span> <span class="pre">gauche</span></code></p></td>
+<td><p>Le texte a une marge gauche plus importante.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Texte</span> <span class="pre">en</span> <span class="pre">retrait</span> <span class="pre">à</span> <span class="pre">droite</span> <span class="pre">&lt;</span></code></p></td>
+<td><p>Le texte a une marge droite plus importante.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">Texte</span> <span class="pre">indenté</span> <span class="pre">gauche/droite</span> <span class="pre">&lt;`</span></code></p></td>
+<td><p>Les deux marges du texte ont été augmentées.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>L’éditeur de texte n’affiche pas l’alignement et l’indentation en direct. Mais le visualiseur les affichera lorsque vous y ouvrirez le document. Ils seront bien sûr également reflétés dans le document généré par l’outil de création de manuscrits, à condition que le format prenne en charge l’alignement des paragraphes.</p>
+</div>
+<section id="alignment-with-line-breaks">
+<h3>Alignement avec les sauts de ligne<a class="headerlink" href="#alignment-with-line-breaks" title="Lien vers cette rubrique">#</a></h3>
+<p>Si vous avez des sauts de ligne dans le paragraphe, comme par exemple lorsque vous écrivez des vers, les marqueurs d’alignement doivent être appliqués à la première ligne. Les marqueurs des autres lignes sont ignorés. Les marqueurs de la première ligne sont utilisés pour toutes les autres lignes.</p>
+<p>Pour le texte suivant, toutes les lignes seront centrées, et pas seulement la première :</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>&gt;&gt; I am the very model of a modern Major-General &lt;&lt;
+I&#39;ve information vegetable, animal, and mineral
+I know the kings of England, and I quote the fights historical
+From Marathon to Waterloo, in order categorical
+</pre></div>
+</div>
+</section>
+<section id="alignment-with-first-line-indent">
+<h3>Alignement sur le retrait de la première ligne<a class="headerlink" href="#alignment-with-first-line-indent" title="Lien vers cette rubrique">#</a></h3>
+<p>Si vous avez activé le retrait de première ligne dans les paramètres de construction de votre Manuscrit, vous voudrez probablement le désactiver pour le texte des versets. L’ajout de balises d’alignement entraînera la désactivation du retrait de première ligne pour ce paragraphe.</p>
+<p>Le texte suivant sera toujours aligné sur la marge de gauche :</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>I am the very model of a modern Major-General &lt;&lt;
+I&#39;ve information vegetable, animal, and mineral
+I know the kings of England, and I quote the fights historical
+From Marathon to Waterloo, in order categorical
+</pre></div>
+</div>
+</section>
+</section>
+<section id="vertical-space-and-page-breaks">
+<span id="a-fmt-break"></span><h2>Espace vertical et sauts de page<a class="headerlink" href="#vertical-space-and-page-breaks" title="Lien vers cette rubrique">#</a></h2>
+<p>Vous pouvez appliquer des sauts de page aux titres de partition, de chapitre et de scène pour les documents de roman à partir de l’outil <strong>Compiler le manuscrit</strong>. Si vous avez besoin d’ajouter un saut de page ou un espacement vertical supplémentaire à d’autres endroits, il existe des codes spéciaux à cet effet.</p>
+<p>L’ajout de plus d’un saut de ligne entre les paragraphes n’augmentera <strong>pas</strong> l’espace entre ces paragraphes lors de la construction du projet. Pour ajouter de l’espace entre les paragraphes, ajoutez le texte <code class="docutils literal notranslate"><span class="pre">[vspace]</span></code> sur une ligne distincte, et l’outil de construction insérera un paragraphe vide à sa place.</p>
+<p>Si vous avez besoin de plusieurs paragraphes vides, il suffit d’ajouter deux points et un chiffre au code ci-dessus. Par exemple, en écrivant <code class="docutils literal notranslate"><span class="pre">[vspace:3]</span></code>, vous insérerez trois paragraphes vides.</p>
+<p>Si vous devez ajouter un saut de page quelque part, placez le texte <code class="docutils literal notranslate"><span class="pre">[new</span> <span class="pre">page]</span></code> sur une ligne isolée avant le texte que vous souhaitez faire commencer sur une nouvelle page.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Le code de saut de page est appliqué au texte qui le suit. Il ajoute une marque de « saut de page avant » au texte lors de l’exportation vers HTML ou Open Document. Cela signifie qu’une <code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">new</span> <span class="pre">page]</span></code> qui n’est suivie d’aucun texte n’entraînera pas de saut de page.</p>
+</div>
+<p><strong>Exemple:</strong></p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>This is a text paragraph.
+
+[vspace:2]
+
+This is another text paragraph, but there will be two empty paragraphs
+between them.
+
+[new page]
+
+This text will start on a new page if the build format has pages.
+</pre></div>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="usage_writing.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">L’éditeur et le visualisateur</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="usage_shortcuts.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Raccourcis clavier</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#syntax-highlighting">Surlignage syntaxique</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#headings">Titres</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-paragraphs">Paragraphes du texte</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-emphasis-with-markdown">Mise en valeur du texte avec Markdown</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formatting-with-shortcodes">Mise en forme avec les shortcodes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comments-and-synopsis">Commentaires et synopsis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#footnotes">Notes de bas de page</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ignored-text">Texte ignoré</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tags-and-references">Tags et références</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#paragraph-alignment-and-indentation">Alignement et indentation des paragraphes</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alignment-with-line-breaks">Alignement avec les sauts de ligne</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alignment-with-first-line-indent">Alignement sur le retrait de la première ligne</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vertical-space-and-page-breaks">Espace vertical et sauts de page</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par Veronica Berglyd Olsen
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

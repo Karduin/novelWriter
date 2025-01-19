@@ -1,0 +1,557 @@
+
+<!DOCTYPE html>
+
+
+<html lang="fr" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Modifications du format des projet &#8212; Version 2.6b1</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=a56b48ff" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=37dc2d04"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="_static/translations.js?v=e6b791cb"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'more_projectformat';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Décompte des mots et des textes" href="more_counting.html" />
+    <link rel="prev" title="Personnalisations" href="more_customise.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  <meta name="docsearch:version" content="2.6b1" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Passer au contenu principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Haut de page</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Alerte de version"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/novelwriter-light.png" class="logo__image only-light" alt="Version 2.6b1 - Home"/>
+    <img src="_static/novelwriter-dark.png" class="logo__image only-dark pst-js-only" alt="Version 2.6b1 - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+<p class="nw-sidebar-title">Version 2.6b1</p>
+</div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Page d'accueil</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="int_introduction.html">Présentation générale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_overview.html">Premières lectures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_started.html">Configuration et installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_howto.html">Trucs et astuces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_glossary.html">Glossaire</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Utiliser novelWriter</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="usage_breakdown.html">Comment ça marche</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_project.html">Vues du projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_writing.html">L’éditeur et le visualisateur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_format.html">Mise en forme du texte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_shortcuts.html">Raccourcis clavier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_typography.html">Notes typographiques</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Organiser votre projet</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="project_overview.html">Gestion des projets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_structure.html">Structure du roman</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_references.html">Tags et références</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_manuscript.html">Compiler le manuscrit</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Détails additionnels</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="more_customise.html">Personnalisations</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Modifications du format des projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="more_counting.html">Décompte des mots et des textes</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Sujets techniques</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="tech_locations.html">Emplacement des fichiers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_storage.html">Comment les données sont stockées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_source.html">Executer depuis la source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_tests.html">Exécution des tests</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/vkbo/novelwriter" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Dépôt source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/vkbo/novelwriter/issues/new?title=Issue%20on%20page%20%2Fmore_projectformat.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Ouvrez un problème"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/more_projectformat.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Thème" data-bs-title="Thème"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Clair"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Sombre"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="Paramètres système"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Modifications du format des projet</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#format-1-5-changes">Format 1.5 Modifications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#format-1-4-changes">Format 1.4 Modifications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#format-1-3-changes">Format 1.3 Modifications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#format-1-2-changes">Format 1.2 Modifications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#format-1-1-changes">Format 1.1 Modifications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#format-1-0-changes">Format 1.0 Modifications</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="project-format-changes">
+<span id="a-prjfmt"></span><h1>Modifications du format des projet<a class="headerlink" href="#project-format-changes" title="Lien vers cette rubrique">#</a></h1>
+<p>La plupart des modifications apportées aux formats de fichiers au cours de l’histoire de novelWriter n’ont pas d’impact sur l’utilisateur. Les fichiers de projet sont généralement mis à jour automatiquement. Cependant, certains changements nécessitent des actions mineures de la part de l’utilisateur.</p>
+<p>Les principales modifications apportées aux formats sont énumérées dans ce chapitre, ainsi que les actions requises de la part de l’utilisateur, le cas échéant.</p>
+<div class="admonition caution">
+<p class="admonition-title">Prudence</p>
+<p>Lorsque vous mettez à jour un projet d’une version de format à la suivante, le projet ne peut plus être ouvert par une version de novelWriter antérieure à la version où le nouveau format de fichier a été introduit. Vous recevrez une notification concernant toute mise à jour du format de fichier de votre projet et vous aurez la possibilité de refuser la mise à jour.</p>
+</div>
+<p><strong>Pour les développeurs</strong></p>
+<p>Une description complète du format de fichier actuel est disponible dans le document <a class="reference download internal" download="" href="_downloads/b90010f8ffc9c978e2b11a514bc1012b/fileformatspec15.pdf"><code class="xref download docutils literal notranslate"><span class="pre">File</span> <span class="pre">Format</span> <span class="pre">Spec</span> <span class="pre">1.5</span></code></a>, disponible au format PDF. Ce document est destiné aux contributeurs de novelWriter, à ceux qui construisent des outils de conversion de projets, soit vers, soit à partir du format novelWriter, et à ceux qui souhaitent créer leur propre système de gabarit.</p>
+<section id="format-1-5-changes">
+<span id="a-prjfmt-1-5"></span><h2>Format 1.5 Modifications<a class="headerlink" href="#format-1-5-changes" title="Lien vers cette rubrique">#</a></h2>
+<p>Ce format de projet a été introduit dans la version 2.0 RC 2 de novelWriter.</p>
+<p>Il s’agit d’une modification du format 1.4. Il rend le XML plus cohérent en ce sens que les métadonnées ont été déplacées vers leurs nœuds de section respectifs en tant qu’attributs, et que les paramètres clé/valeur ont désormais un format cohérent. Les indicateurs logiques sont sauvegardés sous forme de oui/non au lieu de True/False de Python, et le titre principal du document est désormais sauvegardé dans l’article plutôt que dans l’index. La conversion est effectuée automatiquement lors du premier chargement d’un projet. Aucune action de l’utilisateur n’est nécessaire.</p>
+</section>
+<section id="format-1-4-changes">
+<span id="a-prjfmt-1-4"></span><h2>Format 1.4 Modifications<a class="headerlink" href="#format-1-4-changes" title="Lien vers cette rubrique">#</a></h2>
+<p>Ce format de projet a été introduit dans la version 2.0 RC 1 de novelWriter. Comme il s’agissait d’une version candidate, il est peu probable que votre projet l’utilise, mais c’est peut-être le cas si vous avez installé une préversion.</p>
+<p>Ce format modifie la manière dont les éléments du projet (dossiers, documents et notes) sont stockés. Il s’agit d’un format plus compact, plus simple et plus rapide à analyser, et plus facile à étendre. La conversion se fait automatiquement lors du premier chargement d’un projet. Aucune action de l’utilisateur n’est nécessaire.</p>
+</section>
+<section id="format-1-3-changes">
+<span id="a-prjfmt-1-3"></span><h2>Format 1.3 Modifications<a class="headerlink" href="#format-1-3-changes" title="Lien vers cette rubrique">#</a></h2>
+<p>Ce format de projet a été introduit dans la version 1.5 de novelWriter.</p>
+<p>Avec ce format, le nombre de présentations de documents a été réduit de huit à deux. La conversion des présentations de documents s’effectue automatiquement lors de l’ouverture du projet.</p>
+<p>En raison de la réduction des présentations, certaines caractéristiques qui étaient auparavant contrôlées par ces présentations seront perdues. Ces fonctionnalités sont désormais contrôlées par des codes syntaxiques. Pour les récupérer, l’utilisateur doit donc apporter quelques modifications mineures aux documents sélectionnés.</p>
+<p>Les modifications manuelles que l’utilisateur doit apporter sont très peu nombreuses car elles s’appliquent à des mises en page de documents qui ne doivent être utilisées qu’à quelques endroits dans un projet donné. Ces modifications sont les suivantes :</p>
+<p><strong>Pages de titres</strong></p>
+<ul class="simple">
+<li><p>Le formatage du titre de niveau 1 sur la page de titre doit être modifié de <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">Texte</span> <span class="pre">du</span> <span class="pre">titre</span></code> à <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">!</span> <span class="pre">Texte</span> <span class="pre">du</span> <span class="pre">titre</span></code> afin de conserver la fonctionnalité précédente. Voir <a class="reference internal" href="usage_format.html#a-fmt-head"><span class="std std-ref">Titres</span></a>.</p></li>
+<li><p>Tout texte qui était précédemment centré sur la page doit être centré manuellement en utilisant la fonction d’alignement du texte. Voir <a class="reference internal" href="usage_format.html#a-fmt-align"><span class="std std-ref">Alignement et indentation des paragraphes</span></a>.</p></li>
+</ul>
+<p><strong>Chapitres non numérotés</strong></p>
+<ul class="simple">
+<li><p>La mise en page spécifique pour les chapitres non numérotés ayant été abandonnée, ces chapitres doivent tous utiliser le code de formatage <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">!</span> <span class="pre">Nom</span> <span class="pre">de</span> <span class="pre">chapitre</span></code> au lieu de <cite>## Nom de chapitre`</cite>. Cela inclut également les chapitres marqués d’un astérisque : <cite>## *Nom de chapitre`</cite>, car cette fonctionnalité a également été abandonnée. Voir <a class="reference internal" href="usage_format.html#a-fmt-head"><span class="std std-ref">Titres</span></a>.</p></li>
+</ul>
+<p><strong>Pages vierges</strong></p>
+<ul class="simple">
+<li><p>La mise en page appelée « Page vierge » a également été supprimée. La seule caractéristique de cette mise en page était qu’elle garantissait que le contenu commençait toujours sur une nouvelle page. Dans le nouveau format, les pages fraîches peuvent être placées n’importe où dans le texte avec le code <code class="docutils literal notranslate"><span class="pre">[NEW</span> <span class="pre">PAGE]</span></code>. Voir <a class="reference internal" href="usage_format.html#a-fmt-break"><span class="std std-ref">Espace vertical et sauts de page</span></a>.</p></li>
+</ul>
+</section>
+<section id="format-1-2-changes">
+<span id="a-prjfmt-1-2"></span><h2>Format 1.2 Modifications<a class="headerlink" href="#format-1-2-changes" title="Lien vers cette rubrique">#</a></h2>
+<p>Ce format de projet a été introduit dans la version 0.10 de novelWriter.</p>
+<p>Avec ce format, la façon dont les entrées de remplacement automatique étaient stockées dans le fichier XML du projet principal a changé.</p>
+</section>
+<section id="format-1-1-changes">
+<span id="a-prjfmt-1-1"></span><h2>Format 1.1 Modifications<a class="headerlink" href="#format-1-1-changes" title="Lien vers cette rubrique">#</a></h2>
+<p>Ce format de projet a été introduit dans la version 0.7 de novelWriter.</p>
+<p>Avec ce format, le dossier <code class="docutils literal notranslate"><span class="pre">content</span></code> a été introduit dans le stockage du projet. Auparavant, tous les documents de novelWriter étaient sauvegardés dans une série de dossiers numérotés de <code class="docutils literal notranslate"><span class="pre">data_0</span></code> à <code class="docutils literal notranslate"><span class="pre">data_f</span></code>.</p>
+<p>Il réduit également le nombre de métadonnées et de fichiers de cache. Ces fichiers sont automatiquement supprimés lorsqu’un ancien projet est ouvert. C’est également à cette époque que le fichier de table des matières a été introduit.</p>
+</section>
+<section id="format-1-0-changes">
+<span id="a-prjfmt-1-0"></span><h2>Format 1.0 Modifications<a class="headerlink" href="#format-1-0-changes" title="Lien vers cette rubrique">#</a></h2>
+<p>Il s’agit du format de fichier et de la structure de projet d’origine. Il a été utilisé jusqu’à la version 0.6.3.</p>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="more_customise.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">Personnalisations</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="more_counting.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Décompte des mots et des textes</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#format-1-5-changes">Format 1.5 Modifications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#format-1-4-changes">Format 1.4 Modifications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#format-1-3-changes">Format 1.3 Modifications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#format-1-2-changes">Format 1.2 Modifications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#format-1-1-changes">Format 1.1 Modifications</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#format-1-0-changes">Format 1.0 Modifications</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par Veronica Berglyd Olsen
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

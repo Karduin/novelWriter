@@ -1,0 +1,632 @@
+
+<!DOCTYPE html>
+
+
+<html lang="fr" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Vues du projet &#8212; Version 2.6b1</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=a56b48ff" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=37dc2d04"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="_static/translations.js?v=e6b791cb"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'usage_project';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="L’éditeur et le visualisateur" href="usage_writing.html" />
+    <link rel="prev" title="Comment ça marche" href="usage_breakdown.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  <meta name="docsearch:version" content="2.6b1" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Passer au contenu principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Haut de page</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Alerte de version"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/novelwriter-light.png" class="logo__image only-light" alt="Version 2.6b1 - Home"/>
+    <img src="_static/novelwriter-dark.png" class="logo__image only-dark pst-js-only" alt="Version 2.6b1 - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+<p class="nw-sidebar-title">Version 2.6b1</p>
+</div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Page d'accueil</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="int_introduction.html">Présentation générale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_overview.html">Premières lectures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_started.html">Configuration et installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_howto.html">Trucs et astuces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="int_glossary.html">Glossaire</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Utiliser novelWriter</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="usage_breakdown.html">Comment ça marche</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Vues du projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_writing.html">L’éditeur et le visualisateur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_format.html">Mise en forme du texte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_shortcuts.html">Raccourcis clavier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage_typography.html">Notes typographiques</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Organiser votre projet</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="project_overview.html">Gestion des projets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_structure.html">Structure du roman</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_references.html">Tags et références</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_manuscript.html">Compiler le manuscrit</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Détails additionnels</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="more_customise.html">Personnalisations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="more_projectformat.html">Modifications du format des projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="more_counting.html">Décompte des mots et des textes</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Sujets techniques</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="tech_locations.html">Emplacement des fichiers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_storage.html">Comment les données sont stockées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_source.html">Executer depuis la source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_tests.html">Exécution des tests</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/vkbo/novelwriter" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Dépôt source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/vkbo/novelwriter/issues/new?title=Issue%20on%20page%20%2Fusage_project.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Ouvrez un problème"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/usage_project.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Thème" data-bs-title="Thème"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Clair"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Sombre"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="Paramètres système"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Vues du projet</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-project-tree">L’arborescence du projet</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#splitting-and-merging-documents">Séparation et fusion de documents</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#splitting-documents">Découper des documents</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#merging-documents">Fusionner des documents</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#document-importance-and-status">Importance et statut du document</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#project-tree-drag-drop">Glisser-déposer de l’arborescence du projet</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-novel-tree-view">L’arborescence du roman</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-novel-outline-view">Vue d’ensemble du roman</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="project-views">
+<span id="a-ui-project"></span><h1>Vues du projet<a class="headerlink" href="#project-views" title="Lien vers cette rubrique">#</a></h1>
+<p>Ce chapitre couvre plus en détail les différentes vues de projet disponibles dans novelWriter.</p>
+<figure class="align-default" id="id1">
+<img alt="_images/fig_project_tree_detailed.png" src="_images/fig_project_tree_detailed.png" />
+<figcaption>
+<p><span class="caption-text">L’arborescence du <strong>Contenu du projet</strong> telle qu’elle apparaît lors du chargement d’un exemple de projet.</span><a class="headerlink" href="#id1" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<section id="the-project-tree">
+<span id="a-ui-tree"></span><h2>L’arborescence du projet<a class="headerlink" href="#the-project-tree" title="Lien vers cette rubrique">#</a></h2>
+<p>La fenêtre principale contient l’arborescence du projet dans le panneau le plus à gauche. Elle montre la structure complète du projet et comporte quatre colonnes.</p>
+<dl class="simple">
+<dt><strong>Colonne 1</strong></dt><dd><p>La première colonne affiche l’icône et l’étiquette de chaque dossier, document ou note de votre projet. L’étiquette n’est pas la même que le titre de l’en-tête que vous avez défini dans le document. Toutefois, l’étiquette du document apparaît dans l’en-tête, au-dessus du texte du document lui-même, afin que vous sachiez à quel endroit du projet appartient un document ouvert. L’icône est sélectionnée en fonction du type d’élément et, pour les nouveaux documents, du niveau du premier titre dans le texte du document.</p>
+</dd>
+<dt><strong>Colonne 2</strong></dt><dd><p>La deuxième colonne indique le nombre de mots du document, ou la somme des mots des éléments enfants pour les dossiers et les documents avec sous-documents. Si les décomptes semblent incorrects, ils peuvent être mis à jour en reconstruisant le <a class="reference internal" href="int_glossary.html#term-Project-Index"><span class="xref std std-term">index du projet</span></a> à partir du menu <strong>Outils</strong>, ou en appuyant sur <kbd class="kbd docutils literal notranslate">F9</kbd>.</p>
+</dd>
+<dt><strong>Colonne 3</strong></dt><dd><p>La troisième colonne indique si le document est considéré comme actif ou inactif dans le projet. Vous pouvez utiliser ce drapeau pour indiquer qu’un document est toujours dans le projet, mais qu’il ne doit pas être considéré comme une partie active de celui-ci. Lorsque vous exécutez l’outil <strong>Compiler un manuscrit</strong>, vous pouvez inclure ou exclure des documents en fonction de cet indicateur. Vous pouvez modifier cette valeur à partir du <a class="reference internal" href="int_glossary.html#term-Context-Menu"><span class="xref std std-term">menu contextuel</span></a> en cliquant avec le bouton droit de la souris.</p>
+</dd>
+<dt><strong>Colonne 4</strong></dt><dd><p>La quatrième colonne montre les étiquettes de statut ou d’importance définies par l’utilisateur que vous avez attribuées à chaque élément du projet.Voir <a class="reference internal" href="#a-ui-tree-status"><span class="std std-ref">Importance et statut du document</span></a> pour plus de détails sur l’utilisation de ces étiquettes.Vous pouvez sélectionner ces étiquettes dans le <a class="reference internal" href="int_glossary.html#term-Context-Menu"><span class="xref std std-term">menu contextuel</span></a>, et les définir dans <strong>Réglages du projet</strong>.</p>
+</dd>
+</dl>
+<p>Un clic droit sur un élément de l’arborescence du projet ouvre un menu contextuel sous le curseur, affichant une sélection d’actions pouvant être effectuées sur l’élément sélectionné.</p>
+<p>En haut de l’arborescence du projet, vous trouverez une série de boutons.</p>
+<ul class="simple">
+<li><p>Le premier bouton est un bouton de liens rapides qui affiche un menu déroulant de tous les <a class="reference internal" href="int_glossary.html#term-Root-Folder"><span class="xref std std-term">dossiers racines</span></a> de votre projet. En sélectionnant l’un d’entre eux, vous vous déplacerez à la position correspondante dans l’arborescence. Vous pouvez également activer ce menu en appuyant sur <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>+<kbd class="kbd docutils literal notranslate">L</kbd></kbd>.</p></li>
+<li><p>Les deux boutons suivants permettent de déplacer des éléments vers le haut ou vers le bas dans l’arborescence du projet. C’est la seule façon de déplacer les dossiers racines.</p></li>
+<li><p>Le bouton suivant ouvre un menu déroulant permettant d’ajouter de nouveaux éléments à l’arborescence. Cela inclut les dossiers racines et les documents modèles. Vous pouvez également activer ce menu déroulant en appuyant sur <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>+<kbd class="kbd docutils literal notranslate">N</kbd></kbd>.</p></li>
+<li><p>Le dernier bouton est un menu d’actions supplémentaires que vous pouvez appliquer à l’arborescence du projet.</p></li>
+</ul>
+<p>Sous l’arborescence du projet, vous trouverez un petit panneau de détails affichant les informations complètes de l’élément sélectionné. Ce panneau comprend également les derniers décomptes de paragraphes et de caractères, en plus du nombre de mots.</p>
+<div class="admonition tip">
+<p class="admonition-title">Astuce</p>
+<p>Si vous souhaitez que l’étiquette d’un document soit identique à celle d’un en-tête, vous pouvez cliquer avec le bouton droit de la souris sur un en-tête du document lorsqu’il est ouvert dans l’éditeur et sélectionner <span class="guilabel">Renommer comme en-tête</span> dans le menu contextuel.</p>
+</div>
+<section id="splitting-and-merging-documents">
+<span id="a-ui-tree-split-merge"></span><h3>Séparation et fusion de documents<a class="headerlink" href="#splitting-and-merging-documents" title="Lien vers cette rubrique">#</a></h3>
+<p>Dans le sous-menu <strong>Transformer</strong> du menu contextuel d’un élément de l’arborescence du projet, vous trouverez plusieurs options permettant de modifier un document ou un dossier. Il s’agit notamment de passer d’un document à une note, mais aussi de les diviser en plusieurs documents ou de fusionner des éléments enfants en un seul document.</p>
+<section id="splitting-documents">
+<h4>Découper des documents<a class="headerlink" href="#splitting-documents" title="Lien vers cette rubrique">#</a></h4>
+<figure class="align-default" id="id2">
+<img alt="_images/fig_project_split_tool.png" src="_images/fig_project_split_tool.png" />
+<figcaption>
+<p><span class="caption-text">La boîte de dialogue <strong>découper le document</strong>.</span><a class="headerlink" href="#id2" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<p>L’option <strong>découper le document selon les titres</strong> ouvre une boîte de dialogue qui vous permet de découper le document sélectionné en plusieurs nouveaux documents sur la base des en-têtes qu’il contient. Vous pouvez sélectionner le niveau de rubrique auquel le fractionnement doit être effectué dans la liste déroulante. La liste déroulante affiche un aperçu des rubriques qui seront scindées en nouveaux documents.</p>
+<p>Vous avez la possibilité de créer un dossier pour ces nouveaux documents et de créer ou non une hiérarchie entre les documents. C’est-à-dire de placer les sections sous les scènes, et les scènes sous les chapitres.</p>
+<p>Le document source <strong>n’est pas</strong> supprimé au cours du processus, mais vous avez la possibilité de laisser l’outil déplacer le document source dans le dossier <span class="guilabel">Corbeille</span>.</p>
+</section>
+<section id="merging-documents">
+<h4>Fusionner des documents<a class="headerlink" href="#merging-documents" title="Lien vers cette rubrique">#</a></h4>
+<figure class="align-default" id="id3">
+<img alt="_images/fig_project_merge_tool.png" src="_images/fig_project_merge_tool.png" />
+<figcaption>
+<p><span class="caption-text">La boîte de dialogue <strong>Fusionner les documents</strong>.</span><a class="headerlink" href="#id3" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<p>Vous disposez de deux options pour fusionner des documents qui sont des éléments enfants d’un autre document. Vous pouvez soit <strong>Fusionner les éléments enfants dans le même document</strong>, soit <strong>Fusionner les éléments enfants dans le nouveau document</strong>. La première option permet d’extraire tout le contenu des éléments enfants et de les fusionner dans le document parent, tandis que la seconde option crée un nouveau document au cours du processus.</p>
+<p>Lorsque vous fusionnez des documents dans un dossier, seul ce dernier processus est possible, de sorte que seul le choix <strong>Fusionner les documents dans un dossier</strong> est disponible.</p>
+<p>Dans les deux cas, la boîte de dialogue <strong>Fusionner les documents</strong> vous permet d’exclure les documents que vous ne souhaitez pas inclure et de les réorganiser si vous le souhaitez.</p>
+</section>
+</section>
+<section id="document-importance-and-status">
+<span id="a-ui-tree-status"></span><h3>Importance et statut du document<a class="headerlink" href="#document-importance-and-status" title="Lien vers cette rubrique">#</a></h3>
+<p>Chaque document ou dossier de votre projet peut avoir un indicateur « Statut » ou « Importance ». Ce sont des indicateurs que vous contrôlez et définissez vous-même, et novelWriter ne les utilise pas pour quoi que ce soit. Pour modifier les étiquettes, allez dans leurs onglets respectifs dans <strong>Paramètres du projet</strong>.</p>
+<p>L’indicateur « Statut » est destiné à marquer un <a class="reference internal" href="int_glossary.html#term-Novel-Documents"><span class="xref std std-term">document de roman</span></a> comme étant par exemple un brouillon ou comme étant terminé, et l’indicateur « Importance » est destiné à marquer des notes sur les personnages, ou d’autres <a class="reference internal" href="int_glossary.html#term-Project-Notes"><span class="xref std std-term">notes de projet</span></a>, comme par exemple un personnage principal, majeur ou mineur, ou un élément de l’histoire.</p>
+<p>L’utilisation de l’indicateur « Statut » ou « Importance » dépend du <a class="reference internal" href="int_glossary.html#term-Root-Folder"><span class="xref std std-term">dossier racine</span></a> dans lequel se trouve le document. S’il se trouve dans un dossier de type <strong>Romanl</strong>, il utilise l’indicateur « Statut », sinon il utilise l’indicateur « Importance ».</p>
+</section>
+<section id="project-tree-drag-drop">
+<span id="a-ui-tree-dnd"></span><h3>Glisser-déposer de l’arborescence du projet<a class="headerlink" href="#project-tree-drag-drop" title="Lien vers cette rubrique">#</a></h3>
+<p>L’arborescence du projet permet, dans une certaine mesure, d’effectuer un glisser-déposer pour réorganiser vos documents et dossiers. Le déplacement d’un document dans l’arborescence du projet affectera la position du texte lorsque vous assemblerez votre manuscrit dans l’outil <strong>Compilation du manuscrit</strong>.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">Ajouté dans la version 2.2: </span>Vous pouvez maintenant sélectionner plusieurs éléments dans l’arborescence du projet en maintenant la touche <kbd class="kbd docutils literal notranslate">Ctrl</kbd> ou <kbd class="kbd docutils literal notranslate">Maj</kbd> enfoncée pendant la sélection des éléments.</p>
+</div>
+<p>Vous pouvez faire glisser et déposer des documents et des dossiers ordinaires, mais pas des dossiers racines. Si vous sélectionnez plusieurs éléments, ils ne peuvent être glissés et déposés que s’ils sont apparentés. C’est-à-dire qu’ils ont le même élément parent dans le projet. Cette limitation est due à la façon dont le glisser-déposer est implémenté dans l’interface utilisateur sur laquelle novelWriter est construit.</p>
+<p>Les documents et leurs dossiers peuvent être réorganisés librement à l’intérieur de leur dossier racine. Si vous déplacez un <strong>Document roman</strong> hors d’un dossier <strong>roman</strong>, il sera converti en <strong>Note de projet</strong>. Les notes peuvent être déplacées librement entre tous les dossiers racine, mais gardez à l’esprit que si vous déplacez une note dans un dossier racine de type <strong>roman</strong>, son paramètre « Importance “ sera remplacé par un paramètre ” Statut ». Voir <a class="reference internal" href="#a-ui-tree-status"><span class="std std-ref">Importance et statut du document</span></a>. L’ancienne valeur ne sera pas écrasée, et devrait être restaurée si vous la déplacez à nouveau à un moment donné.</p>
+<p>Les dossiers racines de l’arborescence du projet ne peuvent pas être glissés et déposés. Si vous souhaitez les réorganiser, vous pouvez les déplacer vers le haut ou vers le bas à partir des boutons fléchés en haut de l’arborescence du projet, ou en appuyant sur <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>+<kbd class="kbd docutils literal notranslate">Haut</kbd></kbd> ou <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>+<kbd class="kbd docutils literal notranslate">Bas</kbd></kbd> lorsqu’ils sont sélectionnés.</p>
+</section>
+</section>
+<section id="the-novel-tree-view">
+<span id="a-ui-tree-novel"></span><h2>L’arborescence du roman<a class="headerlink" href="#the-novel-tree-view" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-default" id="id4">
+<img alt="_images/fig_novel_tree_view.png" src="_images/fig_novel_tree_view.png" />
+<figcaption>
+<p><span class="caption-text">Capture d’écran de l’arborescence d’un roman.</span><a class="headerlink" href="#id4" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<p>Une autre façon de visualiser la structure du projet est la vue roman. Vous pouvez passer à cette vue en sélectionnant le bouton <span class="guilabel">Vue Roman</span> dans la barre latérale. Cette vue est une version simplifiée de la vue <strong>Vue d’ensemble du roman</strong>. Elle est pratique lorsque vous souhaitez parcourir la structure de l’histoire elle-même plutôt que les fichiers du document.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Vous ne pouvez pas réorganiser les entrées dans la vue roman, ni ajouter de nouveaux documents, car cela impliquerait de restructurer le contenu des fichiers de documents eux-mêmes. Toute modification de ce type doit être effectuée dans l’arborescence du projet. Cependant, vous pouvez ajouter de nouveaux titres aux documents existants ou modifier les références, qui seront mises à jour dans cette vue lors de l’enregistrement du document.</p>
+</div>
+</section>
+<section id="the-novel-outline-view">
+<span id="a-ui-outline"></span><h2>Vue d’ensemble du roman<a class="headerlink" href="#the-novel-outline-view" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-default" id="id5">
+<img alt="_images/fig_outline_view.png" src="_images/fig_outline_view.png" />
+<figcaption>
+<p><span class="caption-text">Capture d’écran de l’affichage du plan du roman.</span><a class="headerlink" href="#id5" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<p>La <strong>vue du plan du roman</strong> du projet est disponible comme une autre option de vue dans la barre latérale. L’aperçu fournit une vue d’ensemble de la structure du roman, en affichant une hiérarchie arborescente des éléments du roman, c’est-à-dire les titres de niveau 1 à 4 représentant les partitions, les chapitres, les scènes et les sections.</p>
+<p>Le document contenant le titre peut également être affiché dans une colonne séparée, ainsi que le numéro de ligne où le titre est défini. Un double-clic sur une entrée ouvre le document correspondant dans l’éditeur et permet de passer en mode <strong>Arborescence du projet</strong>.</p>
+<p>Vous pouvez sélectionner le dossier du roman à afficher dans le menu déroulant. Vous pouvez également choisir d’afficher une combinaison de tous les dossiers de romans.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Comme la structure interne du roman ne dépend pas directement de la structure des dossiers et des documents de l’arborescence du projet, cette vue ne sera pas nécessairement la même, selon la façon dont vous choisissez d’organiser vos documents. Voir la page <a class="reference internal" href="project_structure.html#a-struct"><span class="std std-ref">Structure du roman</span></a> pour plus de détails.</p>
+</div>
+<p>Diverses métadonnées et informations extraites de <a class="reference internal" href="int_glossary.html#term-Tag"><span class="xref std std-term">tags</span></a> peuvent être affichées dans des colonnes du plan. Un ensemble de ces colonnes est visible par défaut, mais vous pouvez activer ou désactiver d’autres colonnes à partir du bouton de menu de la barre d’outils. L’ordre des colonnes peut également être réorganisé en les faisant glisser vers une autre position. Les paramètres des colonnes sont sauvegardés entre les sessions, par projet.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>La colonne <strong>Titre</strong> ne peut pas être désactivée ou déplacée.</p>
+</div>
+<p>Les informations affichées dans l’aperçu sont basées sur l’index du projet <a class="reference internal" href="int_glossary.html#term-Project-Index"><span class="xref std std-term">index du projet</span></a>. Bien que novelWriter fasse de son mieux pour maintenir l’index à jour lorsque le contenu change, vous pouvez toujours le reconstruire manuellement en appuyant sur <kbd class="kbd docutils literal notranslate">F9</kbd> si quelque chose ne va pas.</p>
+<p>La vue d’ensemble elle-même peut être régénérée en appuyant sur le bouton d’actualisation. Par défaut, le contenu est actualisé chaque fois que vous basculez dans cette vue.</p>
+<p>La colonne <strong>Synopsis</strong> de la vue d’ensemble tire ses informations d’un commentaire spécialement formaté. Voir <a class="reference internal" href="usage_format.html#a-fmt-comm"><span class="std std-ref">Commentaires et synopsis</span></a>.</p>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="usage_breakdown.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">Comment ça marche</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="usage_writing.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">L’éditeur et le visualisateur</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-project-tree">L’arborescence du projet</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#splitting-and-merging-documents">Séparation et fusion de documents</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#splitting-documents">Découper des documents</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#merging-documents">Fusionner des documents</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#document-importance-and-status">Importance et statut du document</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#project-tree-drag-drop">Glisser-déposer de l’arborescence du projet</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-novel-tree-view">L’arborescence du roman</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-novel-outline-view">Vue d’ensemble du roman</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par Veronica Berglyd Olsen
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
