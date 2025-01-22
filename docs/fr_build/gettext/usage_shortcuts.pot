@@ -1,0 +1,937 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025
+# This file is distributed under the same license as the novelWriter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: novelWriter 2.6rc1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-22 11:34+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/usage_shortcuts.rst:5
+msgid "Keyboard Shortcuts"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:7
+msgid "Most features in novelWriter are available as keyboard shortcuts. This is a reference list of those shortcuts. Most of them are also listed in the application's user interface."
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:11
+msgid "On MacOS, replace :kbd:`Ctrl` with :kbd:`Cmd`."
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:17
+msgid "Main Window Shortcuts"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Shortcut"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`F1`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Open the online user manual"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`F5`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Open the **Build Manuscript** tool"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`F6`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Open the **Writing Statistics** tool"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`F8`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Toggle **Focus Mode**"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`F9`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Re-build the project's index"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`F11`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Toggle full screen mode"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+,`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Open the **Preferences** dialog"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+E`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Switch or toggle focus for the editor or viewer"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+T`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Switch or toggle focus for the project tree or novel view"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+Q`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Exit novelWriter"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+Shift+,`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Open the **Project Settings** dialog"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+Shift+O`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Open the Welcome dialog to open or create a project"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+Shift+S`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Save the current project"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+Shift+T`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Switch focus to the outline view"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+Shift+W`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Close the current project"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Shift+F1`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Open the local user manual (PDF) if it is available"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Shift+F6`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Open the **Project Details** dialog"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:44
+msgid "Project Tree Shortcuts"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`F2`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Edit the label of the selected item"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Return`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Open the selected document in the editor"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Alt+Up`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Jump or go to the previous item at same level in the tree"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Alt+Down`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Jump or go to the next item at same level in the tree"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Alt+Left`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Jump to the parent item in the tree"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Alt+Right`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Jump to the first child item in the project tree"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+.`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Open the context menu on the selected item"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+L`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Open the **Quick Links** menu"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+N`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Open the **Create New Item** menu"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+O`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+R`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Open the selected document in the viewer"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+Up`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Move selected item one step up in the tree"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+Down`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Move selected item one step down in the tree"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+Shift+Del`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Move the selected item to Trash"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:68
+msgid "Document Editor Shortcuts"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:72
+msgid "Text Search Shortcuts"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`F3`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Find the next occurrence of the search word"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+F`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Open search and look for the selected word"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+G`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+H`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Open replace and look for the selected word (Mac :kbd:`Cmd+=`)"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+Shift+1`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Replace selected occurrence, and move to the next"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+Shift+G`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Find the previous occurrence of the search word"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+Shift+F`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Open project search and look for the selected word"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Shift+F3`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:88
+msgid "Text Formatting Shortcuts"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+'`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Wrap selected text, or word under cursor, in single quotes"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+\"`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Wrap selected text, or word under cursor, in double quotes"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+/`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Toggle comment format for block or selected text"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+0`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Remove format for block or selected text"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+1`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Change block format to heading level 1"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+2`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Change block format to heading level 2"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+3`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Change block format to heading level 3"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+4`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Change block format to heading level 4"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+5`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Change block alignment to left-aligned"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+6`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Change block alignment to centred"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+7`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Change block alignment to right-aligned"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+8`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Add a left margin to the block"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+9`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Add a right margin to the block"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+B`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Format selected text, or word under cursor, with bold"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+D`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Format selected text, or word under cursor, with strike through"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+I`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Format selected text, or word under cursor, with italic"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+Shift+/`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+Shift+D`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Toggle ignored text format for block or selected text"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:114
+msgid "Other Editor Shortcuts"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`F7`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Re-run the spell checker on the document"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Open the context menu at the current cursor location"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+A`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Select all text in the document"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+C`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Copy selected text to clipboard"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Activate the insert commands (see list in :ref:`a_kb_ins`)"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Open or reload the current document in the viewer"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+S`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Save the current document"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+V`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Paste text from clipboard to cursor position"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+W`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Close the current document"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+X`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Cut selected text to clipboard"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+Y`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Redo latest undo"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+Z`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Undo latest changes"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+Backspace`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Delete the word before the cursor"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+Del`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Delete the word after the cursor"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+F7`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Toggle spell checking"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+Return`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Open the tag or reference under the cursor in the viewer"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+Shift+A`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Select all text in the current paragraph"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:141
+msgid "Insert Shortcuts"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:143
+msgid "A set of insert features are also available through shortcuts, but they require a double combination of key sequences. The insert feature is activated with :kbd:`Ctrl+K`, followed by a key or key combination for the inserted content."
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`Space`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a non-breaking space"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`_`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a long dash (em dash)"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`.`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert an ellipsis"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`'`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a modifier apostrophe"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`*`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a list bullet"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`%`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a per mille symbol"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`~`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a figure dash (same width as a number)"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`−`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a short dash (en dash)"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`1`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a left single quote"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`2`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a right single quote"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`3`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a left double quote"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`4`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a right double quote"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`C`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a ``@char`` keyword"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`E`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert an ``@entity`` keyword"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`F`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a ``@focus`` keyword"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`G`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a ``@tag`` keyword"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`H`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a short description comment"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`L`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a ``@location`` keyword"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`M`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a ``@mention`` keyword"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`O`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert an ``@object`` keyword"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`P`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a ``@plot`` keyword"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`S`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a synopsis comment"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`T`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a ``@time`` keyword"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`V`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a ``@pov`` keyword"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`X`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a ``@custom`` keyword"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`Ctrl+Space`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a thin non-breaking space"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`Ctrl+_`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a horizontal bar (quotation dash)"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`Ctrl+'`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a prime"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`Ctrl+\"`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a double prime"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`Ctrl+*`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a flower mark (alternative bullet)"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`Ctrl+−`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a hyphen bullet (alternative bullet)"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`Ctrl+D`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a division sign"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`Ctrl+O`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a degree symbol"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`Ctrl+X`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a times sign"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+K`, :kbd:`Shift+Space`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Insert a thin space"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:190
+msgid "Document Viewer Shortcuts"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Move backward in the view history"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Move forward in the view history"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid ":kbd:`Ctrl+Shift+R`"
+msgstr ""
+
+#: ../../source/usage_shortcuts.rst:1
+msgid "Close the document viewer"
+msgstr ""

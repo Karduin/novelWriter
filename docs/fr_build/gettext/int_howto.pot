@@ -1,0 +1,142 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025
+# This file is distributed under the same license as the novelWriter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: novelWriter 2.6rc1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-22 11:34+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/int_howto.rst:5
+msgid "Tips & Tricks"
+msgstr ""
+
+#: ../../source/int_howto.rst:9
+msgid "This is a list of hopefully helpful little tips on how to get the most out of novelWriter."
+msgstr ""
+
+#: ../../source/int_howto.rst:12
+msgid "This section will be expanded over time. If you would like to have something added, feel free to contribute, or start a discussion on the project's `Discussions Page`_."
+msgstr ""
+
+#: ../../source/int_howto.rst:17
+msgid "Managing the Project"
+msgstr ""
+
+#: ../../source/int_howto.rst:0
+msgid "Create a Project from a Template"
+msgstr ""
+
+#: ../../source/int_howto.rst:22
+msgid "On the Welcome dialog's **Create New Project** form, you can select to \"Prefill Project\" from the content of a different project. This feature is most useful if you copy a project you have dedicated to be a template project. If you have a structure and settings you want to use for every new project, this is the best solution."
+msgstr ""
+
+#: ../../source/int_howto.rst:0
+msgid "Merge Multiple Documents Into One"
+msgstr ""
+
+#: ../../source/int_howto.rst:30
+msgid "If you need to merge a selection of documents in your project into a single document, you can achieve this by first making a new folder for just that purpose, and drag all the documents you want merged into this folder. Then you can right click the folder, select :guilabel:`Transform` and :guilabel:`Merge Documents in Folder`."
+msgstr ""
+
+#: ../../source/int_howto.rst:35
+msgid "In the dialog that pops up, the documents will be in the same order as in the folder, but you can rearrange them here of you wish. See :ref:`a_ui_tree_split_merge` for more details."
+msgstr ""
+
+#: ../../source/int_howto.rst:40
+msgid "Layout Tricks"
+msgstr ""
+
+#: ../../source/int_howto.rst:0
+msgid "Align Paragraphs with Line Breaks"
+msgstr ""
+
+#: ../../source/int_howto.rst:45
+msgid "If you have line breaks in you paragraphs, and also want to apply additional text alignment or indentation, you must apply the alignment tags to the first line."
+msgstr ""
+
+#: ../../source/int_howto.rst:48
+msgid "For example, this will centre the two lines."
+msgstr ""
+
+#: ../../source/int_howto.rst:57
+#: ../../source/int_howto.rst:79
+msgid "See :ref:`a_fmt_align` for more details."
+msgstr ""
+
+#: ../../source/int_howto.rst:0
+msgid "Create a Simple Table"
+msgstr ""
+
+#: ../../source/int_howto.rst:62
+msgid "The formatting tools available in novelWriter don't allow for complex structures like tables. However, the editor does render tabs in a similar way that regular word processors do. You can set the width of a tab in **Preferences**."
+msgstr ""
+
+#: ../../source/int_howto.rst:66
+msgid "The tab key should have the same distance in the editor as in the viewer, so you can align text in columns using the tab key, and it should look the same when viewed next to the editor."
+msgstr ""
+
+#: ../../source/int_howto.rst:69
+msgid "This is most suitable for your notes, as the result in exported documents cannot be guaranteed to match. Especially if you don't use the same font in your manuscript as in the editor."
+msgstr ""
+
+#: ../../source/int_howto.rst:0
+msgid "Turn Off First Line Indent for a Paragraph"
+msgstr ""
+
+#: ../../source/int_howto.rst:75
+msgid "If you have first line indent enabled, but have a specific paragraph that you don't want indented, you can disable the indentation by explicitly add text alignment. Aligned paragraphs are not indented. For instance by adding ``<<`` to the end to left-align it,"
+msgstr ""
+
+#: ../../source/int_howto.rst:83
+msgid "Organising Your Text"
+msgstr ""
+
+#: ../../source/int_howto.rst:0
+msgid "Add Introductory Text to Chapters"
+msgstr ""
+
+#: ../../source/int_howto.rst:88
+msgid "Sometimes chapters have a short preface, like a brief piece of text or a quote to set the stage before the first scene begins."
+msgstr ""
+
+#: ../../source/int_howto.rst:91
+msgid "If you add separate files for chapters and scenes, the chapter file is the perfect place to add such text. Separating chapter and scene files also allows you to make scene files child documents of the chapter."
+msgstr ""
+
+#: ../../source/int_howto.rst:0
+msgid "Distinguishing Soft and Hard Scene Breaks"
+msgstr ""
+
+#: ../../source/int_howto.rst:98
+msgid "Depending on your writing style, you may need to separate between soft and hard scene breaks within chapters. Like for instance if you switch point-of-view character often."
+msgstr ""
+
+#: ../../source/int_howto.rst:101
+msgid "In such cases you may want to use different scene headings for hard and soft scene breaks. The **Build Manuscript** tool will let you define a different format for scenes using the ``###`` and ``###!`` heading codes when you generate your manuscript. You can for instance add the common \"``* * *``\" for hard breaks and select to soft scene breaks, which will just insert an empty paragraph in their place. See :ref:`a_manuscript_settings` for more details."
+msgstr ""
+
+#: ../../source/int_howto.rst:111
+msgid "Other Tools"
+msgstr ""
+
+#: ../../source/int_howto.rst:0
+msgid "Convert Project to/from yWriter Format"
+msgstr ""
+
+#: ../../source/int_howto.rst:116
+msgid "There is a tool available that lets you convert a `yWriter <http://spacejock.com/yWriter7.html>`_ project to a novelWriter project, and vice versa."
+msgstr ""
+
+#: ../../source/int_howto.rst:119
+msgid "The tool is available at `peter88213.github.io/yw2nw <https://peter88213.github.io/yw2nw/>`__"
+msgstr ""

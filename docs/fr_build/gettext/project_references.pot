@@ -1,0 +1,249 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025
+# This file is distributed under the same license as the novelWriter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: novelWriter 2.6rc1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-22 11:34+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/project_references.rst:5
+msgid "Tags and References"
+msgstr ""
+
+#: ../../source/project_references.rst:7
+msgid "In novelWriter there are no forms or tables to fill in to define characters, locations or other elements of your story. Instead, you create :term:`project notes` which you can mark as representing these story elements by creating a :term:`tag`. Whenever you want to link a piece of your story to a note defining a story element, like a character, you create a :term:`reference` back to that tag. You can also cross-link your project notes in the same way."
+msgstr ""
+
+#: ../../source/project_references.rst:13
+msgid "This is perhaps one of the features that makes novelWriter different from other, similar applications. It is therefore not always obvious to new users how this is supposed to work, so this chapter hopes to explain in more detail how to use this tags and references system."
+msgstr ""
+
+#: ../../source/project_references.rst:18
+msgid "If you find the Tags and Reference system difficult to follow just from reading this chapter, you can create a new project in the **Welcome** dialog's New project form and select  \"Create an example project\" from the \"Pre-fill project\" option. The example project contains several examples of tags and references."
+msgstr ""
+
+#: ../../source/project_references.rst:27
+msgid "Metadata in novelWriter"
+msgstr ""
+
+#: ../../source/project_references.rst:29
+msgid "The structure of your novelWriter project is inferred from the :term:`headings` within the documents, not the documents themselves. See :ref:`a_struct_heads` for more details. Therefore, metadata is also associated with headings, and not the documents directly."
+msgstr ""
+
+#: ../../source/project_references.rst:33
+msgid "If you split your project into separate documents for each scene, this distinction may not matter. However, there are several benefits to using documents at a larger structural scale when first starting your project. For instance, it may make more sense to define all your scenes, and even chapters, in a single document at first, or perhaps a document per act. You can later split these documents up using the document split feature. See :ref:`a_ui_tree_split_merge` for more details."
+msgstr ""
+
+#: ../../source/project_references.rst:39
+msgid "You can do the same with your notes. You can treat each heading as an independent element of your notes that can be referenced somewhere else. That way you can collect all your minor or background characters in a single note file, and still be able to reference them individually by separating them with headings and assigning each a tag."
+msgstr ""
+
+#: ../../source/project_references.rst:48
+msgid "How to Use Tags"
+msgstr ""
+
+#: ../../source/project_references.rst:50
+msgid "A \"tag\" in novelWriter is a word or phrase that you define as belonging to a heading. Tags are set by using the ``@tag`` :term:`keyword`."
+msgstr ""
+
+#: ../../source/project_references.rst:53
+msgid "The basic format of a tag is ``@tag: tagName``."
+msgstr ""
+
+#: ../../source/project_references.rst:55
+msgid "An alternative format of a tag is ``@tag: tagName | displayName``."
+msgstr ""
+
+#: ../../source/project_references.rst:57
+msgid "``tagName`` (Required)"
+msgstr ""
+
+#: ../../source/project_references.rst:58
+msgid "This is a unique identifier of your choosing. It is the value you use later for making references back to this document, or section of the document."
+msgstr ""
+
+#: ../../source/project_references.rst:61
+msgid "``displayName`` (Optional)"
+msgstr ""
+
+#: ../../source/project_references.rst:62
+msgid "This is an optional display name used for the tag. When you build your manuscript, you can for instance insert the point of view character name directly into chapter headings. By default, the ``tagName`` value is used in such headings, but if you use a shortened format internally in your project, you can use this to specify a more suitable format for your manuscript headings."
+msgstr ""
+
+#: ../../source/project_references.rst:67
+msgid "You can only set **one** tag per heading, and the tag has to be unique across **all** documents in the project."
+msgstr ""
+
+#: ../../source/project_references.rst:70
+msgid "After a tag has been defined, it can be referenced in novel documents, or cross-referenced in other notes. Tags will also show up in the **Outline View** and in the references panel under the document viewer when a document is open in the viewer."
+msgstr ""
+
+#: ../../source/project_references.rst:74
+msgid "The syntax highlighter will indicate to you that the keyword is correctly used and that the tag is allowed, that is, the tag is unique. Duplicate tags should be detected as long as the index is up to date. An invalid tag should have a green wiggly line under it, and will not receive the colour that valid tags do."
+msgstr ""
+
+#: ../../source/project_references.rst:79
+msgid "The tag is the only part of these notes that novelWriter uses. The rest of the document content is there for you to use in whatever way you wish. Of course, the content of the documents can be added to the manuscript, or an outline document. If you want to compile a single document of all your notes, you can do this from the **Manuscript Build** tool."
+msgstr ""
+
+#: ../../source/project_references.rst:84
+msgid "Tags are no longer case sensitive. The tags are by default displayed with the capitalisation you use when defining the tag, but you don't have to use the same capitalisation when referencing it later."
+msgstr ""
+
+#: ../../source/project_references.rst:89
+msgid "Tags can have an optional display name for manuscript builds."
+msgstr ""
+
+#: ../../source/project_references.rst:92
+msgid "Example of a heading with a tag for a character of the story:"
+msgstr ""
+
+#: ../../source/project_references.rst:102
+msgid "When this is done in a document in a :term:`Root Folder` of type \"Characters\", the tag is automatically treated as an available character in your project with the value \"Jane\", and you will be able to reference it in any of your other documents using the reference keywords for characters. It will also show up in the Character tab in the Reference panel below the document viewer, and in the reference auto-completer menu in the editor when you fill in references. See :ref:`a_ui_view` and :ref:`a_references_completer`."
+msgstr ""
+
+#: ../../source/project_references.rst:109
+msgid "It is the root folder type that defines what category of story elements the tag is indexed under. See the :ref:`a_proj_roots` section for an overview of available root folder types. They are also covered in the next section."
+msgstr ""
+
+#: ../../source/project_references.rst:117
+msgid "How to Use References"
+msgstr ""
+
+#: ../../source/project_references.rst:119
+msgid "Each heading of any level in your project can contain references to tags set in project notes. The references are gathered by the indexer and used to generate the **Outline View**, among other things."
+msgstr ""
+
+#: ../../source/project_references.rst:123
+msgid "References are set as a :term:`keyword` and a list of corresponding tags. The valid keywords are listed below. The format of a reference line is ``@keyword: value1, [value2] ... [valueN]``. All reference keywords allow multiple values."
+msgstr ""
+
+#: ../../source/project_references.rst:127
+msgid "``@pov``"
+msgstr ""
+
+#: ../../source/project_references.rst:128
+msgid "The point-of-view character for the current section. The target must be a note tag in a **Character** type root folder."
+msgstr ""
+
+#: ../../source/project_references.rst:131
+msgid "``@focus``"
+msgstr ""
+
+#: ../../source/project_references.rst:132
+msgid "The character that has the focus for the current section. This can be used in cases where the focus is not a point-of-view character. The target must be a note tag in a **Character** type root folder."
+msgstr ""
+
+#: ../../source/project_references.rst:136
+msgid "``@char``"
+msgstr ""
+
+#: ../../source/project_references.rst:137
+msgid "Other characters in the current section. The target must be a note tag in a **Character** type root folder. This should not include the point-of-view or focus character if those references are used."
+msgstr ""
+
+#: ../../source/project_references.rst:141
+msgid "``@plot``"
+msgstr ""
+
+#: ../../source/project_references.rst:142
+msgid "The plot or subplot advanced in the current section. The target must be a note tag in a **Plot** type root folder."
+msgstr ""
+
+#: ../../source/project_references.rst:145
+msgid "``@time``"
+msgstr ""
+
+#: ../../source/project_references.rst:146
+msgid "The timelines touched by the current section. The target must be a note tag in a **Timeline** type root folder."
+msgstr ""
+
+#: ../../source/project_references.rst:149
+msgid "``@location``"
+msgstr ""
+
+#: ../../source/project_references.rst:150
+msgid "The location the current section takes place in. The target must be a note tag in a **Locations** type root folder."
+msgstr ""
+
+#: ../../source/project_references.rst:153
+msgid "``@object``"
+msgstr ""
+
+#: ../../source/project_references.rst:154
+msgid "Objects present in the current section. The target must be a note tag in a **Object** type root folder."
+msgstr ""
+
+#: ../../source/project_references.rst:157
+msgid "``@entity``"
+msgstr ""
+
+#: ../../source/project_references.rst:158
+msgid "Entities present in the current section. The target must be a note tag in an **Entities** type root folder."
+msgstr ""
+
+#: ../../source/project_references.rst:161
+msgid "``@custom``"
+msgstr ""
+
+#: ../../source/project_references.rst:162
+msgid "Custom references in the current section. The target must be a note tag in a **Custom** type root folder. The custom folder are for any other category of notes you may want to use."
+msgstr ""
+
+#: ../../source/project_references.rst:165
+msgid "``@mention``"
+msgstr ""
+
+#: ../../source/project_references.rst:166
+msgid "Anything mentioned, but not present in the current section. It is intended for those cases where you reveal details about a character or place in a scene without it being otherwise a part of it. This can be useful when checking for consistency later. Any tag in any root note folder can be listed under mentions."
+msgstr ""
+
+#: ../../source/project_references.rst:171
+msgid "The syntax highlighter will alert the user that the tags and references are used correctly, and that the tags referenced exist."
+msgstr ""
+
+#: ../../source/project_references.rst:175
+msgid "The highlighter may be mistaken if the index of defined tags is out of date. If so, press :kbd:`F9` to regenerate it, or select **Rebuild Index** from the **Tools** menu. In general, the index for a document is regenerated when it is saved, so this shouldn't normally be necessary."
+msgstr ""
+
+#: ../../source/project_references.rst:180
+msgid "If you add a reference in the editor to a tag that doesn't yet exist, you can right-click it and select **Create Note for Tag**. This will generate a new project note automatically with the new tag defined. In order for this to be possible, a root folder for that category of references must already exist."
+msgstr ""
+
+#: ../../source/project_references.rst:185
+msgid "One note can also reference another note in the same way novel documents do. When the note is opened in the document viewer, the references become clickable links, making it easier to follow connections in the plot. You can follow links in the document editor by clicking them with the mouse while holding down the :kbd:`Ctrl` key. Clicked links are always opened in the view panel."
+msgstr ""
+
+#: ../../source/project_references.rst:190
+msgid "Project notes don't show up in the **Outline View**, so referencing between notes is only meaningful if you want to be able to click-navigate between them, or of course if you just want to highlight that two notes are related."
+msgstr ""
+
+#: ../../source/project_references.rst:195
+msgid "If you cross-reference between notes and export your project as an HTML document using the **Manuscript Build** tool, the cross-references become clickable links in the exported HTML document as well."
+msgstr ""
+
+#: ../../source/project_references.rst:199
+msgid "Example of a novel document with references to characters and plots:"
+msgstr ""
+
+#: ../../source/project_references.rst:218
+msgid "The References Auto-Completer"
+msgstr ""
+
+#: ../../source/project_references.rst:220
+msgid "An auto-completer context menu will show up automatically in the document editor when you type the character ``@`` on a new line. It will first suggest tag or reference keywords for you to add, and after the ``:`` has been added, suggest references from the list of tags you have already defined."
+msgstr ""
+
+#: ../../source/project_references.rst:224
+msgid "You can use the auto-completer to add multiple references with a ``,`` between them, and even type new ones. New references can be created by right-clicking on them and selecting **Create Note for Tag** from the menu."
+msgstr ""

@@ -1,0 +1,214 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025
+# This file is distributed under the same license as the novelWriter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: novelWriter 2.6rc1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-22 11:34+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/more_counting.rst:5
+msgid "Word and Text Counts"
+msgstr ""
+
+#: ../../source/more_counting.rst:7
+msgid "This is an overview of how words and other counts of your text are performed. The counting rules should be relatively standard, and are compared to Libre Office Writer rules."
+msgstr ""
+
+#: ../../source/more_counting.rst:10
+msgid "The counts provided in the app on the raw text is meant to be approximate. For more accurate counts, you need to build your manuscript in the **Manuscript Tool** and check the counts on the generated preview."
+msgstr ""
+
+#: ../../source/more_counting.rst:16
+msgid "Text Word Counts and Stats"
+msgstr ""
+
+#: ../../source/more_counting.rst:18
+msgid "These are the rules for the main counts available for for each document in a project."
+msgstr ""
+
+#: ../../source/more_counting.rst:20
+msgid "For all counts, the following rules apply."
+msgstr ""
+
+#: ../../source/more_counting.rst:22
+#: ../../source/more_counting.rst:56
+msgid "Short (–) and long (—) dashes are considered word separators."
+msgstr ""
+
+#: ../../source/more_counting.rst:23
+msgid "Any line starting with ``%`` or ``@`` is ignored."
+msgstr ""
+
+#: ../../source/more_counting.rst:24
+msgid "Trailing white spaces are ignored, including line breaks."
+msgstr ""
+
+#: ../../source/more_counting.rst:25
+msgid "Leading ``>`` and trailing ``<`` are ignored with any spaces next to them."
+msgstr ""
+
+#: ../../source/more_counting.rst:26
+msgid "Valid shortcodes and other commands wrapped in brackets ``[]`` are ignored."
+msgstr ""
+
+#: ../../source/more_counting.rst:27
+msgid "In-line Markdown syntax in text paragraphs is treated as part of the text."
+msgstr ""
+
+#: ../../source/more_counting.rst:29
+msgid "After the above preparation of the text, the following counts are available."
+msgstr ""
+
+#: ../../source/more_counting.rst:31
+msgid "**Character Count**"
+msgstr ""
+
+#: ../../source/more_counting.rst:32
+msgid "The character count is the sum of characters per line, including leading and in-text white space characters, but excluding trailing white space characters. Shortcodes in the text are not included, but Markdown codes are. Only headings and text are counted."
+msgstr ""
+
+#: ../../source/more_counting.rst:36
+msgid "**Word Count**"
+msgstr ""
+
+#: ../../source/more_counting.rst:37
+msgid "The words count is the sum of blocks of continuous character per line separated by any number of white space characters or dashes. Only headings and text are counted."
+msgstr ""
+
+#: ../../source/more_counting.rst:40
+msgid "**Paragraph Count**"
+msgstr ""
+
+#: ../../source/more_counting.rst:41
+msgid "The paragraph count is the number of text blocks separated by one or more empty line. A line consisting only of white spaces is considered empty."
+msgstr ""
+
+#: ../../source/more_counting.rst:46
+msgid "Manuscript Counts"
+msgstr ""
+
+#: ../../source/more_counting.rst:48
+msgid "These are the rules for the counts available for a manuscript in the **Manuscript Tool**. The rules have been tuned to agree with LibreOffice Writer, but will vary slightly depending on the content of your text. LibreOffice Writer also counts the text in the page header, which the **Manuscript Tool** does not."
+msgstr ""
+
+#: ../../source/more_counting.rst:53
+msgid "The content of each line is counted after all formatting has been processed, so the result will be more accurate than the counts for text documents elsewhere in the app. The following rules apply:"
+msgstr ""
+
+#: ../../source/more_counting.rst:57
+msgid "Leading and trailing white spaces are generally included, but paragraph breaks are not."
+msgstr ""
+
+#: ../../source/more_counting.rst:58
+msgid "Hard line breaks within paragraph are considered white space characters."
+msgstr ""
+
+#: ../../source/more_counting.rst:59
+msgid "All formatting codes are ignored, including shortcodes, commands and Markdown."
+msgstr ""
+
+#: ../../source/more_counting.rst:60
+msgid "Scene and section separators are counted."
+msgstr ""
+
+#: ../../source/more_counting.rst:61
+msgid "Comments and meta data lines are counted after they are formatted."
+msgstr ""
+
+#: ../../source/more_counting.rst:62
+msgid "Headers are counted after they are formatted with custom formats."
+msgstr ""
+
+#: ../../source/more_counting.rst:64
+msgid "The following counts are available:"
+msgstr ""
+
+#: ../../source/more_counting.rst:66
+msgid "**Headings**"
+msgstr ""
+
+#: ../../source/more_counting.rst:67
+msgid "The number of headings in the manuscript."
+msgstr ""
+
+#: ../../source/more_counting.rst:69
+msgid "**Paragraphs**"
+msgstr ""
+
+#: ../../source/more_counting.rst:70
+msgid "The number of body text paragraphs in the manuscript."
+msgstr ""
+
+#: ../../source/more_counting.rst:72
+msgid "**Words**"
+msgstr ""
+
+#: ../../source/more_counting.rst:73
+msgid "The number of words in the manuscript, including any comments and meta data text."
+msgstr ""
+
+#: ../../source/more_counting.rst:75
+msgid "**Words in Text**"
+msgstr ""
+
+#: ../../source/more_counting.rst:76
+msgid "The number of words in body text paragraphs, excluding all other text."
+msgstr ""
+
+#: ../../source/more_counting.rst:78
+msgid "**Words in Headings**"
+msgstr ""
+
+#: ../../source/more_counting.rst:79
+msgid "The number of words in headings, including inserted formatting like chapter numbers, etc."
+msgstr ""
+
+#: ../../source/more_counting.rst:81
+msgid "**Characters**"
+msgstr ""
+
+#: ../../source/more_counting.rst:82
+msgid "The number of characters in all lines, including any comments and meta data text. Paragraph breaks are not counted, but in-paragraph hard line breaks are."
+msgstr ""
+
+#: ../../source/more_counting.rst:85
+msgid "**Character in Text**"
+msgstr ""
+
+#: ../../source/more_counting.rst:86
+msgid "The number of characters in body text paragraphs. Paragraph breaks are not counted, but in-paragraph hard line breaks are."
+msgstr ""
+
+#: ../../source/more_counting.rst:89
+msgid "**Characters in Headings**"
+msgstr ""
+
+#: ../../source/more_counting.rst:90
+msgid "The number of characters in headings."
+msgstr ""
+
+#: ../../source/more_counting.rst:92
+msgid "**Character in Text, No Spaces**"
+msgstr ""
+
+#: ../../source/more_counting.rst:93
+msgid "The number of characters in body text paragraphs considered part of a word or punctuation. That is, white space characters are not counted."
+msgstr ""
+
+#: ../../source/more_counting.rst:96
+msgid "**Character in Headings, No Spaces**"
+msgstr ""
+
+#: ../../source/more_counting.rst:97
+msgid "The number of characters in headings considered part of a word or punctuation. That is, white space characters are not counted."
+msgstr ""

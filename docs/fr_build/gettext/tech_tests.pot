@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025
+# This file is distributed under the same license as the novelWriter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: novelWriter 2.6rc1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-22 11:34+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/tech_tests.rst:5
+msgid "Running Tests"
+msgstr ""
+
+#: ../../source/tech_tests.rst:7
+msgid "The novelWriter source code is well covered by tests. The test framework used for the development is ``pytest`` with the use of an extension for Qt."
+msgstr ""
+
+#: ../../source/tech_tests.rst:12
+msgid "Dependencies"
+msgstr ""
+
+#: ../../source/tech_tests.rst:14
+msgid "The dependencies for running the tests can be installed with:"
+msgstr ""
+
+#: ../../source/tech_tests.rst:20
+msgid "This will install a couple of extra packages for coverage and test management. The minimum requirement is ``pytest`` and ``pytest-qt``."
+msgstr ""
+
+#: ../../source/tech_tests.rst:25
+msgid "Simple Test Run"
+msgstr ""
+
+#: ../../source/tech_tests.rst:27
+msgid "To run the tests, you simply need to execute the following from the root of the source folder:"
+msgstr ""
+
+#: ../../source/tech_tests.rst:33
+msgid "Since several of the tests involve opening up the novelWriter GUI, you may want to disable the GUI for the duration of the test run. Moving your mouse while the tests are running may otherwise interfere with the execution of some tests."
+msgstr ""
+
+#: ../../source/tech_tests.rst:37
+msgid "You can disable the renderring of the GUI by setting the flag ``QT_QPA_PLATFORM=offscreen``:"
+msgstr ""
+
+#: ../../source/tech_tests.rst:45
+msgid "Advanced Options"
+msgstr ""
+
+#: ../../source/tech_tests.rst:47
+msgid "Adding the flag ``-v`` to the ``pytest`` command will increase verbosity of the test execution."
+msgstr ""
+
+#: ../../source/tech_tests.rst:49
+msgid "You can also add coverage report generation. For instance to HTML:"
+msgstr ""
+
+#: ../../source/tech_tests.rst:55
+msgid "Other useful report formats are ``xml``, and ``term`` for terminal output."
+msgstr ""
+
+#: ../../source/tech_tests.rst:57
+msgid "You can also run tests per subpackage of novelWriter with the ``-m`` command. The available subpackage groups are ``base``, ``core``, and ``gui``. Consider for instance:"
+msgstr ""
+
+#: ../../source/tech_tests.rst:64
+msgid "This will only run the tests of the \"core\" package, that is, all the classes that deal with the project data of a novelWriter project. The \"gui\" tests, likewise, will run the tests for the GUI components, and the \"base\" tests cover the bits in-between."
+msgstr ""
+
+#: ../../source/tech_tests.rst:68
+msgid "You can also filter the tests with the ``-k`` switch. The following will do the same as ``-m core``:"
+msgstr ""
+
+#: ../../source/tech_tests.rst:75
+msgid "All tests are named in such a way that you can filter them by adding more bits of the test names. They all start with the word \"test\". Then comes the group: \"Core\", \"Base\", \"Dlg\", \"Tool\", or \"Gui\". Finally comes the name of the class or module, which generally corresponds to a single source code file. For instance, running the following will run all tests for the document editor:"
+msgstr ""
+
+#: ../../source/tech_tests.rst:84
+msgid "To run a single test, simply add the full test name to the ``-k`` switch."
+msgstr ""
