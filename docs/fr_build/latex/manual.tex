@@ -67,7 +67,7 @@
 
 
 \title{User Guide}
-\date{dimanche, 26 janvier 2025 at 12:55}
+\date{dimanche, 26 janvier 2025 at 16:14}
 \release{2.6rc1}
 \author{Veronica Berglyd Olsen}
 \newcommand{\sphinxlogo}{\sphinxincludegraphics{novelwriter-pdf.png}\par}
@@ -3487,7 +3487,7 @@ Dans la figure, l’icône de la flèche verte et l’icône de l’épingle ble
 \caption{La page \sphinxstylestrong{En\sphinxhyphen{}têtes} de la boîte de dialogue \sphinxstylestrong{Paramètres de construction du manuscrit}.}\label{\detokenize{project_manuscript:id4}}\end{figure}
 
 \sphinxAtStartPar
-La page \sphinxstylestrong{En\sphinxhyphen{}têtes} de la boîte de dialogue \sphinxstylestrong{Paramètres de construction du manuscrit} vous permet de définir le format des titres de vos {\hyperref[\detokenize{int_glossary:term-Novel-Documents}]{\sphinxtermref{\DUrole{xref}{\DUrole{std}{\DUrole{std-term}{Documents du roman}}}}}}. Par défaut, le titre est simplement copié tel quel, comme l’indique le format \sphinxcode{\sphinxupquote{\{Titre\}}}. Vous pouvez modifier ce format pour, par exemple, ajouter des numéros de chapitre et de scène, ou insérer des noms de personnages, comme indiqué dans la figure ci\sphinxhyphen{}dessus.
+La page \sphinxstylestrong{En\sphinxhyphen{}têtes} de la boîte de dialogue \sphinxstylestrong{Paramètres de construction du manuscrit} vous permet de définir le format des titres de vos {\hyperref[\detokenize{int_glossary:term-Novel-Documents}]{\sphinxtermref{\DUrole{xref}{\DUrole{std}{\DUrole{std-term}{Documents du roman}}}}}}. Par défaut, le titre est simplement copié tel quel, comme l’indique le format \sphinxcode{\sphinxupquote{\{Title\}}}. Vous pouvez modifier ce format pour, par exemple, ajouter des numéros de chapitre et de scène, ou insérer des noms de personnages, comme indiqué dans la figure ci\sphinxhyphen{}dessus.
 
 \sphinxAtStartPar
 Cliquer sur le bouton d’édition à côté d’un format copiera la chaîne de formatage dans la boîte d’édition où elle peut être modifiée, et où un surligneur de syntaxe aidera à indiquer quelles parties sont automatiquement générées par l’outil de construction. Le bouton \sphinxguilabel{Insérer} est une liste déroulante de ces formats, et en sélectionner un l’insérera à la position du curseur.
@@ -3496,7 +3496,7 @@ Cliquer sur le bouton d’édition à côté d’un format copiera la chaîne de
 Tout texte que vous ajoutez et qui n’est pas surligné en couleur restera dans vos titres formatés. \sphinxcode{\sphinxupquote{\{Titre\}}} sera toujours remplacé par le texte de l’en\sphinxhyphen{}tête de vos documents.
 
 \sphinxAtStartPar
-Vous pouvez prévisualiser le résultat de ces chaînes de formatage en cliquant sur \sphinxguilabel{appliquer}, puis en cliquant sur \sphinxguilabel{aperçu} dans la fenêtre principale de l’outil \sphinxstylestrong{Compilation de manuscrit}.
+Vous pouvez prévisualiser le résultat de ces chaînes de formatage en cliquant sur \sphinxguilabel{appliquer}, puis en cliquant sur \sphinxguilabel{aperçu} dans la fenêtre principale de l’outil \sphinxstylestrong{Compiler le manuscrit}.
 
 
 \subsubsection{Séparateurs de scènes}
@@ -3733,7 +3733,7 @@ Les valeurs de la palette correspondent aux valeurs de l’enum Qt pour \sphinxc
 \subsection{Syntaxe des thèmes personnalisés}
 \label{\detokenize{more_customise:custom-syntax-theme}}
 \sphinxAtStartPar
-A syntax theme \sphinxcode{\sphinxupquote{.conf}} file consists of the following settings:
+Un fichier \sphinxcode{\sphinxupquote{.conf}} de thème est constitué des paramètres suivants :
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
 \PYG{k}{[Main]}
@@ -3768,26 +3768,22 @@ A syntax theme \sphinxcode{\sphinxupquote{.conf}} file consists of the following
 \end{sphinxVerbatim}
 
 \sphinxAtStartPar
-In the Main section, you must define at least the \sphinxcode{\sphinxupquote{name}} setting. The Syntax colour values are
-RGB(A) numbers of the format \sphinxcode{\sphinxupquote{r, g, b, a}} where each is an integer from \sphinxcode{\sphinxupquote{0}} to \sphinxcode{\sphinxupquote{255}}. The
-fourth value is the alpha channel, which can be omitted.
+Dans la section Main, vous devez définir au moins le paramètre \sphinxcode{\sphinxupquote{name}}. Les valeurs de couleur de la syntaxe sont des nombres RVB(A) du format \sphinxcode{\sphinxupquote{r, g, b, a}} où chacun est un entier de \sphinxcode{\sphinxupquote{0}} à \sphinxcode{\sphinxupquote{255}}. La quatrième valeur est le canal alpha, qui peut être omis.
 
 \sphinxAtStartPar
-Omitted syntax colours default to black, except \sphinxcode{\sphinxupquote{background}} which defaults to white, and
-\sphinxcode{\sphinxupquote{texthighlight}} which defaults to white with half transparency.
+Les couleurs omises dans la syntaxe prennent par défaut la couleur noire, à l’exception de \sphinxcode{\sphinxupquote{background}} qui prend par défaut la couleur blanche, et de \sphinxcode{\sphinxupquote{texthighlight}} qui prend par défaut la couleur blanche avec une demi\sphinxhyphen{}transparence.
 
 \sphinxAtStartPar
-\DUrole{versionmodified}{\DUrole{added}{Ajouté dans la version 2.2: }}The \sphinxcode{\sphinxupquote{shortcode}} syntax colour entry was added.
+\DUrole{versionmodified}{\DUrole{added}{Ajouté dans la version 2.2: }}Le paramètre de couleur \sphinxcode{\sphinxupquote{shortcode}} a été ajouté.
 
 \sphinxAtStartPar
-\DUrole{versionmodified}{\DUrole{added}{Ajouté dans la version 2.3: }}The \sphinxcode{\sphinxupquote{optional}} syntax colour entry was added.
+\DUrole{versionmodified}{\DUrole{added}{Ajouté dans la version 2.3: }}Le paramètre de couleur \sphinxcode{\sphinxupquote{optional}} a été ajouté.
 
 \sphinxAtStartPar
-\DUrole{versionmodified}{\DUrole{added}{Ajouté dans la version 2.4: }}The \sphinxcode{\sphinxupquote{texthighlight}} syntax colour entry was added.
+\DUrole{versionmodified}{\DUrole{added}{Ajouté dans la version 2.4: }}Le paramètre de couleur \sphinxcode{\sphinxupquote{texthighlight}} a été ajouté.
 
 \sphinxAtStartPar
-\DUrole{versionmodified}{\DUrole{added}{Ajouté dans la version 2.5: }}The \sphinxcode{\sphinxupquote{dialog}}, \sphinxcode{\sphinxupquote{altdialog}}, \sphinxcode{\sphinxupquote{note}} and \sphinxcode{\sphinxupquote{tag}} syntax colour entries were added.
-\sphinxcode{\sphinxupquote{straightquotes}}, \sphinxcode{\sphinxupquote{doublequotes}} and \sphinxcode{\sphinxupquote{singlequotes}} were removed.
+\DUrole{versionmodified}{\DUrole{added}{Ajouté dans la version 2.5: }}Les paramètres de couleur  \sphinxcode{\sphinxupquote{dialog}}, \sphinxcode{\sphinxupquote{altdialog}}, \sphinxcode{\sphinxupquote{note}} et \sphinxcode{\sphinxupquote{tag}} ont été ajoutés. Les paramètres \sphinxcode{\sphinxupquote{guillemets droits}}, \sphinxcode{\sphinxupquote{guillemets doubles}} et \sphinxcode{\sphinxupquote{guillemets simples}} ont été supprimés.
 
 \sphinxstepscope
 

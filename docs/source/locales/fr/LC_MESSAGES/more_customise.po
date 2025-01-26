@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-12-21 19:37+0100\n"
-"PO-Revision-Date: 2024-12-22 17:55+0100\n"
+"PO-Revision-Date: 2025-01-26 17:06+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -305,6 +305,7 @@ msgstr "Syntaxe des thèmes personnalisés"
 #: ../../source/more_customise.rst:159
 msgid "A syntax theme ``.conf`` file consists of the following settings:"
 msgstr ""
+"Un fichier ``.conf`` de thème est constitué des paramètres suivants :"
 
 #: ../../source/more_customise.rst:193
 msgid ""
@@ -313,6 +314,10 @@ msgid ""
 "each is an integer from ``0`` to ``255``. The fourth value is the alpha "
 "channel, which can be omitted."
 msgstr ""
+"Dans la section Main, vous devez définir au moins le paramètre ``name``. "
+"Les valeurs de couleur de la syntaxe sont des nombres RVB(A) du format "
+"``r, g, b, a`` où chacun est un entier de ``0`` à ``255``. La quatrième "
+"valeur est le canal alpha, qui peut être omis."
 
 #: ../../source/more_customise.rst:197
 msgid ""
@@ -320,18 +325,22 @@ msgid ""
 "defaults to white, and ``texthighlight`` which defaults to white with half "
 "transparency."
 msgstr ""
+"Les couleurs omises dans la syntaxe prennent par défaut la couleur noire, "
+"à l'exception de ``background`` qui prend par défaut la couleur blanche, "
+"et de ``texthighlight`` qui prend par défaut la couleur blanche avec une "
+"demi-transparence."
 
 #: ../../source/more_customise.rst:200
 msgid "The ``shortcode`` syntax colour entry was added."
-msgstr ""
+msgstr "Le paramètre de couleur ``shortcode`` a été ajouté."
 
 #: ../../source/more_customise.rst:203
 msgid "The ``optional`` syntax colour entry was added."
-msgstr ""
+msgstr "Le paramètre de couleur ``optional`` a été ajouté."
 
 #: ../../source/more_customise.rst:206
 msgid "The ``texthighlight`` syntax colour entry was added."
-msgstr ""
+msgstr "Le paramètre de couleur ``texthighlight`` a été ajouté."
 
 #: ../../source/more_customise.rst:209
 msgid ""
@@ -339,3 +348,6 @@ msgid ""
 "were added. ``straightquotes``, ``doublequotes`` and ``singlequotes`` were "
 "removed."
 msgstr ""
+"Les paramètres de couleur  ``dialog``, ``altdialog``, ``note`` et ``tag`` "
+"ont été ajoutés. Les paramètres ``guillemets droits``, ``guillemets "
+"doubles`` et ``guillemets simples`` ont été supprimés."
