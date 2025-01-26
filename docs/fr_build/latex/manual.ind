@@ -1,0 +1,36 @@
+\begin{sphinxtheindex}
+\let\bigletter\sphinxstyleindexlettergroup
+\let\spxpagem \sphinxstyleindexpagemain
+\let\spxentry \sphinxstyleindexentry
+\let\spxextra \sphinxstyleindexextra
+
+  \bigletter D
+  \item \spxentry{Documents du roman}, \hyperindexformat{\spxpagem}{17}
+  \item \spxentry{Dossier racine}, \hyperindexformat{\spxpagem}{17}
+
+  \indexspace
+  \bigletter E
+  \item \spxentry{En\sphinxhyphen {}têtes}, \hyperindexformat{\spxpagem}{17}
+
+  \indexspace
+  \bigletter I
+  \item \spxentry{Index du projet}, \hyperindexformat{\spxpagem}{17}
+
+  \indexspace
+  \bigletter M
+  \item \spxentry{Menu contextuel}, \hyperindexformat{\spxpagem}{17}
+  \item \spxentry{Mot\sphinxhyphen {}clé}, \hyperindexformat{\spxpagem}{17}
+
+  \indexspace
+  \bigletter N
+  \item \spxentry{Notes de projet}, \hyperindexformat{\spxpagem}{18}
+
+  \indexspace
+  \bigletter R
+  \item \spxentry{Référence}, \hyperindexformat{\spxpagem}{18}
+
+  \indexspace
+  \bigletter T
+  \item \spxentry{Tag}, \hyperindexformat{\spxpagem}{18}
+
+\end{sphinxtheindex}

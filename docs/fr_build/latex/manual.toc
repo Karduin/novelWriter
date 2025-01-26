@@ -1,0 +1,164 @@
+\babel@toc {nil}{}\relax 
+\contentsline {chapter}{\numberline {1}Présentation générale}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Fonctionnalités principales}{4}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Captures d’écran}{5}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Premières lectures}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Utiliser novelWriter}{7}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Organiser vos projets}{8}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Détails supplémentaires et sujets techniques}{8}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Configuration et installation}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Installation sous Windows}{9}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Installation sous Linux}{10}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Ubuntu}{10}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Debian et Mint}{10}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}AppImage}{11}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Installation sur MacOS}{11}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Installation à partir de PyPi}{11}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Trucs et astuces}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Gestion du projet}{13}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Astuces de mise en page}{14}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Organiser son texte}{14}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Autres outils}{15}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Glossaire}{17}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Comment ça marche}{19}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Mise en page et conception de l’interface graphique}{19}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Arborescence du projet et vue de l’éditeur}{20}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Vue du roman et vue de l’éditeur}{20}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Vue d’ensemble du roman}{21}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}Thèmes}{22}{subsection.6.1.4}%
+\contentsline {subsection}{\numberline {6.1.5}Recherche dans un projet}{22}{subsection.6.1.5}%
+\contentsline {subsection}{\numberline {6.1.6}Changer de focus}{23}{subsection.6.1.6}%
+\contentsline {section}{\numberline {6.2}Structure du projet}{23}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Élaboration d’un manuscrit}{24}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Stockage du projet}{24}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Vues du projet}{27}{chapter.7}%
+\contentsline {section}{\numberline {7.1}L’arborescence du projet}{28}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Séparation et fusion de documents}{29}{subsection.7.1.1}%
+\contentsline {subsubsection}{Découper des documents}{29}{subsubsection*.12}%
+\contentsline {subsubsection}{Fusionner des documents}{30}{subsubsection*.13}%
+\contentsline {subsection}{\numberline {7.1.2}Importance et statut du document}{30}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}Glisser\sphinxhyphen {}déposer de l’arborescence du projet}{31}{subsection.7.1.3}%
+\contentsline {section}{\numberline {7.2}L’arborescence du roman}{31}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Vue d’ensemble du roman}{32}{section.7.3}%
+\contentsline {chapter}{\numberline {8}L’éditeur et l’afficheur}{35}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Édition d’un document}{35}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Vérification de l’orthographe}{37}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Auto\sphinxhyphen {}complétion de l’éditeur}{37}{subsection.8.1.2}%
+\contentsline {section}{\numberline {8.2}Visualisation d’un document}{37}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Rechercher \& Remplacer}{38}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Remplacement automatique au fur et à mesure de la saisie}{39}{section.8.4}%
+\contentsline {chapter}{\numberline {9}Mise en forme du texte}{41}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Surlignage syntaxique}{41}{section.9.1}%
+\contentsline {section}{\numberline {9.2}En\sphinxhyphen {}têtes}{42}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Paragraphes du texte}{43}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Mise en valeur du texte avec Markdown}{44}{section.9.4}%
+\contentsline {section}{\numberline {9.5}Mise en forme avec les shortcodes}{44}{section.9.5}%
+\contentsline {section}{\numberline {9.6}Commentaires et synopsis}{45}{section.9.6}%
+\contentsline {section}{\numberline {9.7}Notes de bas de page}{46}{section.9.7}%
+\contentsline {section}{\numberline {9.8}Texte ignoré}{46}{section.9.8}%
+\contentsline {section}{\numberline {9.9}Tags et références}{47}{section.9.9}%
+\contentsline {section}{\numberline {9.10}Alignement et indentation des paragraphes}{47}{section.9.10}%
+\contentsline {subsection}{\numberline {9.10.1}Alignement avec les sauts de ligne}{48}{subsection.9.10.1}%
+\contentsline {subsection}{\numberline {9.10.2}Alignement sur le retrait de la première ligne}{48}{subsection.9.10.2}%
+\contentsline {section}{\numberline {9.11}Espace vertical et sauts de page}{48}{section.9.11}%
+\contentsline {chapter}{\numberline {10}Raccourcis clavier}{51}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Raccourcis de la fenêtre principale}{51}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Raccourcis de l’arborescence du projet}{52}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Raccourcis de l’éditeur de documents}{52}{section.10.3}%
+\contentsline {subsection}{\numberline {10.3.1}Raccourcis de recherche de texte}{52}{subsection.10.3.1}%
+\contentsline {subsection}{\numberline {10.3.2}Raccourcis de mise en forme du texteRaccourcis de mise en forme du texte}{53}{subsection.10.3.2}%
+\contentsline {subsection}{\numberline {10.3.3}Autres raccourcis de l’éditeur}{53}{subsection.10.3.3}%
+\contentsline {subsection}{\numberline {10.3.4}Raccourcis d’insertion}{54}{subsection.10.3.4}%
+\contentsline {section}{\numberline {10.4}Raccourcis de la fenêtre de visualisation des documents}{55}{section.10.4}%
+\contentsline {chapter}{\numberline {11}Notes typographiques}{57}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Remarques spéciales sur les symboles}{57}{section.11.1}%
+\contentsline {subsection}{\numberline {11.1.1}Tirets et points de suspension}{57}{subsection.11.1.1}%
+\contentsline {subsection}{\numberline {11.1.2}Guillemets simples et doubles}{57}{subsection.11.1.2}%
+\contentsline {subsection}{\numberline {11.1.3}Simple et double prime}{58}{subsection.11.1.3}%
+\contentsline {subsection}{\numberline {11.1.4}Modificateur Lettre Apostrophe}{58}{subsection.11.1.4}%
+\contentsline {subsection}{\numberline {11.1.5}Symboles spéciaux d’espacement}{58}{subsection.11.1.5}%
+\contentsline {chapter}{\numberline {12}Gestion des projets}{59}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Créer un projet}{59}{section.12.1}%
+\contentsline {subsection}{\numberline {12.1.1}Modèles de projets}{59}{subsection.12.1.1}%
+\contentsline {section}{\numberline {12.2}Structure du projet}{60}{section.12.2}%
+\contentsline {subsection}{\numberline {12.2.1}Types de dossiers racines}{60}{subsection.12.2.1}%
+\contentsline {subsection}{\numberline {12.2.2}Documents supprimés}{61}{subsection.12.2.2}%
+\contentsline {subsection}{\numberline {12.2.3}Documents archivés}{62}{subsection.12.2.3}%
+\contentsline {subsection}{\numberline {12.2.4}Utilisation des dossiers dans l’arborescence du projet}{62}{subsection.12.2.4}%
+\contentsline {subsection}{\numberline {12.2.5}Documents récupérés}{62}{subsection.12.2.5}%
+\contentsline {subsection}{\numberline {12.2.6}Fichier de verrouillage du projet}{62}{subsection.12.2.6}%
+\contentsline {section}{\numberline {12.3}Documents de projets}{63}{section.12.3}%
+\contentsline {subsection}{\numberline {12.3.1}Modèles de documents}{63}{subsection.12.3.1}%
+\contentsline {subsection}{\numberline {12.3.2}Nombre de mots}{63}{subsection.12.3.2}%
+\contentsline {section}{\numberline {12.4}Paramètres du projet}{64}{section.12.4}%
+\contentsline {subsection}{\numberline {12.4.1}Onglet Paramètres}{64}{subsection.12.4.1}%
+\contentsline {subsection}{\numberline {12.4.2}Onglets Statut et Importance}{64}{subsection.12.4.2}%
+\contentsline {subsection}{\numberline {12.4.3}Onglet Remplacement automatique}{65}{subsection.12.4.3}%
+\contentsline {section}{\numberline {12.5}Sauvegarde}{65}{section.12.5}%
+\contentsline {section}{\numberline {12.6}Statistiques d’écriture}{65}{section.12.6}%
+\contentsline {subsection}{\numberline {12.6.1}Chronomètre de session}{66}{subsection.12.6.1}%
+\contentsline {chapter}{\numberline {13}Structure du roman}{67}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Importance des titres}{67}{section.13.1}%
+\contentsline {subsection}{\numberline {13.1.1}Titre du roman et page de garde}{68}{subsection.13.1.1}%
+\contentsline {subsection}{\numberline {13.1.2}Titres des chapitres non numérotés}{69}{subsection.13.1.2}%
+\contentsline {subsection}{\numberline {13.1.3}Ruptures de scène dures et douces}{69}{subsection.13.1.3}%
+\contentsline {chapter}{\numberline {14}Tags et références}{71}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Métadonnées dans novelWriter}{71}{section.14.1}%
+\contentsline {section}{\numberline {14.2}Comment utiliser les tags}{72}{section.14.2}%
+\contentsline {section}{\numberline {14.3}Comment utiliser les références}{73}{section.14.3}%
+\contentsline {subsection}{\numberline {14.3.1}L’auto\sphinxhyphen {}complétion des références}{75}{subsection.14.3.1}%
+\contentsline {chapter}{\numberline {15}Compiler le manuscrit}{77}{chapter.15}%
+\contentsline {section}{\numberline {15.1}L’outil de compilation de manuscrit}{77}{section.15.1}%
+\contentsline {subsection}{\numberline {15.1.1}Plan et nombre de mots}{78}{subsection.15.1.1}%
+\contentsline {section}{\numberline {15.2}Paramètres de compilation}{78}{section.15.2}%
+\contentsline {subsection}{\numberline {15.2.1}Sélection des documents}{79}{subsection.15.2.1}%
+\contentsline {subsection}{\numberline {15.2.2}Mise en forme des en\sphinxhyphen {}têtes}{79}{subsection.15.2.2}%
+\contentsline {subsubsection}{Séparateurs de scènes}{80}{subsubsection*.14}%
+\contentsline {subsubsection}{Scènes dures et douces}{80}{subsubsection*.15}%
+\contentsline {subsection}{\numberline {15.2.3}Paramètres de sortie}{81}{subsection.15.2.3}%
+\contentsline {section}{\numberline {15.3}Création des manuscrits}{81}{section.15.3}%
+\contentsline {subsection}{\numberline {15.3.1}Formats de fichiers}{81}{subsection.15.3.1}%
+\contentsline {subsection}{\numberline {15.3.2}Formats supplémentaires}{82}{subsection.15.3.2}%
+\contentsline {section}{\numberline {15.4}Imprimer et PDF}{82}{section.15.4}%
+\contentsline {chapter}{\numberline {16}Personnalisations}{83}{chapter.16}%
+\contentsline {section}{\numberline {16.1}Dictionnaires de vérification orthographique}{83}{section.16.1}%
+\contentsline {subsection}{\numberline {16.1.1}Linux et MacOS}{83}{subsection.16.1.1}%
+\contentsline {subsection}{\numberline {16.1.2}Windows}{83}{subsection.16.1.2}%
+\contentsline {section}{\numberline {16.2}Syntaxe et thèmes de l’interface graphique}{84}{section.16.2}%
+\contentsline {subsection}{\numberline {16.2.1}Thème d’interface graphique et d’icônes personnalisé}{85}{subsection.16.2.1}%
+\contentsline {subsection}{\numberline {16.2.2}Syntaxe des thèmes personnalisés}{86}{subsection.16.2.2}%
+\contentsline {chapter}{\numberline {17}Modifications du format des projet}{87}{chapter.17}%
+\contentsline {section}{\numberline {17.1}Format 1.5 Modifications}{87}{section.17.1}%
+\contentsline {section}{\numberline {17.2}Format 1.4 Modifications}{88}{section.17.2}%
+\contentsline {section}{\numberline {17.3}Format 1.3 Modifications}{88}{section.17.3}%
+\contentsline {section}{\numberline {17.4}Format 1.2 Modifications}{88}{section.17.4}%
+\contentsline {section}{\numberline {17.5}Format 1.1 Modifications}{89}{section.17.5}%
+\contentsline {section}{\numberline {17.6}Format 1.0 Modifications}{89}{section.17.6}%
+\contentsline {chapter}{\numberline {18}Décompte des mots et des textes}{91}{chapter.18}%
+\contentsline {section}{\numberline {18.1}Décompte des mots du texte et statistiques}{91}{section.18.1}%
+\contentsline {section}{\numberline {18.2}Décompte du manuscrit}{92}{section.18.2}%
+\contentsline {chapter}{\numberline {19}Emplacement des fichiers}{95}{chapter.19}%
+\contentsline {section}{\numberline {19.1}Configuration}{95}{section.19.1}%
+\contentsline {section}{\numberline {19.2}Données d’application}{95}{section.19.2}%
+\contentsline {chapter}{\numberline {20}Comment les données sont stockées}{97}{chapter.20}%
+\contentsline {section}{\numberline {20.1}Structure du projet}{97}{section.20.1}%
+\contentsline {subsection}{\numberline {20.1.1}Fichier principal du projet}{97}{subsection.20.1.1}%
+\contentsline {section}{\numberline {20.2}Documents de projet}{98}{section.20.2}%
+\contentsline {subsection}{\numberline {20.2.1}Le processus d’enregistrement des fichiers}{98}{subsection.20.2.1}%
+\contentsline {section}{\numberline {20.3}Métadonnées du projet}{98}{section.20.3}%
+\contentsline {subsection}{\numberline {20.3.1}L’index des projets}{99}{subsection.20.3.1}%
+\contentsline {subsection}{\numberline {20.3.2}Définitions des compilations}{99}{subsection.20.3.2}%
+\contentsline {subsection}{\numberline {20.3.3}Options de l’interface graphique mises en cache}{99}{subsection.20.3.3}%
+\contentsline {subsection}{\numberline {20.3.4}Liste des mots personnalisés}{99}{subsection.20.3.4}%
+\contentsline {subsection}{\numberline {20.3.5}Statistiques de la session}{99}{subsection.20.3.5}%
+\contentsline {chapter}{\numberline {21}Executer depuis la source}{101}{chapter.21}%
+\contentsline {section}{\numberline {21.1}Dépendances}{101}{section.21.1}%
+\contentsline {section}{\numberline {21.2}Compiler et installer à partir des sources}{102}{section.21.2}%
+\contentsline {section}{\numberline {21.3}Création des fichiers de traduction}{102}{section.21.3}%
+\contentsline {section}{\numberline {21.4}Construction du projet d’exemple}{103}{section.21.4}%
+\contentsline {section}{\numberline {21.5}Élaboration de la documentation}{103}{section.21.5}%
+\contentsline {chapter}{\numberline {22}Exécution des tests}{105}{chapter.22}%
+\contentsline {section}{\numberline {22.1}Dépendances}{105}{section.22.1}%
+\contentsline {section}{\numberline {22.2}Test simple}{105}{section.22.2}%
+\contentsline {section}{\numberline {22.3}Options avancées}{106}{section.22.3}%
+\contentsline {chapter}{Index}{107}{section*.16}%
