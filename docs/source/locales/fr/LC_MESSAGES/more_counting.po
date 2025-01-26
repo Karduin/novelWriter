@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-12-21 19:37+0100\n"
-"PO-Revision-Date: 2024-12-23 16:13+0100\n"
+"PO-Revision-Date: 2025-01-26 13:53+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -112,8 +112,8 @@ msgstr ""
 "Le nombre de caractères est la somme des caractères par ligne, y compris les "
 "caractères d'en-tête et les caractères d'espacement dans le texte, mais pas les "
 "caractères d'espacement de fin. Les Shortcodes dans le texte ne sont pas "
-"inclus, mais les codes Markdown le sont. Seuls les titres et le texte sont pris "
-"en compte."
+"inclus, mais les codes Markdown le sont. Seuls les en-têtes et le texte sont "
+"pris en compte."
 
 #: ../../source/more_counting.rst:36
 msgid "**Word Count**"
@@ -144,7 +144,7 @@ msgstr ""
 
 #: ../../source/more_counting.rst:46
 msgid "Manuscript Counts"
-msgstr "Décompte des manuscrits"
+msgstr "Décompte du manuscrit"
 
 #: ../../source/more_counting.rst:48
 msgid ""
@@ -214,7 +214,7 @@ msgstr "Les décomptes suivants sont disponibles :"
 
 #: ../../source/more_counting.rst:66
 msgid "**Headings**"
-msgstr "**Entêtes**"
+msgstr "**En-têtes**"
 
 #: ../../source/more_counting.rst:67
 msgid "The number of headings in the manuscript."
@@ -294,7 +294,7 @@ msgstr "Le nombre de caractères dans les en-têtes."
 
 #: ../../source/more_counting.rst:92
 msgid "**Character in Text, No Spaces**"
-msgstr "**Charactères dans le texte, sans les espaces**"
+msgstr "**Caractères dans le texte, sans les espaces**"
 
 #: ../../source/more_counting.rst:93
 msgid ""
@@ -307,7 +307,7 @@ msgstr ""
 
 #: ../../source/more_counting.rst:96
 msgid "**Character in Headings, No Spaces**"
-msgstr "**Charactères dans les en-têtes, sans les espaces**"
+msgstr "**Caractères dans les en-têtes, sans les espaces**"
 
 #: ../../source/more_counting.rst:97
 msgid ""
