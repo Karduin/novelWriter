@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: novelWriter 2.6b1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-21 19:37+0100\n"
-"PO-Revision-Date: 2024-12-27 14:35+0100\n"
+"POT-Creation-Date: 2025-01-27 10:21+0100\n"
+"PO-Revision-Date: 2025-01-27 11:10+0100\n"
 "Last-Translator: \n"
 "Language-Team: fr <LL@li.org>\n"
 "Language: fr\n"
@@ -46,12 +46,12 @@ msgstr ""
 msgid ""
 "The project tree can distinguish between the different heading levels of "
 "the novel documents using coloured icons, and optionally add emphasis on "
-"the label, set in **Preferences** for easier identification."
+"the label. Emphasis can be enabled in **Preferences**."
 msgstr ""
 "L'arborescence du projet peut distinguer les différents niveaux d'en-"
 "tête des nouveaux documents à l'aide d'icônes colorées, et "
-"éventuellement mettre l'accent sur l'étiquette, définie dans les "
-"**Préférences**, pour faciliter l'identification."
+"éventuellement ajouter de l'emphase sur l'étiquette. L'accentuation peut "
+"être activée dans les **Préférences**."
 
 #: ../../source/project_structure.rst:21
 msgid "Importance of Headings"
@@ -77,7 +77,7 @@ msgstr ""
 "signes (``#``) précédant le titre. Voir aussi la section :ref:`a_fmt` "
 "pour plus de détails sur la syntaxe du balisage."
 
-#: ../../source/project_structure.rst:30
+#: ../../source/project_structure.rst:31
 msgid ""
 "The heading levels are not only important when generating the "
 "manuscript, they are also used by the indexer when building the outline "
@@ -92,7 +92,7 @@ msgstr ""
 "une nouvelle région où de nouvelles étiquettes et références peuvent "
 "être définies. Voir :ref:`a_references` pour plus de détails."
 
-#: ../../source/project_structure.rst:35
+#: ../../source/project_structure.rst:36
 msgid ""
 "The syntax for the four basic heading types, and the three special "
 "types, is listed in section :ref:`a_fmt_head`. The meaning of the four "
@@ -102,11 +102,11 @@ msgstr ""
 "spéciaux, est listée dans la section :ref:`a_fmt_head`. La signification "
 "des quatre niveaux pour la structure de votre roman est la suivante :"
 
-#: ../../source/project_structure.rst:38
+#: ../../source/project_structure.rst:39
 msgid "**Heading Level 1: Partition**"
 msgstr "**Titre de niveau 1 : Section**"
 
-#: ../../source/project_structure.rst:39
+#: ../../source/project_structure.rst:40
 msgid ""
 "This heading level signifies that the text refers to a top level "
 "heading. This is useful when you want to split the manuscript up into "
@@ -120,11 +120,11 @@ msgstr ""
 "du roman lui-même doit utiliser le niveau de titre spécial ``#!`` "
 "couvert dans :ref:`a_fmt_head`."
 
-#: ../../source/project_structure.rst:43
+#: ../../source/project_structure.rst:44
 msgid "**Heading Level 2: Chapter**"
 msgstr "**Niveau de niveau 2 : Chapitre**"
 
-#: ../../source/project_structure.rst:44
+#: ../../source/project_structure.rst:45
 msgid ""
 "This heading level signifies a chapter. Each time you want to start a "
 "new chapter, you must add such a heading. If you choose to split your "
@@ -143,11 +143,11 @@ msgstr ""
 "par une citation ou un autre texte d'introduction qui ne fait pas partie "
 "d'une scène, c'est également dans ce document que vous placerez ce texte."
 
-#: ../../source/project_structure.rst:50
+#: ../../source/project_structure.rst:51
 msgid "**Heading Level 3: Scene**"
 msgstr "**Niveau de titre 3 : Scène**"
 
-#: ../../source/project_structure.rst:51
+#: ../../source/project_structure.rst:52
 msgid ""
 "This heading level signifies a scene. You must provide a title text, but "
 "the title text can be replaced with a scene separator or just skipped "
@@ -164,11 +164,11 @@ msgstr ""
 "utiliser pour faire cette distinction. Le formatage est couvert dans :"
 "ref:`a_fmt_head`. Voir aussi :ref:`a_struct_heads_scenes`."
 
-#: ../../source/project_structure.rst:57
+#: ../../source/project_structure.rst:58
 msgid "**Heading Level 4: Section**"
 msgstr "**Niveau de titre 4 : Section**"
 
-#: ../../source/project_structure.rst:58
+#: ../../source/project_structure.rst:59
 msgid ""
 "This heading level can be used to split up a scene, usually called a "
 "\"section\" in the documentation and the user interface. These can be "
@@ -183,22 +183,21 @@ msgstr ""
 "de vue. Vous êtes libre d'utiliser les sections comme vous le souhaitez, "
 "et vous pouvez les filtrer dans le manuscrit final."
 
-#: ../../source/project_structure.rst:63
+#: ../../source/project_structure.rst:64
 msgid ""
-"Page breaks can be automatically added before partition, chapter and "
-"scene headings from the **Manuscript Build** tool when you build your "
-"project to a format that supports page breaks. If you want page breaks "
-"in other places, you have to specify them manually. See :ref:"
+"Page breaks can be automatically added before titles, partition, chapter "
+"and scene headings from the **Manuscript Build** tool when you build "
+"your project to a format that supports page breaks. If you want page "
+"breaks in other places, you have to specify them manually. See :ref:"
 "`a_fmt_break`."
 msgstr ""
-"Les sauts de page peuvent être automatiquement ajoutés avant les titres "
-"de partition, de chapitre et de scène à partir de l'outil **Compilation "
-"de projet** lorsque vous construisez votre projet dans un format qui "
-"prend en charge les sauts de page. Si vous voulez des sauts de page à "
-"d'autres endroits, vous devez les spécifier manuellement. Voir :ref:"
-"`a_fmt_break`."
+"Les sauts de page peuvent être automatiquement ajoutés avant les titres, "
+"les parties, les chapitres et les scènes à partir de l'outil **Compiler "
+"le manuscrit** lorsque vous créez votre projet dans un format qui prend "
+"en charge les sauts de page. Si vous voulez des sauts de page à d'autres "
+"endroits, vous devez les spécifier manuellement. Voir :ref:`a_fmt_break`."
 
-#: ../../source/project_structure.rst:68
+#: ../../source/project_structure.rst:70
 msgid ""
 "There are multiple options of how to process novel headings when "
 "building the manuscript. For instance, chapter numbers can be applied "
@@ -214,25 +213,55 @@ msgstr ""
 "page :ref:`a_manuscript` pour plus de détails."
 
 #: ../../source/project_structure.rst:77
+msgid ""
+"As of 2.6, the heading levels internally in novelWriter do not map "
+"directly to heading levels in manuscript documents. In manuscript "
+"documents, chapters are considered the top level heading, and partitions "
+"become plain text paragraphs with a larger font."
+msgstr ""
+"Depuis la version 2.6, les niveaux d'en-tête internes à novelWriter ne "
+"correspondent pas directement aux niveaux d'en-tête des documents "
+"manuscrits. Dans les documents manuscrits, les chapitres sont considérés "
+"comme l'en-tête de premier niveau, et les partitions deviennent des "
+"paragraphes de texte simple avec une police plus grande."
+
+#: ../../source/project_structure.rst:87
 msgid "Novel Title and Front Matter"
 msgstr "Titre du roman et page de garde"
 
-#: ../../source/project_structure.rst:79
+#: ../../source/project_structure.rst:89
 msgid ""
 "It is recommended that you add a document at the very top of each "
-"**Novel** root folder with the novel title as the first line. You should "
-"modify the level 1 heading format code with an ``!`` in order to render "
-"it as a document title that is excluded from any automatic Table of "
-"Content in a manuscript build document, like so:"
+"**Novel** root folder with the novel title in it. You should modify the "
+"level 1 heading format code with an ``!`` in order to render it as a "
+"document title that is excluded from any automatic Table of Content in a "
+"manuscript build document."
 msgstr ""
-"Il est recommandé d'ajouter un document tout en haut de chaque dossier "
-"racine **Roman** avec le titre du roman comme première ligne. Vous devez "
-"modifier le code de format de l'en-tête de niveau 1 avec un ``!`` fin de "
-"le rendre comme un titre de document qui est exclu de toute table des "
-"matières automatique dans un document de construction de manuscrit, "
-"comme ceci :"
+"Il est recommandé d'ajouter un document au premier niveau de chaque "
+"dossier racine **Nouveau** avec le titre du roman. Vous devez modifier "
+"le code de format de l'en-tête de niveau 1 avec un ``!`` afin de le "
+"rendre comme un titre de document qui est exclu de toute table des "
+"matières automatique dans un document de construction de manuscrit."
 
-#: ../../source/project_structure.rst:90
+#: ../../source/project_structure.rst:94
+msgid ""
+"You can also add the author name and address above this if this is "
+"required by the manuscript format you use, and additional space added "
+"before the title."
+msgstr ""
+"Vous pouvez également ajouter le nom et l'adresse de l'auteur au-dessus "
+"de ce titre si le format de manuscrit que vous utilisez l'exige, et "
+"ajouter un espace supplémentaire avant le titre."
+
+#: ../../source/project_structure.rst:97
+msgid ""
+"This is the title page novelWriter generates automatically for a new "
+"project as of version 2.6:"
+msgstr ""
+"Il s'agit de la page de titre que novelWriter génère automatiquement "
+"pour un nouveau projet à partir de la version 2.6 :"
+
+#: ../../source/project_structure.rst:113
 msgid ""
 "The title is by default centred on the page. You can add more text to "
 "the page as you wish, like for instance the author's name and details."
@@ -241,7 +270,7 @@ msgstr ""
 "texte à la page si vous le souhaitez, comme par exemple le nom de "
 "l'auteur et ses coordonnées."
 
-#: ../../source/project_structure.rst:93
+#: ../../source/project_structure.rst:116
 msgid ""
 "If you want an additional page of text after the title page, starting on "
 "a fresh page, you can add ``[new page]`` on a line by itself, and "
@@ -253,11 +282,11 @@ msgstr ""
 "une ligne à part, et continuer le texte après elle. Cela insérera un "
 "saut de page avant le texte. Voir aussi :ref:`a_fmt_break`."
 
-#: ../../source/project_structure.rst:101
+#: ../../source/project_structure.rst:124
 msgid "Unnumbered Chapter Headings"
 msgstr "Titres des chapitres non numérotés"
 
-#: ../../source/project_structure.rst:103
+#: ../../source/project_structure.rst:126
 msgid ""
 "If you use the automatic numbering feature for your chapters, but you "
 "want to keep some special chapters separate from this, you can add an ``!"
@@ -270,7 +299,7 @@ msgstr ""
 "à l'outil de construction d'ignorer ces chapitres lors de l'ajout des "
 "numéros."
 
-#: ../../source/project_structure.rst:113
+#: ../../source/project_structure.rst:136
 msgid ""
 "There is a separate formatting feature for such chapter titles in the "
 "**Manuscript Build** tool as well. See the :ref:`a_manuscript` page for "
@@ -285,11 +314,11 @@ msgstr ""
 "numérotés peuvent également avoir un saut de page ajouté comme pour les "
 "chapitres normaux."
 
-#: ../../source/project_structure.rst:122
+#: ../../source/project_structure.rst:145
 msgid "Hard and Soft Scene Breaks"
 msgstr "Ruptures de scène dures et douces"
 
-#: ../../source/project_structure.rst:124
+#: ../../source/project_structure.rst:147
 msgid ""
 "If you need two different ways to style scenes in your manuscript, like "
 "if you want to insert different scene separators for soft and hard scene "
@@ -302,7 +331,7 @@ msgstr ""
 "existe un format de scène alternatif disponible pour les titres de scène "
 "avec un `!` ajouté au code de formatage."
 
-#: ../../source/project_structure.rst:138
+#: ../../source/project_structure.rst:161
 msgid ""
 "There is a separate formatting feature for these titles in the "
 "**Manuscript Build** tool."

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: novelWriter 2.6rc1\n"
+"Project-Id-Version: novelWriter 2.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-22 11:34+0100\n"
+"POT-Creation-Date: 2025-01-27 10:21+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgid "Managing the Project"
 msgstr ""
 
 #: ../../source/int_howto.rst:0
-msgid "Create a Project from a Template"
+msgid "How do I create a project from a template?"
 msgstr ""
 
 #: ../../source/int_howto.rst:22
@@ -41,7 +41,7 @@ msgid "On the Welcome dialog's **Create New Project** form, you can select to \"
 msgstr ""
 
 #: ../../source/int_howto.rst:0
-msgid "Merge Multiple Documents Into One"
+msgid "How do I merge multiple documents into one?"
 msgstr ""
 
 #: ../../source/int_howto.rst:30
@@ -52,49 +52,52 @@ msgstr ""
 msgid "In the dialog that pops up, the documents will be in the same order as in the folder, but you can rearrange them here of you wish. See :ref:`a_ui_tree_split_merge` for more details."
 msgstr ""
 
-#: ../../source/int_howto.rst:40
+#: ../../source/int_howto.rst:0
+msgid "How do I share status or importance labels between projects?"
+msgstr ""
+
+#: ../../source/int_howto.rst:41
+msgid "The status or importance labels you have defined in a project can be exported from **Project Settings** from the respective configuration tabs. You can then import these labels in another project."
+msgstr ""
+
+#: ../../source/int_howto.rst:47
 msgid "Layout Tricks"
 msgstr ""
 
 #: ../../source/int_howto.rst:0
-msgid "Align Paragraphs with Line Breaks"
+msgid "How do I create a table?"
 msgstr ""
 
-#: ../../source/int_howto.rst:45
-msgid "If you have line breaks in you paragraphs, and also want to apply additional text alignment or indentation, you must apply the alignment tags to the first line."
-msgstr ""
-
-#: ../../source/int_howto.rst:48
-msgid "For example, this will centre the two lines."
-msgstr ""
-
-#: ../../source/int_howto.rst:57
-#: ../../source/int_howto.rst:79
-msgid "See :ref:`a_fmt_align` for more details."
-msgstr ""
-
-#: ../../source/int_howto.rst:0
-msgid "Create a Simple Table"
-msgstr ""
-
-#: ../../source/int_howto.rst:62
+#: ../../source/int_howto.rst:52
 msgid "The formatting tools available in novelWriter don't allow for complex structures like tables. However, the editor does render tabs in a similar way that regular word processors do. You can set the width of a tab in **Preferences**."
 msgstr ""
 
-#: ../../source/int_howto.rst:66
+#: ../../source/int_howto.rst:56
 msgid "The tab key should have the same distance in the editor as in the viewer, so you can align text in columns using the tab key, and it should look the same when viewed next to the editor."
 msgstr ""
 
-#: ../../source/int_howto.rst:69
+#: ../../source/int_howto.rst:59
 msgid "This is most suitable for your notes, as the result in exported documents cannot be guaranteed to match. Especially if you don't use the same font in your manuscript as in the editor."
 msgstr ""
 
 #: ../../source/int_howto.rst:0
-msgid "Turn Off First Line Indent for a Paragraph"
+msgid "How do I force a line break when line breaks are ignored in my manuscript?"
+msgstr ""
+
+#: ../../source/int_howto.rst:65
+msgid "In the **Manuscript Build Settings** you can choose to ignore line breaks within paragraphs in your text. However, some times you still need those breaks. Like for instance on the cover page where you may need to add your name and address. In such cases, you can add ``[br]`` where you want line breaks. These breaks cannot be ignored by any settings and will always be respected."
+msgstr ""
+
+#: ../../source/int_howto.rst:0
+msgid "How do I turn off first line indent for a specific paragraph?"
 msgstr ""
 
 #: ../../source/int_howto.rst:75
-msgid "If you have first line indent enabled, but have a specific paragraph that you don't want indented, you can disable the indentation by explicitly add text alignment. Aligned paragraphs are not indented. For instance by adding ``<<`` to the end to left-align it,"
+msgid "If you have first line indent enabled, but have a specific paragraph that you don't want indented, you can disable the indentation by explicitly adding text alignment. For instance by adding ``<<`` to the end to left-align it. Aligned paragraphs are not indented."
+msgstr ""
+
+#: ../../source/int_howto.rst:79
+msgid "See :ref:`a_fmt_align` for more details."
 msgstr ""
 
 #: ../../source/int_howto.rst:83
@@ -102,7 +105,7 @@ msgid "Organising Your Text"
 msgstr ""
 
 #: ../../source/int_howto.rst:0
-msgid "Add Introductory Text to Chapters"
+msgid "How do I add introductory text to chapters?"
 msgstr ""
 
 #: ../../source/int_howto.rst:88
@@ -114,7 +117,7 @@ msgid "If you add separate files for chapters and scenes, the chapter file is th
 msgstr ""
 
 #: ../../source/int_howto.rst:0
-msgid "Distinguishing Soft and Hard Scene Breaks"
+msgid "How do I distinguishing between soft and hard scene breaks?"
 msgstr ""
 
 #: ../../source/int_howto.rst:98
@@ -122,7 +125,7 @@ msgid "Depending on your writing style, you may need to separate between soft an
 msgstr ""
 
 #: ../../source/int_howto.rst:101
-msgid "In such cases you may want to use different scene headings for hard and soft scene breaks. The **Build Manuscript** tool will let you define a different format for scenes using the ``###`` and ``###!`` heading codes when you generate your manuscript. You can for instance add the common \"``* * *``\" for hard breaks and select to soft scene breaks, which will just insert an empty paragraph in their place. See :ref:`a_manuscript_settings` for more details."
+msgid "In such cases you may want to use different scene headings for hard and soft scene breaks. The **Build Manuscript** tool will let you define a different format for scenes using the ``###`` and ``###!`` heading codes when you generate your manuscript. You can for instance add the common \"``* * *``\" for hard breaks and select to hide soft scene breaks, which will just insert an empty paragraph in their place. See :ref:`a_manuscript_settings` for more details."
 msgstr ""
 
 #: ../../source/int_howto.rst:111
@@ -130,7 +133,7 @@ msgid "Other Tools"
 msgstr ""
 
 #: ../../source/int_howto.rst:0
-msgid "Convert Project to/from yWriter Format"
+msgid "How do I convert my project to/from the yWriter format?"
 msgstr ""
 
 #: ../../source/int_howto.rst:116

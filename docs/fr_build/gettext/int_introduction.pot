@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: novelWriter 2.6rc1\n"
+"Project-Id-Version: novelWriter 2.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-22 11:34+0100\n"
+"POT-Creation-Date: 2025-01-27 10:21+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,97 +49,97 @@ msgid "There are two kinds of documents in your project: :term:`Novel Documents`
 msgstr ""
 
 #: ../../source/int_introduction.rst:39
-msgid "You can at any point split the individual documents by their headings up into multiple documents, or merge multiple documents into a single document. This makes it easier to use variations of the Snowflake_ method for writing. You can start by writing larger structure-focused documents, like for instance one document per act, and later effortlessly split these up into chapters or scenes."
+msgid "You can at any point split the individual documents by their headings up into multiple documents, or merge multiple documents into a single document. This makes it easier to use variations of the Snowflake_ method for writing. You can start by writing larger structure-focused documents, like for instance one document per act, and later effortlessly split these up into individual chapter or scene documents."
 msgstr ""
 
-#: ../../source/int_introduction.rst:48
+#: ../../source/int_introduction.rst:49
 msgid "Key Features"
 msgstr ""
 
-#: ../../source/int_introduction.rst:50
+#: ../../source/int_introduction.rst:51
 msgid "Below are some key features of novelWriter."
 msgstr ""
 
-#: ../../source/int_introduction.rst:52
+#: ../../source/int_introduction.rst:53
 msgid "**Focus on writing**"
 msgstr ""
 
-#: ../../source/int_introduction.rst:53
-msgid "The aim of the user interface is to let you focus on writing instead of spending time formatting text. Formatting is therefore limited to a small set of formatting tags for simple things like text emphasis and paragraph alignment. Additional shortcodes are available for special formatting cases."
+#: ../../source/int_introduction.rst:54
+msgid "The aim of the user interface is to let you focus on writing instead of spending time formatting text. Formatting is therefore limited to a small set of formatting tags for simple things like text emphasis and paragraph alignment. Additional shortcodes are available for special formatting cases when you need them."
 msgstr ""
 
-#: ../../source/int_introduction.rst:58
+#: ../../source/int_introduction.rst:59
 msgid "When you really want to focus on just writing, you can switch the editor into **Focus Mode** where only the text editor panel itself is visible, and the project structure view is hidden away."
 msgstr ""
 
-#: ../../source/int_introduction.rst:62
+#: ../../source/int_introduction.rst:63
 msgid "**Keep an eye on your notes**"
 msgstr ""
 
-#: ../../source/int_introduction.rst:63
+#: ../../source/int_introduction.rst:64
 msgid "The main window can optionally show a document viewer to the right of the editor. The viewer is intended for displaying another scene document, your character notes, plot notes, or any other document you may need to reference while writing. It is not intended as a preview panel for the document you're editing, but if you wish, you can also use it for this purpose."
 msgstr ""
 
-#: ../../source/int_introduction.rst:68
+#: ../../source/int_introduction.rst:69
 msgid "**Organise your documents how you like**"
 msgstr ""
 
-#: ../../source/int_introduction.rst:69
+#: ../../source/int_introduction.rst:70
 msgid "You can split your novel project up into as many individual documents as you want to. When you build the project into a manuscript, they are all glued together in the top-to-bottom order in which they appear in the project tree. You can use as few text documents as you like, but splitting the project up into chapters and scenes means you can easily reorder them using the drag-and-drop feature of the project tree. You can also start out with fewer documents and then later split them into multiple documents based on chapter and scene headings."
 msgstr ""
 
-#: ../../source/int_introduction.rst:76
+#: ../../source/int_introduction.rst:77
 msgid "**Multi-novel project support**"
 msgstr ""
 
-#: ../../source/int_introduction.rst:77
-msgid "The main parts of your project is split up into top level special folders called \"Root\" folders. Your main story text lives in the \"Novel\" root folder. You can have multiple such folders in a project, and rename them to whatever you want. This allows you to keep a series of individual novels with the same characters and world building in the same project, and create manuscripts for them individually."
-msgstr ""
-
-#: ../../source/int_introduction.rst:83
-msgid "**Keep track of your story elements**"
+#: ../../source/int_introduction.rst:78
+msgid "The main parts of your project is split up into top level special folders called \"Root\" folders. Your main story text lives in the \"Novel\" root folder. You can have multiple such folders in a project, and rename them to whatever you want. This allows you to keep a series of individual novels with the same characters and world building in the same project, and create manuscripts for them separately."
 msgstr ""
 
 #: ../../source/int_introduction.rst:84
-msgid "All notes in your project can be assigned a :term:`tag` that you can then :term:`reference` from any other document or note. In fact, you can add a new tag under each heading of a note if you need to be able to reference specific sections of it, or you want to keep several topics in the same note."
+msgid "**Keep track of your story elements**"
 msgstr ""
 
-#: ../../source/int_introduction.rst:89
-msgid "**Get an overview of your story**"
+#: ../../source/int_introduction.rst:85
+msgid "All documents in your project can be assigned a :term:`tag` that you can then :term:`reference` from any other document or note. In fact, you can add a new tag under each heading of a note if you need to be able to reference specific sections of it, or you want to keep several topics or scenes in the same document."
 msgstr ""
 
 #: ../../source/int_introduction.rst:90
-msgid "It is not the documents themselves that define the chapters and scenes of your story, but the headings that separate them. In the **Outline View** on the main window you can see an outline of all the chapter and scene headings of each novel root folder in your project. If they have any references in them, like which character is in what chapter and scene, these are listed in additional columns."
+msgid "**Get an overview of your story**"
 msgstr ""
 
-#: ../../source/int_introduction.rst:96
+#: ../../source/int_introduction.rst:91
+msgid "It is not the documents themselves that define the chapters and scenes of your story, but the headings within them. In the **Outline View** on the main window you can see an outline of all the chapter and scene headings of each novel root folder in your project. If they have any references in them, like which character is in what chapter and scene, these are listed in additional columns."
+msgstr ""
+
+#: ../../source/int_introduction.rst:97
 msgid "You can also add a synopsis to each chapter or scene, which can be listed here as well. You have the option to add or remove columns of information from this outline. A subset of the outline information is also available in the **Novel View** as an alternative view to the project tree."
 msgstr ""
 
-#: ../../source/int_introduction.rst:100
+#: ../../source/int_introduction.rst:101
 msgid "**Get an overview of your story elements**"
 msgstr ""
 
-#: ../../source/int_introduction.rst:101
+#: ../../source/int_introduction.rst:102
 msgid "Under the document viewer panel you will find a series of tabs that show the different story elements you have created tags for. The tabs are sorted into **Characters**, **Plots**, etc, depending on which categories you are using in your story. This panel can be hidden to free up space when you don't need it."
 msgstr ""
 
-#: ../../source/int_introduction.rst:106
+#: ../../source/int_introduction.rst:107
 msgid "**Assembling your manuscript**"
 msgstr ""
 
-#: ../../source/int_introduction.rst:107
-msgid "Whether you want to assemble a manuscript, or export all your notes, or generate an outline of your chapters and scenes with a synopsis included, you can use the **Build Manuscript** tool to do so. The tool lets you select what information you want to include in the generated document, and how it is formatted. You can send the result to a printer or PDF, or generate an Open Document file that can be opened by most office type word processors. You can also generate the result as HTML, or Markdown, both suitable for further conversion to other formats."
+#: ../../source/int_introduction.rst:108
+msgid "Whether you want to assemble a manuscript, or export all your notes, or generate an outline of your chapters and scenes with a synopsis included, you can use the **Build Manuscript** tool to do so. The tool lets you select what information you want to include in the generated document, and how it is formatted. You can send the result to a printer, or generate an Open Document or Word Document file that can be opened by most office type word processors. You can also generate the result as HTML, or Markdown, both suitable for further conversion to other formats."
 msgstr ""
 
-#: ../../source/int_introduction.rst:118
+#: ../../source/int_introduction.rst:119
 msgid "Screenshots"
 msgstr ""
 
-#: ../../source/int_introduction.rst:123
+#: ../../source/int_introduction.rst:124
 msgid "novelWriter with light colour theme"
 msgstr ""
 
-#: ../../source/int_introduction.rst:128
+#: ../../source/int_introduction.rst:129
 msgid "novelWriter with dark colour theme"
 msgstr ""

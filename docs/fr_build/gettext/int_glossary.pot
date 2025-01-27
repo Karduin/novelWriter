@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: novelWriter 2.6rc1\n"
+"Project-Id-Version: novelWriter 2.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-22 11:34+0100\n"
+"POT-Creation-Date: 2025-01-27 10:21+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,7 +53,7 @@ msgid "Novel Documents"
 msgstr ""
 
 #: ../../source/int_glossary.rst:16
-msgid "These are documents that are created under a \"Novel\" :term:`root folder`. They behave differently than :term:`Project Notes`, and have some more restrictions. For instance, they can not exist in folders intended only for project notes. See the :ref:`a_struct` chapter for more details."
+msgid "These are documents that are created under a \"Novel\" :term:`Root Folder`. They behave differently than :term:`Project Notes`, and have some more restrictions. For instance, they can not exist in folders intended only for project notes. See the :ref:`a_struct` chapter for more details."
 msgstr ""
 
 #: ../../source/int_glossary.rst:38

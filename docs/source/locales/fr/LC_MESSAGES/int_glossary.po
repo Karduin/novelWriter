@@ -1,4 +1,4 @@
-# Translations template for PROJECT.
+# French translations for PROJECT.
 # Copyright (C) 2024 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
@@ -8,14 +8,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-12-21 19:37+0100\n"
-"PO-Revision-Date: 2025-01-26 10:42+0100\n"
+"POT-Creation-Date: 2025-01-27 10:21+0100\n"
+"PO-Revision-Date: 2025-01-27 10:29+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Generated-By: Babel 2.16.0\n"
 "X-Generator: Poedit 3.4.2\n"
 
@@ -95,8 +96,8 @@ msgstr "Documents du roman"
 
 #: ../../source/int_glossary.rst:16
 msgid ""
-"These are documents that are created under a \"Novel\" :term:`root "
-"folder`. They behave differently than :term:`Project Notes`, and have "
+"These are documents that are created under a \"Novel\" :term:`Root "
+"Folder`. They behave differently than :term:`Project Notes`, and have "
 "some more restrictions. For instance, they can not exist in folders "
 "intended only for project notes. See the :ref:`a_struct` chapter for "
 "more details."

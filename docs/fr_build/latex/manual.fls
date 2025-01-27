@@ -518,8 +518,6 @@ INPUT ./fig_welcome.jpg
 INPUT ./fig_welcome.jpg
 INPUT ./fig_welcome.jpg
 INPUT ./fig_welcome.jpg
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/t1xttsl.tfm
-INPUT /usr/share/texmf/fonts/tfm/public/tex-gyre/ec-qtmr.tfm
 INPUT ./fig_manuscript_build.png
 INPUT ./fig_manuscript_build.png
 INPUT ./fig_manuscript_build.png
@@ -581,6 +579,5 @@ INPUT /usr/share/texmf/fonts/type1/public/tex-gyre/qtmbi.pfb
 INPUT /usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb
 INPUT /usr/share/texmf/fonts/type1/public/tex-gyre/qtmri.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/tcxtt.pfb

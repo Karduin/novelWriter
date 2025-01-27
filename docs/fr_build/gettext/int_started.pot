@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: novelWriter 2.6rc1\n"
+"Project-Id-Version: novelWriter 2.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-22 11:34+0100\n"
+"POT-Creation-Date: 2025-01-27 10:21+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgid "Setup and Installation"
 msgstr ""
 
 #: ../../source/int_started.rst:17
-msgid "Ready-made packages and installers for novelWriter are available for all major platforms, including Linux, Windows and MacOS, from the `Downloads page`_. See below for install additional instructions for each platform."
+msgid "Ready-made packages and installers for novelWriter are available for all major platforms, including Linux, Windows and MacOS, from the `Downloads page`_. See below for additional install instructions for each platform."
 msgstr ""
 
 #: ../../source/int_started.rst:21
@@ -44,122 +44,114 @@ msgstr ""
 msgid "If you have any issues, try uninstalling the previous version and making a fresh install. If you already had a version installed via a different method, you should uninstall that first as having multiple installations has been known to cause problems."
 msgstr ""
 
-#: ../../source/int_started.rst:44
-msgid "The novelWriter installer is not signed because Microsoft doesn't currently provide a way for non-profit open source projects to properly sign their installers. The novelWriter project doesn't have the funding to pay for commercial software signing certificates. You will therefore see an additional warning about this when you download and run the installer."
-msgstr ""
-
-#: ../../source/int_started.rst:53
+#: ../../source/int_started.rst:47
 msgid "Installing on Linux"
 msgstr ""
 
-#: ../../source/int_started.rst:55
+#: ../../source/int_started.rst:49
 msgid "A Debian package can be downloaded from the `Downloads page`_, or from the Releases_ page on GitHub_. This package should work on both Debian, Ubuntu and Linux Mint, at least."
 msgstr ""
 
-#: ../../source/int_started.rst:58
+#: ../../source/int_started.rst:52
 msgid "If you prefer, you can also add the novelWriter repository on Launchpad to your package manager. The Launchpad packages `are signed by the author <https://launchpad.net/~vkbo>`__."
 msgstr ""
 
-#: ../../source/int_started.rst:63
+#: ../../source/int_started.rst:57
 msgid "Ubuntu"
 msgstr ""
 
-#: ../../source/int_started.rst:65
+#: ../../source/int_started.rst:59
 msgid "You can add the Ubuntu PPA_ and install novelWriter with the following commands."
 msgstr ""
 
-#: ../../source/int_started.rst:73
+#: ../../source/int_started.rst:67
 msgid "If you want the `Pre-Release PPA`_ instead, add the ``ppa:vkbo/novelwriter-pre`` repository."
 msgstr ""
 
-#: ../../source/int_started.rst:77
+#: ../../source/int_started.rst:71
 msgid "Debian and Mint"
 msgstr ""
 
-#: ../../source/int_started.rst:79
+#: ../../source/int_started.rst:73
 msgid "Since this is a pure Python package, the Launchpad PPA can in principle also be used on Debian or Mint. However, the above command will fail to add the signing key, as it is Ubuntu-specific."
 msgstr ""
 
-#: ../../source/int_started.rst:82
+#: ../../source/int_started.rst:76
 msgid "Instead, run the following commands to add the repository and key:"
 msgstr ""
 
-#: ../../source/int_started.rst:89
+#: ../../source/int_started.rst:83
 msgid "Then run the update and install commands as for Ubuntu:"
 msgstr ""
 
-#: ../../source/int_started.rst:97
-msgid "You may need to use the Ubuntu 20.04 (focal) packages for Debian 11 or earlier. The newer Ubuntu packages use a different compression algorithm that may not be supported."
-msgstr ""
-
-#: ../../source/int_started.rst:101
+#: ../../source/int_started.rst:91
 msgid "If you get an error message like ``gpg: failed to create temporary file`` when importing the key from the Ubuntu keyserver, try creating the folder it fails on, and import the key again:"
 msgstr ""
 
-#: ../../source/int_started.rst:110
+#: ../../source/int_started.rst:100
 msgid "AppImage Releases"
 msgstr ""
 
-#: ../../source/int_started.rst:112
+#: ../../source/int_started.rst:102
 msgid "For other Linux distros than the ones mentioned above, the primary option is AppImage_. These are completely standalone images for the app that include the necessary environment to run novelWriter. They can of course be run on any Linux distro, if you prefer this to native packages."
 msgstr ""
 
-#: ../../source/int_started.rst:117
+#: ../../source/int_started.rst:107
 msgid "novelWriter generally doesn't support Python versions that have reached end of life. If your Linux distro still uses older Python versions and novelWriter won't run, you may want to try the AppImage instead."
 msgstr ""
 
-#: ../../source/int_started.rst:125
+#: ../../source/int_started.rst:115
 msgid "Installing on MacOS"
 msgstr ""
 
-#: ../../source/int_started.rst:127
+#: ../../source/int_started.rst:117
 msgid "You can install novelWriter with both its Python and library dependencies embedded using the DMG application image file from the `Downloads page`_, or from the Releases_ page on GitHub_. Installing it should be straightforward."
 msgstr ""
 
-#: ../../source/int_started.rst:131
+#: ../../source/int_started.rst:121
 msgid "Download the DMG file and open it. Then drag the novelWriter icon to the :guilabel:`Applications` folder on the right. This will install it into your :guilabel:`Applications`."
 msgstr ""
 
-#: ../../source/int_started.rst:133
+#: ../../source/int_started.rst:123
 msgid "The first time you try to launch it, it will say that the bundle cannot be verified, simply press the :guilabel:`Open` button to add an exception."
 msgstr ""
 
-#: ../../source/int_started.rst:135
+#: ../../source/int_started.rst:125
 msgid "If you are not presented with an :guilabel:`Open` button in the dialog, launch the application again by right clicking on the application in Finder and selecting :guilabel:`Open` from the context menu."
 msgstr ""
 
-#: ../../source/int_started.rst:139
+#: ../../source/int_started.rst:129
 msgid "The context menu can also be accessed by option-clicking if you have a one button mouse. This is done by holding down the option key on your keyboard and clicking on the application in Finder."
 msgstr ""
 
-#: ../../source/int_started.rst:143
-msgid "The novelWriter DMG is not signed because Apple doesn't currently provide a way for non-profit open source projects to properly sign their installers. The novelWriter project doesn't have the funding to pay for commercial software signing certificates."
+#: ../../source/int_started.rst:133
+msgid "The novelWriter DMG is not signed because Apple doesn't currently provide a way for non-profit open source projects to properly sign their installers. The novelWriter project doesn't have the funding to pay for a commercial software signing certificate."
 msgstr ""
 
-#: ../../source/int_started.rst:151
+#: ../../source/int_started.rst:141
 msgid "Installing from PyPi"
 msgstr ""
 
-#: ../../source/int_started.rst:153
+#: ../../source/int_started.rst:143
 msgid "novelWriter is also available on the Python Package Index, or PyPi_. This install method works on all supported operating systems with a suitable Python environment."
 msgstr ""
 
-#: ../../source/int_started.rst:156
+#: ../../source/int_started.rst:146
 msgid "To install from PyPi you must first have the ``python`` and ``pip`` commands available on your system. You can download Python from `python.org`_. It is recommended that you install the latest version. If you are on Windows, also make sure to select the \"Add Python to PATH\" option during installation."
 msgstr ""
 
-#: ../../source/int_started.rst:161
+#: ../../source/int_started.rst:151
 msgid "To install novelWriter from PyPi, use the following command:"
 msgstr ""
 
-#: ../../source/int_started.rst:167
+#: ../../source/int_started.rst:157
 msgid "To upgrade an existing installation, use:"
 msgstr ""
 
-#: ../../source/int_started.rst:173
+#: ../../source/int_started.rst:163
 msgid "When installing via pip, novelWriter can be launched from command line with:"
 msgstr ""
 
-#: ../../source/int_started.rst:179
+#: ../../source/int_started.rst:169
 msgid "Make sure the install location for pip is in your PATH variable. This is not always the case by default, and then you may get a \"Not Found\" error when running the ``novelwriter`` command."
 msgstr ""

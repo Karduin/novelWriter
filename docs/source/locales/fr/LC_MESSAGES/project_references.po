@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: novelWriter 2.6b1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-21 19:37+0100\n"
-"PO-Revision-Date: 2025-01-26 11:02+0100\n"
+"POT-Creation-Date: 2025-01-27 10:21+0100\n"
+"PO-Revision-Date: 2025-01-27 11:14+0100\n"
 "Last-Translator: \n"
 "Language-Team: fr <LL@li.org>\n"
 "Language: fr\n"
@@ -58,11 +58,11 @@ msgstr ""
 "fonctionner, c'est pourquoi ce chapitre vise à expliquer plus en détail "
 "comment utiliser ce système de balises et de références."
 
-#: ../../source/project_references.rst:18
+#: ../../source/project_references.rst:19
 msgid ""
 "If you find the Tags and Reference system difficult to follow just from "
 "reading this chapter, you can create a new project in the **Welcome** "
-"dialog's New project form and select  \"Create an example project\" from "
+"dialog's New project form and select \"Create an example project\" from "
 "the \"Pre-fill project\" option. The example project contains several "
 "examples of tags and references."
 msgstr ""
@@ -73,11 +73,11 @@ msgstr ""
 "le projet ». Le projet d'exemple contient plusieurs exemples de balises "
 "et de références."
 
-#: ../../source/project_references.rst:27
+#: ../../source/project_references.rst:28
 msgid "Metadata in novelWriter"
 msgstr "Métadonnées dans novelWriter"
 
-#: ../../source/project_references.rst:29
+#: ../../source/project_references.rst:30
 msgid ""
 "The structure of your novelWriter project is inferred from the :term:"
 "`headings` within the documents, not the documents themselves. See :ref:"
@@ -89,7 +89,7 @@ msgstr ""
 "pour plus de détails. Par conséquent, les métadonnées sont également "
 "associées aux en-têtes, et non aux documents directement."
 
-#: ../../source/project_references.rst:33
+#: ../../source/project_references.rst:34
 msgid ""
 "If you split your project into separate documents for each scene, this "
 "distinction may not matter. However, there are several benefits to using "
@@ -109,26 +109,30 @@ msgstr ""
 "fonction de division de document. Voir :ref:`a_ui_tree_split_merge` pour "
 "plus de détails."
 
-#: ../../source/project_references.rst:39
+#: ../../source/project_references.rst:40
 msgid ""
 "You can do the same with your notes. You can treat each heading as an "
 "independent element of your notes that can be referenced somewhere else. "
 "That way you can collect all your minor or background characters in a "
 "single note file, and still be able to reference them individually by "
-"separating them with headings and assigning each a tag."
+"separating them with headings and assigning each a tag. Or, you can lay "
+"out your plot in a single document and have a tag for each plot stage "
+"under separate headings."
 msgstr ""
-"Vous pouvez faire de même avec vos notes. Vous pouvez traiter chaque "
-"titre comme un élément indépendant de vos notes qui peut être référencé "
+"Vous pouvez faire de même avec vos notes. Vous pouvez traiter chaque en-"
+"tête comme un élément indépendant de vos notes qui peut être référencé "
 "ailleurs. Ainsi, vous pouvez rassembler tous vos personnages mineurs ou "
-"d'arrière-plan dans un seul fichier de notes, tout en étant en mesure de "
-"les référencer individuellement en les séparant par des titres et en leur "
-"attribuant à chacun une étiquette."
+"de second plan dans un seul fichier de notes, tout en étant en mesure de "
+"les référencer individuellement en les séparant par des en-têtes et en "
+"leur attribuant à chacun une balise. Vous pouvez également présenter "
+"votre intrigue dans un seul document et attribuer une balise à chaque "
+"étape de l'intrigue dans des rubriques distinctes."
 
-#: ../../source/project_references.rst:48
+#: ../../source/project_references.rst:50
 msgid "How to Use Tags"
 msgstr "Comment utiliser les tags"
 
-#: ../../source/project_references.rst:50
+#: ../../source/project_references.rst:52
 msgid ""
 "A \"tag\" in novelWriter is a word or phrase that you define as belonging "
 "to a heading. Tags are set by using the ``@tag`` :term:`keyword`."
@@ -137,19 +141,19 @@ msgstr ""
 "comme appartenant à une rubrique. Les balises sont définies à l'aide de "
 "la commande ``@tag`` :term:`mot-clé`."
 
-#: ../../source/project_references.rst:53
+#: ../../source/project_references.rst:55
 msgid "The basic format of a tag is ``@tag: tagName``."
 msgstr "Le format de base d'une balise est ``@tag: NomDuTag``."
 
-#: ../../source/project_references.rst:55
+#: ../../source/project_references.rst:57
 msgid "An alternative format of a tag is ``@tag: tagName | displayName``."
 msgstr "Un autre format de balise est ``@tag: NomDuTag | NomAffiché``."
 
-#: ../../source/project_references.rst:57
+#: ../../source/project_references.rst:59
 msgid "``tagName`` (Required)"
 msgstr "``NomDuTag`` (Requis)"
 
-#: ../../source/project_references.rst:58
+#: ../../source/project_references.rst:60
 msgid ""
 "This is a unique identifier of your choosing. It is the value you use "
 "later for making references back to this document, or section of the "
@@ -159,11 +163,11 @@ msgstr ""
 "vous utiliserez plus tard pour faire référence à ce document ou à une "
 "section du document."
 
-#: ../../source/project_references.rst:61
+#: ../../source/project_references.rst:63
 msgid "``displayName`` (Optional)"
 msgstr "``NomAffiché`` (Optionnel)"
 
-#: ../../source/project_references.rst:62
+#: ../../source/project_references.rst:64
 msgid ""
 "This is an optional display name used for the tag. When you build your "
 "manuscript, you can for instance insert the point of view character name "
@@ -180,7 +184,7 @@ msgstr ""
 "utiliser ceci pour spécifier un format plus approprié pour les titres de "
 "votre manuscrit."
 
-#: ../../source/project_references.rst:67
+#: ../../source/project_references.rst:69
 msgid ""
 "You can only set **one** tag per heading, and the tag has to be unique "
 "across **all** documents in the project."
@@ -188,7 +192,7 @@ msgstr ""
 "Vous ne pouvez définir qu'une seule balise** par rubrique, et la balise "
 "doit être unique dans **tous** les documents du projet."
 
-#: ../../source/project_references.rst:70
+#: ../../source/project_references.rst:72
 msgid ""
 "After a tag has been defined, it can be referenced in novel documents, or "
 "cross-referenced in other notes. Tags will also show up in the **Outline "
@@ -201,7 +205,7 @@ msgstr ""
 "le panneau des références sous le visualiseur de documents lorsqu'un "
 "document est ouvert dans le visualiseur."
 
-#: ../../source/project_references.rst:74
+#: ../../source/project_references.rst:76
 msgid ""
 "The syntax highlighter will indicate to you that the keyword is correctly "
 "used and that the tag is allowed, that is, the tag is unique. Duplicate "
@@ -215,7 +219,7 @@ msgstr ""
 "Une balise non valide est signalée par une ligne verte et ne reçoit pas "
 "la même couleur que les balises valides."
 
-#: ../../source/project_references.rst:79
+#: ../../source/project_references.rst:81
 msgid ""
 "The tag is the only part of these notes that novelWriter uses. The rest "
 "of the document content is there for you to use in whatever way you wish. "
@@ -230,7 +234,7 @@ msgstr ""
 "compiler un seul document de toutes vos notes, vous pouvez le faire à "
 "partir de l'outil **Compiler le manuscrit**."
 
-#: ../../source/project_references.rst:84
+#: ../../source/project_references.rst:88
 msgid ""
 "Tags are no longer case sensitive. The tags are by default displayed with "
 "the capitalisation you use when defining the tag, but you don't have to "
@@ -241,17 +245,26 @@ msgstr ""
 "mais vous n'êtes pas obligé d'utiliser la même majuscule lorsque vous y "
 "faites référence ultérieurement."
 
-#: ../../source/project_references.rst:89
+#: ../../source/project_references.rst:94
 msgid "Tags can have an optional display name for manuscript builds."
 msgstr ""
 "Les balises peuvent avoir un nom d'affichage facultatif pour les "
 "constructions de manuscrits."
 
-#: ../../source/project_references.rst:92
+#: ../../source/project_references.rst:98
+msgid ""
+"You can now add tags also to Novel Documents. These can be used for cross-"
+"referencing between chapters and scenes, and also from notes if desired."
+msgstr ""
+"Vous pouvez désormais ajouter des balises aux documents du roman. Celles-"
+"ci peuvent être utilisées pour les références croisées entre les "
+"chapitres et les scènes, ainsi qu'à partir des notes si vous le souhaitez."
+
+#: ../../source/project_references.rst:101
 msgid "Example of a heading with a tag for a character of the story:"
 msgstr "Exemple d'un titre avec une tag pour un personnage de l'histoire :"
 
-#: ../../source/project_references.rst:102
+#: ../../source/project_references.rst:111
 msgid ""
 "When this is done in a document in a :term:`Root Folder` of type "
 "\"Characters\", the tag is automatically treated as an available "
@@ -272,7 +285,7 @@ msgstr ""
 "référence dans l'éditeur lorsque vous remplissez des références. Voir :"
 "ref:`a_ui_view` et :ref:`a_references_completer`."
 
-#: ../../source/project_references.rst:109
+#: ../../source/project_references.rst:118
 msgid ""
 "It is the root folder type that defines what category of story elements "
 "the tag is indexed under. See the :ref:`a_proj_roots` section for an "
@@ -284,11 +297,11 @@ msgstr ""
 "`a_proj_roots` pour une vue d'ensemble des types de dossiers racines "
 "disponibles. Ils sont également abordés dans la section suivante."
 
-#: ../../source/project_references.rst:117
+#: ../../source/project_references.rst:126
 msgid "How to Use References"
 msgstr "Comment utiliser les références"
 
-#: ../../source/project_references.rst:119
+#: ../../source/project_references.rst:128
 msgid ""
 "Each heading of any level in your project can contain references to tags "
 "set in project notes. The references are gathered by the indexer and used "
@@ -299,7 +312,7 @@ msgstr ""
 "références sont rassemblées par l'indexeur et utilisées pour générer la "
 "**Vue d'ensemble**, entre autres choses."
 
-#: ../../source/project_references.rst:123
+#: ../../source/project_references.rst:132
 msgid ""
 "References are set as a :term:`keyword` and a list of corresponding tags. "
 "The valid keywords are listed below. The format of a reference line is "
@@ -312,11 +325,11 @@ msgstr ""
 "[value2] ... [valeurN]``. Tous les mots-clés de référence autorisent des "
 "valeurs multiples."
 
-#: ../../source/project_references.rst:127
+#: ../../source/project_references.rst:136
 msgid "``@pov``"
 msgstr "``@pov``"
 
-#: ../../source/project_references.rst:128
+#: ../../source/project_references.rst:137
 msgid ""
 "The point-of-view character for the current section. The target must be a "
 "note tag in a **Character** type root folder."
@@ -324,11 +337,11 @@ msgstr ""
 "Le personnage de point de vue pour la section en cours. La cible doit "
 "être une balise note dans un dossier racine de type **Personnages**."
 
-#: ../../source/project_references.rst:131
+#: ../../source/project_references.rst:140
 msgid "``@focus``"
 msgstr "``@focus``"
 
-#: ../../source/project_references.rst:132
+#: ../../source/project_references.rst:141
 msgid ""
 "The character that has the focus for the current section. This can be "
 "used in cases where the focus is not a point-of-view character. The "
@@ -339,11 +352,11 @@ msgstr ""
 "de point de vue. La cible doit être une balise note dans un dossier "
 "racine de type **Personnages**."
 
-#: ../../source/project_references.rst:136
+#: ../../source/project_references.rst:145
 msgid "``@char``"
 msgstr "``@char``"
 
-#: ../../source/project_references.rst:137
+#: ../../source/project_references.rst:146
 msgid ""
 "Other characters in the current section. The target must be a note tag in "
 "a **Character** type root folder. This should not include the point-of-"
@@ -354,11 +367,11 @@ msgstr ""
 "doit pas inclure le point de vue ou le personnage principal si ces "
 "références sont utilisées."
 
-#: ../../source/project_references.rst:141
+#: ../../source/project_references.rst:150
 msgid "``@plot``"
 msgstr "``@plot``"
 
-#: ../../source/project_references.rst:142
+#: ../../source/project_references.rst:151
 msgid ""
 "The plot or subplot advanced in the current section. The target must be a "
 "note tag in a **Plot** type root folder."
@@ -367,11 +380,11 @@ msgstr ""
 "cible doit être une balise note dans un dossier racine de type "
 "**Intrigue**."
 
-#: ../../source/project_references.rst:145
+#: ../../source/project_references.rst:154
 msgid "``@time``"
 msgstr "``@time``"
 
-#: ../../source/project_references.rst:146
+#: ../../source/project_references.rst:155
 msgid ""
 "The timelines touched by the current section. The target must be a note "
 "tag in a **Timeline** type root folder."
@@ -379,11 +392,11 @@ msgstr ""
 "Les lignes de temps concernées par la section en cours. La cible doit "
 "être une balise note dans un dossier racine de type **Chronologie**."
 
-#: ../../source/project_references.rst:149
+#: ../../source/project_references.rst:158
 msgid "``@location``"
 msgstr "``@location``"
 
-#: ../../source/project_references.rst:150
+#: ../../source/project_references.rst:159
 msgid ""
 "The location the current section takes place in. The target must be a "
 "note tag in a **Locations** type root folder."
@@ -391,11 +404,11 @@ msgstr ""
 "L'endroit où se déroule la section en cours. La cible doit être une "
 "balise note dans un dossier racine de type **lieux**."
 
-#: ../../source/project_references.rst:153
+#: ../../source/project_references.rst:162
 msgid "``@object``"
 msgstr "``@object``"
 
-#: ../../source/project_references.rst:154
+#: ../../source/project_references.rst:163
 msgid ""
 "Objects present in the current section. The target must be a note tag in "
 "a **Object** type root folder."
@@ -403,11 +416,11 @@ msgstr ""
 "Objets présents dans la section courante. La cible doit être une "
 "étiquette de note dans un dossier racine de type **Objets**."
 
-#: ../../source/project_references.rst:157
+#: ../../source/project_references.rst:166
 msgid "``@entity``"
 msgstr "``@entity``"
 
-#: ../../source/project_references.rst:158
+#: ../../source/project_references.rst:167
 msgid ""
 "Entities present in the current section. The target must be a note tag in "
 "an **Entities** type root folder."
@@ -415,11 +428,11 @@ msgstr ""
 "Entités présentes dans la section courante. La cible doit être une balise "
 "note dans un dossier racine de type **Entités**."
 
-#: ../../source/project_references.rst:161
+#: ../../source/project_references.rst:170
 msgid "``@custom``"
 msgstr "``@custom``"
 
-#: ../../source/project_references.rst:162
+#: ../../source/project_references.rst:171
 msgid ""
 "Custom references in the current section. The target must be a note tag "
 "in a **Custom** type root folder. The custom folder are for any other "
@@ -430,11 +443,11 @@ msgstr ""
 "Les dossiers personnalisés sont destinés à toute autre catégorie de notes "
 "que vous souhaiteriez utiliser."
 
-#: ../../source/project_references.rst:165
+#: ../../source/project_references.rst:174
 msgid "``@mention``"
 msgstr "``@mention``"
 
-#: ../../source/project_references.rst:166
+#: ../../source/project_references.rst:175
 msgid ""
 "Anything mentioned, but not present in the current section. It is "
 "intended for those cases where you reveal details about a character or "
@@ -449,7 +462,19 @@ msgstr ""
 "quelle balise dans n'importe quel dossier de notes racine peut être "
 "listée sous mentions."
 
-#: ../../source/project_references.rst:171
+#: ../../source/project_references.rst:180
+msgid "``@story``"
+msgstr "``@story``"
+
+#: ../../source/project_references.rst:181
+msgid ""
+"This is used when referencing a Novel Document, like a scene or chapter, "
+"from somewhere else in your project."
+msgstr ""
+"Cette fonction est utilisée pour référencer un document de roman, comme "
+"une scène ou un chapitre, à partir d'un autre endroit de votre projet."
+
+#: ../../source/project_references.rst:184
 msgid ""
 "The syntax highlighter will alert the user that the tags and references "
 "are used correctly, and that the tags referenced exist."
@@ -458,7 +483,7 @@ msgstr ""
 "balises et les références sont utilisées correctement et que les balises "
 "référencées existent."
 
-#: ../../source/project_references.rst:175
+#: ../../source/project_references.rst:189
 msgid ""
 "The highlighter may be mistaken if the index of defined tags is out of "
 "date. If so, press :kbd:`F9` to regenerate it, or select **Rebuild "
@@ -471,7 +496,7 @@ msgstr ""
 "général, l'index d'un document est régénéré lorsqu'il est sauvegardé, ce "
 "qui ne devrait pas être nécessaire."
 
-#: ../../source/project_references.rst:180
+#: ../../source/project_references.rst:195
 msgid ""
 "If you add a reference in the editor to a tag that doesn't yet exist, you "
 "can right-click it and select **Create Note for Tag**. This will generate "
@@ -486,7 +511,7 @@ msgstr ""
 "définie. Pour que cela soit possible, un dossier racine pour cette "
 "catégorie de références doit déjà exister."
 
-#: ../../source/project_references.rst:185
+#: ../../source/project_references.rst:200
 msgid ""
 "One note can also reference another note in the same way novel documents "
 "do. When the note is opened in the document viewer, the references become "
@@ -503,7 +528,7 @@ msgstr ""
 "souris tout en maintenant la touche :kbd:`Ctrl` enfoncée. Les liens "
 "cliqués sont toujours ouverts dans le panneau de visualisation."
 
-#: ../../source/project_references.rst:190
+#: ../../source/project_references.rst:205
 msgid ""
 "Project notes don't show up in the **Outline View**, so referencing "
 "between notes is only meaningful if you want to be able to click-navigate "
@@ -515,7 +540,7 @@ msgstr ""
 "pouvoir naviguer d'une note à l'autre en cliquant, ou bien sûr si vous "
 "voulez simplement mettre en évidence que deux notes sont liées."
 
-#: ../../source/project_references.rst:195
+#: ../../source/project_references.rst:211
 msgid ""
 "If you cross-reference between notes and export your project as an HTML "
 "document using the **Manuscript Build** tool, the cross-references become "
@@ -526,17 +551,17 @@ msgstr ""
 "**Compiler le manuscrit**, les références croisées deviennent également "
 "des liens cliquables dans le document HTML exporté."
 
-#: ../../source/project_references.rst:199
+#: ../../source/project_references.rst:215
 msgid "Example of a novel document with references to characters and plots:"
 msgstr ""
 "Exemple de document de roman avec références aux personnages et aux "
 "intrigues :"
 
-#: ../../source/project_references.rst:218
+#: ../../source/project_references.rst:234
 msgid "The References Auto-Completer"
 msgstr "L'auto-complétion des références"
 
-#: ../../source/project_references.rst:220
+#: ../../source/project_references.rst:236
 msgid ""
 "An auto-completer context menu will show up automatically in the document "
 "editor when you type the character ``@`` on a new line. It will first "
@@ -550,7 +575,7 @@ msgstr ""
 "référence à ajouter, puis, après l'ajout de ``:``, des références à "
 "partir de la liste des balises que vous avez déjà définies."
 
-#: ../../source/project_references.rst:224
+#: ../../source/project_references.rst:240
 msgid ""
 "You can use the auto-completer to add multiple references with a ``,`` "
 "between them, and even type new ones. New references can be created by "
