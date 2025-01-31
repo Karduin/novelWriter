@@ -32,6 +32,7 @@ import sys
 from datetime import datetime
 from pathlib import Path
 from time import time
+from typing import TYPE_CHECKING
 
 from PyQt5.QtCore import (
     PYQT_VERSION, PYQT_VERSION_STR, QT_VERSION, QT_VERSION_STR, QLibraryInfo,
@@ -46,6 +47,9 @@ from novelwriter.common import (
 )
 from novelwriter.constants import nwFiles, nwUnicode
 from novelwriter.error import formatException, logException
+
+if TYPE_CHECKING:  # pragma: no cover
+    from novelwriter.core.projectdata import NWProjectData
 
 logger = logging.getLogger(__name__)
 
@@ -135,6 +139,7 @@ class Config:
         self.emphLabels      = True   # Add emphasis to H1 and H2 item labels
         self.backupOnClose   = False  # Flag for running automatic backups
         self.askBeforeBackup = True   # Flag for asking before running automatic backup
+        self.askBeforeExit   = True   # Flag for asking before exiting the app
 
         # Text Editor Settings
         self.textFont        = QFont()  # Editor font
@@ -628,6 +633,7 @@ class Config:
         self._backupPath     = conf.rdPath(sec, "backuppath", self._backupPath)
         self.backupOnClose   = conf.rdBool(sec, "backuponclose", self.backupOnClose)
         self.askBeforeBackup = conf.rdBool(sec, "askbeforebackup", self.askBeforeBackup)
+        self.askBeforeExit   = conf.rdBool(sec, "askbeforeexit", self.askBeforeExit)
 
         # Editor
         sec = "Editor"
@@ -739,6 +745,7 @@ class Config:
             "backuppath":      str(self._backupPath),
             "backuponclose":   str(self.backupOnClose),
             "askbeforebackup": str(self.askBeforeBackup),
+            "askbeforeexit":   str(self.askBeforeExit),
         }
 
         conf["Editor"] = {
@@ -842,29 +849,30 @@ class RecentProjects:
 
     def __init__(self, config: Config) -> None:
         self._conf = config
-        self._data = {}
+        self._data: dict[str, dict[str, str | int]] = {}
+        self._map: dict[str, str] = {}
         return
 
     def loadCache(self) -> bool:
         """Load the cache file for recent projects."""
         self._data = {}
-
+        self._map = {}
         cacheFile = self._conf.dataPath(nwFiles.RECENT_FILE)
         if cacheFile.is_file():
             try:
                 with open(cacheFile, mode="r", encoding="utf-8") as inFile:
                     data = json.load(inFile)
                 for path, entry in data.items():
-                    self._data[path] = {
-                        "title": entry.get("title", ""),
-                        "words": entry.get("words", 0),
-                        "time": entry.get("time", 0),
-                    }
+                    puuid = str(entry.get("uuid", ""))
+                    title = str(entry.get("title", ""))
+                    words = checkInt(entry.get("words", 0), 0)
+                    saved = checkInt(entry.get("time", 0), 0)
+                    if path and title:
+                        self._setEntry(puuid, path, title, words, saved)
             except Exception:
                 logger.error("Could not load recent project cache")
                 logException()
                 return False
-
         return True
 
     def saveCache(self) -> bool:
@@ -879,7 +887,6 @@ class RecentProjects:
             logger.error("Could not save recent project cache")
             logException()
             return False
-
         return True
 
     def listEntries(self) -> list[tuple[str, str, int, int]]:
@@ -889,14 +896,15 @@ class RecentProjects:
             for k, e in self._data.items()
         ]
 
-    def update(self, path: str | Path, title: str, words: int, saved: float | int) -> None:
+    def update(self, path: str | Path, data: NWProjectData, saved: float | int) -> None:
         """Add or update recent cache information on a given project."""
-        self._data[str(path)] = {
-            "title": title,
-            "words": int(words),
-            "time": int(saved),
-        }
-        self.saveCache()
+        try:
+            if (remove := self._map.get(data.uuid)) and (remove != str(path)):
+                self.remove(remove)
+            self._setEntry(data.uuid, str(path), data.name, sum(data.currCounts), int(saved))
+            self.saveCache()
+        except Exception:
+            pass
         return
 
     def remove(self, path: str | Path) -> None:
@@ -904,6 +912,13 @@ class RecentProjects:
         if self._data.pop(str(path), None) is not None:
             logger.debug("Removed recent: %s", path)
             self.saveCache()
+        return
+
+    def _setEntry(self, puuid: str, path: str, title: str, words: int, saved: int) -> None:
+        """Set an entry in the recent projects record."""
+        self._data[path] = {"uuid": puuid, "title": title, "words": words, "time": saved}
+        if puuid:
+            self._map[puuid] = path
         return
 
 
